@@ -1,0 +1,25 @@
+{
+  "updated": "2026-09-01T10:15:33.633478-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-09-01_0931.json",
+  "tickers_scanned": 7,
+  "lookback_days": 3,
+  "since": "2026-08-29",
+  "hits": [],
+  "new_hits": [],
+  "unresolved_tickers": [
+    "SOXL",
+    "TQQQ",
+    "SOXS"
+  ],
+  "errors": [
+    "full-text search \"strategic alternatives\": HTTP Error 500: Internal Server Error",
+    "full-text search \"definitive agreement\": HTTP Error 500: Internal Server Error",
+    "full-text search \"unsolicited proposal\": HTTP Error 500: Internal Server Error",
+    "full-text search \"positive topline\": HTTP Error 500: Internal Server Error",
+    "full-text search \"topline results\": HTTP Error 500: Internal Server Error",
+    "full-text search \"record quarterly revenue\": HTTP Error 500: Internal Server Error",
+    "full-text search \"record backlog\": HTTP Error 500: Internal Server Error"
+  ]
+}

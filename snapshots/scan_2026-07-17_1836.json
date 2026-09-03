@@ -1,0 +1,372 @@
+{
+  "feed_last_updated": "2026-07-17 16:15:56",
+  "survivors": [
+    {
+      "ticker": "SDOT",
+      "price": 25.3,
+      "change_pct": 77.5439,
+      "volume": 23601688,
+      "dollar_volume": 597122706.4,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SLND",
+      "price": 1.16,
+      "change_pct": 70.2627,
+      "volume": 202005715,
+      "dollar_volume": 234326629.39999998,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "STAK",
+      "price": 1.92,
+      "change_pct": -46.3687,
+      "volume": 29159538,
+      "dollar_volume": 55986312.96,
+      "lists": [
+        "loser"
+      ]
+    },
+    {
+      "ticker": "CJMB",
+      "price": 1.22,
+      "change_pct": 41.6957,
+      "volume": 46780769,
+      "dollar_volume": 57072538.18,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "BIYA",
+      "price": 4.14,
+      "change_pct": 36.1842,
+      "volume": 22072198,
+      "dollar_volume": 91378899.72,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 13.23,
+      "change_pct": -8.6326,
+      "volume": 148274535,
+      "dollar_volume": 1961672098.05,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNDQ",
+      "price": 4.22,
+      "change_pct": 7.9284,
+      "volume": 329003529,
+      "dollar_volume": 1388394892.3799999,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "price": 68.95,
+      "change_pct": -7.2629,
+      "volume": 141234882,
+      "dollar_volume": 9738145113.9,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "price": 54.92,
+      "change_pct": 5.5748,
+      "volume": 106683102,
+      "dollar_volume": 5859035961.84,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "price": 135.1292,
+      "change_pct": -5.1592,
+      "volume": 104481616,
+      "dollar_volume": 14118517184.787199,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "AAL",
+      "price": 14.98,
+      "change_pct": -3.9744,
+      "volume": 176691169,
+      "dollar_volume": 2646833711.62,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "price": 10.11,
+      "change_pct": -2.6012,
+      "volume": 115511346,
+      "dollar_volume": 1167819708.06,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "price": 202.81,
+      "change_pct": -2.2131,
+      "volume": 143409896,
+      "dollar_volume": 29084961007.760002,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "price": 95.04,
+      "change_pct": -2.0004,
+      "volume": 123788062,
+      "dollar_volume": 11764817412.480001,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "ONDS",
+      "price": 6.525,
+      "change_pct": -1.8797,
+      "volume": 214073430,
+      "dollar_volume": 1396829130.75,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "OPEN",
+      "price": 4.5,
+      "change_pct": -1.5317,
+      "volume": 106389674,
+      "dollar_volume": 478753533.0,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NU",
+      "price": 13.585,
+      "change_pct": -1.4866,
+      "volume": 112184304,
+      "dollar_volume": 1524023769.8400002,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "JOBY",
+      "price": 7.24,
+      "change_pct": -1.3624,
+      "volume": 90851648,
+      "dollar_volume": 657765931.52,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "PATH",
+      "price": 12.15,
+      "change_pct": 0.9975,
+      "volume": 92252365,
+      "dollar_volume": 1120866234.75,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "DRAM",
+      "price": 52.66,
+      "change_pct": 0.6114,
+      "volume": 135445107,
+      "dollar_volume": 7132539334.62,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "BITO",
+      "price": 8.695,
+      "change_pct": -0.2867,
+      "volume": 639634842,
+      "dollar_volume": 5561624951.190001,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOFI",
+      "price": 17.28,
+      "change_pct": -0.2309,
+      "volume": 89721415,
+      "dollar_volume": 1550386051.2,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "CELUW",
+      "likely warrant"
+    ],
+    [
+      "PSNYW",
+      "likely warrant"
+    ],
+    [
+      "SLXNW",
+      "likely warrant"
+    ],
+    [
+      "BRLSW",
+      "likely warrant"
+    ],
+    [
+      "ILLRW",
+      "likely warrant"
+    ],
+    [
+      "LIDRW",
+      "likely warrant"
+    ],
+    [
+      "NOEMW",
+      "likely warrant"
+    ],
+    [
+      "SLND+",
+      "warrant/unit symbol"
+    ],
+    [
+      "PBMWW",
+      "likely warrant"
+    ],
+    [
+      "PSQH+",
+      "warrant/unit symbol"
+    ],
+    [
+      "ASTLW",
+      "likely warrant"
+    ],
+    [
+      "CDIOW",
+      "likely warrant"
+    ],
+    [
+      "TNONW",
+      "likely warrant"
+    ],
+    [
+      "FGIWW",
+      "likely warrant"
+    ],
+    [
+      "CCIXW",
+      "likely warrant"
+    ],
+    [
+      "BPACR",
+      "$165 traded"
+    ],
+    [
+      "RNWWW",
+      "likely warrant"
+    ],
+    [
+      "NEXRW",
+      "likely warrant"
+    ],
+    [
+      "VIVK",
+      "$5,348,961 traded"
+    ],
+    [
+      "RDACR",
+      "$3,593 traded"
+    ],
+    [
+      "BURU",
+      "$2,857,754 traded"
+    ],
+    [
+      "ACHR+",
+      "warrant/unit symbol"
+    ],
+    [
+      "QMLS",
+      "$3,406,908 traded"
+    ],
+    [
+      "CYCU",
+      "$764,438 traded"
+    ],
+    [
+      "EOSER",
+      "$1,936,001 traded"
+    ],
+    [
+      "TGHL",
+      "$5,441,815 traded"
+    ],
+    [
+      "DSYWW",
+      "likely warrant"
+    ],
+    [
+      "BBLGW",
+      "likely warrant"
+    ],
+    [
+      "CSAI",
+      "$763,328 traded"
+    ],
+    [
+      "ISUL",
+      "$12,194,674 traded"
+    ],
+    [
+      "WZRD",
+      "$48,589 traded"
+    ],
+    [
+      "VGASW",
+      "likely warrant"
+    ],
+    [
+      "BEATW",
+      "likely warrant"
+    ],
+    [
+      "MTEKW",
+      "likely warrant"
+    ],
+    [
+      "MVSTW",
+      "likely warrant"
+    ],
+    [
+      "DFNS",
+      "$6,390,647 traded"
+    ]
+  ]
+}

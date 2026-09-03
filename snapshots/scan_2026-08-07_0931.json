@@ -1,0 +1,339 @@
+{
+  "feed_last_updated": "2026-08-07 09:31:02",
+  "survivors": [
+    {
+      "ticker": "MB",
+      "price": 13.335,
+      "change_pct": 250.9211,
+      "volume": 16882175,
+      "dollar_volume": 225123803.625,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "NAMI",
+      "price": 8.99,
+      "change_pct": 212.1528,
+      "volume": 30906648,
+      "dollar_volume": 277850765.52,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DOCS",
+      "price": 38.891,
+      "change_pct": 88.243,
+      "volume": 18650177,
+      "dollar_volume": 725324033.707,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DSY",
+      "price": 5.965,
+      "change_pct": 72.8986,
+      "volume": 17118928,
+      "dollar_volume": 102114405.52,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "HCWC",
+      "price": 0.3403,
+      "change_pct": 70.15,
+      "volume": 185306815,
+      "dollar_volume": 63059909.144499995,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "VATE",
+      "price": 10.951,
+      "change_pct": 47.7868,
+      "volume": 5973930,
+      "dollar_volume": 65420507.43,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SLGB",
+      "price": 0.7399,
+      "change_pct": 44.3989,
+      "volume": 82059012,
+      "dollar_volume": 60715462.9788,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "TEAM",
+      "price": 146.275,
+      "change_pct": 32.7721,
+      "volume": 1842353,
+      "dollar_volume": 269490185.075,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SEZL",
+      "price": 123.6505,
+      "change_pct": -30.7397,
+      "volume": 268981,
+      "dollar_volume": 33259635.140499998,
+      "lists": [
+        "loser"
+      ]
+    },
+    {
+      "ticker": "CPOP",
+      "price": 0.456,
+      "change_pct": 27.3387,
+      "volume": 70864457,
+      "dollar_volume": 32314192.392,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "TTD",
+      "price": 13.135,
+      "change_pct": -25.665,
+      "volume": 23331572,
+      "dollar_volume": 306460198.21999997,
+      "lists": [
+        "loser",
+        "active"
+      ]
+    },
+    {
+      "ticker": "AAOX",
+      "price": 21.175,
+      "change_pct": 22.4696,
+      "volume": 3653238,
+      "dollar_volume": 77357314.65,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "LGHL",
+      "price": 1.1599,
+      "change_pct": 20.1969,
+      "volume": 20633208,
+      "dollar_volume": 23932457.9592,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "HTZ",
+      "price": 2.405,
+      "change_pct": 19.0594,
+      "volume": 32938092,
+      "dollar_volume": 79216111.25999999,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "ZENA",
+      "price": 1.61,
+      "change_pct": 16.6667,
+      "volume": 13837704,
+      "dollar_volume": 22278703.44,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "DV",
+      "price": 13.225,
+      "change_pct": 12.9377,
+      "volume": 12116624,
+      "dollar_volume": 160242352.4,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "price": 142.39,
+      "change_pct": 7.6022,
+      "volume": 10617690,
+      "dollar_volume": 1511852879.1,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 10.5786,
+      "change_pct": 7.5061,
+      "volume": 16461217,
+      "dollar_volume": 174136630.1562,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "price": 41.504,
+      "change_pct": -7.2744,
+      "volume": 10249470,
+      "dollar_volume": 425394002.88,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "price": 115.95,
+      "change_pct": 0.8963,
+      "volume": 12709691,
+      "dollar_volume": 1473688671.45,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "TMCWW",
+      "likely warrant"
+    ],
+    [
+      "FIGS",
+      "$4,975,334 traded"
+    ],
+    [
+      "RCEL",
+      "$1,148,582 traded"
+    ],
+    [
+      "CELZ",
+      "$11,654,849 traded"
+    ],
+    [
+      "BIVIW",
+      "likely warrant"
+    ],
+    [
+      "PUBM",
+      "$5,342,074 traded"
+    ],
+    [
+      "FNKO",
+      "$1,383,584 traded"
+    ],
+    [
+      "QNST",
+      "$1,687,577 traded"
+    ],
+    [
+      "AAOG",
+      "$4,892,903 traded"
+    ],
+    [
+      "NETG",
+      "$918,520 traded"
+    ],
+    [
+      "PN",
+      "$1,145,166 traded"
+    ],
+    [
+      "TTDU",
+      "$5,046,861 traded"
+    ],
+    [
+      "CVRX",
+      "$1,633,752 traded"
+    ],
+    [
+      "RNWWW",
+      "likely warrant"
+    ],
+    [
+      "GDEVW",
+      "likely warrant"
+    ],
+    [
+      "WYHG",
+      "$4,385,052 traded"
+    ],
+    [
+      "XHLD",
+      "$1,714,279 traded"
+    ],
+    [
+      "HUBCW",
+      "likely warrant"
+    ],
+    [
+      "ARQQW",
+      "likely warrant"
+    ],
+    [
+      "AAOZ",
+      "$14,809,468 traded"
+    ],
+    [
+      "ONFO",
+      "$566,043 traded"
+    ],
+    [
+      "BAER",
+      "$466,375 traded"
+    ],
+    [
+      "ORGO",
+      "$902,089 traded"
+    ],
+    [
+      "WEAV",
+      "$748,202 traded"
+    ],
+    [
+      "BAERW",
+      "likely warrant"
+    ],
+    [
+      "HCAT",
+      "$535,825 traded"
+    ],
+    [
+      "AIIOW",
+      "likely warrant"
+    ],
+    [
+      "GDXD",
+      "$14,120,240 traded"
+    ],
+    [
+      "YYAI",
+      "$15,467,608 traded"
+    ],
+    [
+      "RCON",
+      "$2,454,666 traded"
+    ],
+    [
+      "SXTC",
+      "$1,083,104 traded"
+    ]
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "updated": "2026-08-10T10:26:23.237429-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-08-10_0931.json",
+  "tickers_scanned": 10,
+  "lookback_days": 3,
+  "since": "2026-08-07",
+  "hits": [
+    {
+      "ticker": "SLN",
+      "company": "Silence Therapeutics plc  (SLN, SLNCF)  (CIK 0001479615)",
+      "cik": 1479615,
+      "form": "8-K",
+      "kind": "clinical",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341293",
+      "phrase": "topline results",
+      "meaning": "8-K contains \"topline results\" - trial data released - read for direction",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1479615/000119312526341293/d12947dex991.htm"
+    },
+    {
+      "ticker": "INTC",
+      "company": "INTEL CORP",
+      "cik": 50863,
+      "form": "424B5",
+      "kind": "dilution",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341318",
+      "meaning": "prospectus supplement - SELLING STOCK, usually into strength",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526341318/d98483d424b5.htm"
+    },
+    {
+      "ticker": "INTC",
+      "company": "INTEL CORP",
+      "cik": 50863,
+      "form": "S-3ASR",
+      "kind": "dilution",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341177",
+      "meaning": "automatic shelf - can sell immediately",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526341177/d120558ds3asr.htm"
+    },
+    {
+      "ticker": "HZO",
+      "company": "MARINEMAX INC  (HZO)  (CIK 0001057060)",
+      "cik": 1057060,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341302",
+      "phrase": "stock split",
+      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1057060/000119312526341302/d135056dex21.htm"
+    },
+    {
+      "ticker": "ACHR",
+      "company": "Archer Aviation Inc.  (ACHR, ACHR-WT)  (CIK 0001824502)",
+      "cik": 1824502,
+      "form": "8-K",
+      "kind": "operating",
+      "filed": "2026-08-10",
+      "accession": "0001104659-26-093056",
+      "phrase": "strategic partnership",
+      "meaning": "8-K contains \"strategic partnership\" - new distribution/tech/commercial tie-up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1824502/000110465926093056/tm2622394d1_ex2-1.htm"
+    }
+  ],
+  "new_hits": [
+    {
+      "ticker": "SLN",
+      "company": "Silence Therapeutics plc  (SLN, SLNCF)  (CIK 0001479615)",
+      "cik": 1479615,
+      "form": "8-K",
+      "kind": "clinical",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341293",
+      "phrase": "topline results",
+      "meaning": "8-K contains \"topline results\" - trial data released - read for direction",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1479615/000119312526341293/d12947dex991.htm"
+    },
+    {
+      "ticker": "INTC",
+      "company": "INTEL CORP",
+      "cik": 50863,
+      "form": "424B5",
+      "kind": "dilution",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341318",
+      "meaning": "prospectus supplement - SELLING STOCK, usually into strength",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526341318/d98483d424b5.htm"
+    },
+    {
+      "ticker": "INTC",
+      "company": "INTEL CORP",
+      "cik": 50863,
+      "form": "S-3ASR",
+      "kind": "dilution",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341177",
+      "meaning": "automatic shelf - can sell immediately",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000119312526341177/d120558ds3asr.htm"
+    },
+    {
+      "ticker": "HZO",
+      "company": "MARINEMAX INC  (HZO)  (CIK 0001057060)",
+      "cik": 1057060,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-08-10",
+      "accession": "0001193125-26-341302",
+      "phrase": "stock split",
+      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1057060/000119312526341302/d135056dex21.htm"
+    },
+    {
+      "ticker": "ACHR",
+      "company": "Archer Aviation Inc.  (ACHR, ACHR-WT)  (CIK 0001824502)",
+      "cik": 1824502,
+      "form": "8-K",
+      "kind": "operating",
+      "filed": "2026-08-10",
+      "accession": "0001104659-26-093056",
+      "phrase": "strategic partnership",
+      "meaning": "8-K contains \"strategic partnership\" - new distribution/tech/commercial tie-up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1824502/000110465926093056/tm2622394d1_ex2-1.htm"
+    }
+  ],
+  "unresolved_tickers": [],
+  "errors": []
+}

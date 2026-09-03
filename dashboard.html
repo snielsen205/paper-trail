@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movers</title>
+<style>
+  :root {
+    --green: #00C805; --red: #FF5000; --amber: #FFB400;
+    --bg: #0B0E11; --card: #12161B; --card-open: #1A1F26;
+    --line: #1C2127; --gray: #6B7280; --gray-l: #9CA3AF;
+    --text: #fff; --text-dim: #D1D5DB; --text-body: #B6BFC9; --faint: #4B5563;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text); min-height: 100vh;
+    font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+    font-size: 15px;
+  }
+  button { font-family: inherit; border: none; background: none; color: inherit; cursor: pointer; }
+
+  /* header */
+  header { padding: 16px 24px 0; border-bottom: 1px solid var(--line); }
+  .hrow { display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .logo {
+    width: 32px; height: 32px; border-radius: 8px; background: var(--green);
+    color: #000; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  .brand-name { font-weight: 600; letter-spacing: -0.01em; }
+  .brand-sub { font-size: 12px; color: var(--gray); }
+  .hright { display: flex; align-items: center; gap: 16px; font-size: 14px; }
+  .mkt { display: flex; align-items: center; gap: 8px; color: var(--gray-l); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .refresh {
+    font-size: 12px; padding: 6px 12px; border-radius: 999px;
+    font-weight: 500; color: #000; background: var(--green);
+  }
+  nav { display: flex; gap: 24px; margin-top: 16px; }
+  nav button {
+    padding-bottom: 12px; font-size: 14px; font-weight: 500;
+    border-bottom: 2px solid transparent; color: var(--gray);
+  }
+  nav button.on { border-color: var(--green); color: #fff; }
+
+  main { padding: 16px 24px; }
+  .card { background: var(--card); border-radius: 16px; padding: 16px; }
+
+  /* today layout */
+  .today { display: flex; flex-direction: column; gap: 16px; }
+  @media (min-width: 1024px) { .today { flex-direction: row; } .side { width: 384px; } }
+  .grow { flex: 1; }
+  .side { align-self: flex-start; width: 100%; }
+
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; margin: 0 4px 4px; }
+  .sec-head h2 { font-size: 15px; font-weight: 600; }
+  .hint { font-size: 12px; color: var(--gray); }
+  .sec-sub { font-size: 12px; color: var(--gray); margin: 0 4px 12px; }
+
+  /* pick rows */
+  .pick { border-radius: 12px; overflow: hidden; }
+  .pick.open { background: var(--card-open); }
+  .pick-btn { width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 12px; text-align: left; }
+  .pick-btn:hover { opacity: 0.9; }
+  .rank { width: 20px; font-size: 12px; font-weight: 500; color: var(--faint); }
+  .tk { width: 62px; }
+  .tk b { font-size: 14px; display: block; }
+  .tk span { font-size: 12px; color: var(--gray-l); }
+  .spacer { flex: 1; }
+  .score { width: 40px; text-align: right; font-size: 14px; font-weight: 700; }
+  .pick-why { padding: 0 12px 12px 44px; }
+  .pick-why p { font-size: 14px; line-height: 1.55; color: var(--text-body); }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #1F2937; color: var(--gray-l); }
+  .tag.warn { color: var(--amber); background: rgba(255,180,0,0.12); }
+
+  /* badges */
+  .chg { font-size: 13px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .chg.up { color: var(--green); background: rgba(0,200,5,0.12); }
+  .chg.dn { color: var(--red); background: rgba(255,80,0,0.12); }
+  .dir { font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 6px; letter-spacing: 0.03em; white-space: nowrap; }
+  .dir.small { font-size: 10px; padding: 2px 6px; }
+  .dir.LONG { color: var(--green); background: rgba(0,200,5,0.14); }
+  .dir.SHORT { color: var(--red); background: rgba(255,80,0,0.14); }
+  .dir.WATCH { color: var(--gray-l); background: rgba(156,163,175,0.14); }
+
+  /* side panel */
+  .toggle { display: flex; gap: 4px; margin-bottom: 12px; padding: 4px; border-radius: 999px; background: var(--bg); }
+  .toggle button { flex: 1; font-size: 14px; font-weight: 500; padding: 6px 0; border-radius: 999px; color: var(--gray); text-transform: capitalize; }
+  .toggle button.on { background: #1F2937; color: #fff; }
+  .lrow { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .lrow:last-child { border-bottom: none; }
+  .lrow .t b { font-size: 14px; display: block; }
+  .lrow .t span { font-size: 12px; color: var(--gray); }
+  .lrow .r { display: flex; align-items: center; gap: 12px; }
+  .lrow .price { font-size: 14px; color: var(--text-dim); }
+
+  /* stat tiles */
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .tile { background: var(--card); border-radius: 16px; padding: 16px; }
+  .tile .lbl { font-size: 12px; color: var(--gray); margin-bottom: 4px; }
+  .tile .big { font-size: 24px; font-weight: 700; }
+  .tile .sub { font-size: 12px; color: var(--gray); }
+  .narrow { max-width: 768px; }
+
+  /* record rows */
+  .rrow { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .rrow:last-child { border-bottom: none; }
+  .rl { display: flex; align-items: center; gap: 12px; }
+  .rdate { font-size: 12px; color: var(--gray); width: 76px; }
+  .rtk { font-size: 14px; font-weight: 600; width: 52px; }
+  .rr { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+  .rspy { font-size: 12px; color: var(--gray); }
+  .muted { font-size: 12px; color: var(--gray); }
+  .footnote { font-size: 12px; color: var(--faint); margin-top: 12px; line-height: 1.5; }
+
+  /* calendar */
+  .cal-day { margin-bottom: 12px; }
+  .cal-day h3 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+  .crow { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .crow:last-child { border-bottom: none; }
+  .ctk { font-size: 14px; font-weight: 600; width: 62px; padding-top: 2px; }
+  .ctype { font-size: 12px; padding: 2px 8px; border-radius: 999px; flex-shrink: 0; margin-top: 2px;
+           color: var(--green); background: rgba(0,200,5,0.12); }
+  .cnote { font-size: 14px; color: var(--gray-l); }
+
+  /* bot dials */
+  .dials { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-top: 12px; }
+  .dial { background: var(--bg); border-radius: 10px; padding: 10px 12px; }
+  .dial .v { font-size: 16px; font-weight: 700; }
+  .dial .k { font-size: 11px; color: var(--gray); margin-top: 2px; }
+
+  .empty { padding: 32px 16px; text-align: center; color: var(--gray); font-size: 14px; line-height: 1.6; }
+  .empty code { color: var(--gray-l); background: #1F2937; padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+  .stale { font-size: 12px; color: var(--amber); margin: 0 4px 8px; }
+  section.card + section.card, .card + .card { margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <div class="brand">
+      <div class="logo">M</div>
+      <div>
+        <div class="brand-name">Movers</div>
+        <div class="brand-sub">Signal ranking &middot; real snapshot data &middot; not investment advice</div>
+      </div>
+    </div>
+    <div class="hright">
+      <span class="mkt" id="mkt"><span class="dot" style="background:var(--gray)"></span><span>&hellip;</span></span>
+      <button class="refresh" onclick="load()">Refresh</button>
+    </div>
+  </div>
+  <nav id="nav">
+    <button data-p="today" class="on">Today</button>
+    <button data-p="record">Track Record</button>
+    <button data-p="calendar">Calendar</button>
+    <button data-p="momentum">Momentum</button>
+    <button data-p="macro">Macro</button>
+    <button data-p="filings">Filings</button>
+    <button data-p="bot">Main Bot</button>
+    <button data-p="fund">Hedge Fund</button>
+    <button data-p="review">Review</button>
+  </nav>
+</header>
+
+<main id="main"><div class="empty">Loading&hellip;</div></main>
+
+<script>
+let DATA = null;
+let page = "today";
+let tab = "gainers";
+let openPick = null;
+
+const $ = (h) => { const d = document.createElement("div"); d.innerHTML = h; return d.firstElementChild; };
+const esc = (s) => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const money = (v) => "$" + Number(v).toFixed(2);
+const volFmt = (v) => v >= 1e9 ? (v/1e9).toFixed(1)+"B" : v >= 1e6 ? (v/1e6).toFixed(1)+"M" : (v/1e3).toFixed(0)+"K";
+
+function chg(v) {
+  const up = v >= 0;
+  return `<span class="chg ${up?"up":"dn"}">${up?"+":""}${Number(v).toFixed(1)}%</span>`;
+}
+function dirBadge(d, small) {
+  const label = d === "LONG" ? "LONG &uarr;" : d === "SHORT" ? "SHORT &darr;" : "WATCH";
+  return `<span class="dir ${d}${small?" small":""}">${label}</span>`;
+}
+function spark(data, up) {
+  if (!data || data.length < 3) return `<svg width="56" height="22"></svg>`;
+  const max = Math.max(...data), min = Math.min(...data);
+  const pts = data.map((v,i) =>
+    `${(i/(data.length-1))*56},${20-((v-min)/(max-min||1))*18}`).join(" ");
+  return `<svg width="56" height="22" style="flex-shrink:0"><polyline points="${pts}" fill="none" stroke="${up?"#00C805":"#FF5000"}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+/* ---------------- TODAY ---------------- */
+function renderToday() {
+  const floor = DATA.score_floor || 80;
+  const stale = DATA.feed_last_updated
+    ? `<p class="stale" id="staleline"></p>` : "";
+
+  const picks = (DATA.top10 || []).map((p, i) => {
+    const up = p.change_pct >= 0;
+    const isOpen = openPick === p.ticker;
+    const reasons = (p.why || "").split(" | ");
+    const mainWhy = reasons.join(". ");
+    const tags = reasons.map(r => {
+      const warn = r.startsWith("TOO VOLATILE") || r.startsWith("CONFLICT");
+      const short = r.length > 38 ? r.slice(0, 36) + "&hellip;" : esc(r);
+      return `<span class="tag${warn?" warn":""}">${warn?esc(r.split(":")[0]):short}</span>`;
+    }).join("");
+    const bracket = (p.stop != null && p.target != null)
+      ? `<span class="tag">stop ${money(p.stop)} &middot; target ${money(p.target)}</span>` : "";
+    const scoreColor = p.score >= floor ? "var(--green)"
+      : p.direction === "WATCH" ? "var(--faint)" : "var(--text-dim)";
+    return `
+      <div class="pick${isOpen?" open":""}">
+        <button class="pick-btn" onclick="togglePick('${esc(p.ticker)}')">
+          <span class="rank">${i+1}</span>
+          <span class="tk"><b>${esc(p.ticker)}</b><span>${money(p.price)}</span></span>
+          ${dirBadge(p.direction)}
+          ${spark(p.spark, up)}
+          <span class="spacer"></span>
+          ${chg(p.change_pct)}
+          <span class="score" style="color:${scoreColor}">${p.score}</span>
+        </button>
+        ${isOpen ? `<div class="pick-why"><p>${esc(mainWhy)}</p>
+          <div class="tags">${tags}${bracket}</div></div>` : ""}
+      </div>`;
+  }).join("");
+
+  const eligible = (DATA.top10 || []).filter(p => p.score >= floor && p.direction !== "WATCH").length;
+
+  const rows = (tab === "gainers" ? DATA.gainers : DATA.losers) || [];
+  const list = rows.length ? rows.map(r => `
+    <div class="lrow">
+      <span class="t"><b>${esc(r.ticker)}</b><span>Vol ${volFmt(r.volume)}</span></span>
+      <span class="r"><span class="price">${money(r.price)}</span>${chg(r.change_pct)}</span>
+    </div>`).join("")
+    : `<div class="empty">No scan data yet.<br>Run <code>python3 scan.py</code></div>`;
+
+  return `
+  <div class="today">
+    <section class="card grow">
+      <div class="sec-head"><h2>Today's Top 10 Setups</h2><span class="hint">tap for reasoning</span></div>
+      <p class="sec-sub">Ranked by setup clarity: catalyst + direction confidence + liquidity. Clear setups outrank big moves.
+        ${eligible ? ` &middot; <b style="color:var(--green)">${eligible} bot-eligible (score &ge; ${floor})</b>` : ""}</p>
+      ${stale}
+      ${picks || `<div class="empty">No scored picks yet.<br>Run <code>python3 score.py</code></div>`}
+    </section>
+    <section class="card side">
+      <div class="toggle">
+        <button class="${tab==="gainers"?"on":""}" onclick="setTab('gainers')">gainers</button>
+        <button class="${tab==="losers"?"on":""}" onclick="setTab('losers')">losers</button>
+      </div>
+      ${list}
+    </section>
+  </div>`;
+}
+
+/* ---------------- TRACK RECORD ---------------- */
+function renderRecord() {
+  const rows = DATA.track_record || [];
+  if (!rows.length) return `<div class="narrow"><div class="card"><div class="empty">
+    The ledger is empty — the track record starts with the first logged trading day.<br><br>
+    After a scan: <code>python3 track_record.py log</code><br>
+    5+ trading days later: <code>python3 track_record.py grade</code></div></div></div>`;
+
+  const graded = rows.filter(r => r.graded);
+  const pending = rows.filter(r => !r.graded);
+  const scored = graded.filter(r => !r.no_call);
+  const wins = scored.filter(r => r.return_pct > 0).length;
+  const avg = scored.length ? scored.reduce((s,r)=>s+r.return_pct,0)/scored.length : 0;
+  const avgSpy = scored.length ? scored.reduce((s,r)=>s+r.spy_return_pct,0)/scored.length : 0;
+
+  const tiles = scored.length ? `
+    <div class="tiles">
+      <div class="tile"><div class="lbl">Win rate</div>
+        <div class="big" style="color:var(--green)">${Math.round(wins/scored.length*100)}%</div>
+        <div class="sub">${wins} of ${scored.length} graded calls</div></div>
+      <div class="tile"><div class="lbl">Avg result / pick</div>
+        <div class="big" style="color:${avg>=0?"var(--green)":"var(--red)"}">${avg>=0?"+":""}${avg.toFixed(1)}%</div>
+        <div class="sub">close +5 trading days, direction-adjusted</div></div>
+      <div class="tile"><div class="lbl">SPY same period</div>
+        <div class="big" style="color:var(--text-dim)">${avgSpy>=0?"+":""}${avgSpy.toFixed(1)}%</div>
+        <div class="sub">the bar to beat</div></div>
+    </div>` : "";
+
+  const fmt = (d) => { const [y,m,dd] = d.split("-");
+    return new Date(+y, m-1, +dd).toLocaleDateString("en-US",{month:"short",day:"numeric"}); };
+
+  const lines = rows.slice().sort((a,b)=> b.pick_date.localeCompare(a.pick_date) || b.score - a.score)
+    .map(r => {
+      let right;
+      if (r.no_call) right = `<span class="muted">no call &mdash; not tracked</span>`;
+      else if (!r.graded) right = `<span class="muted">pending &mdash; needs +5 trading days</span>`;
+      else right = `<span class="rr"><span class="rspy">vs SPY ${r.spy_return_pct>=0?"+":""}${r.spy_return_pct.toFixed(1)}%</span>${chg(r.return_pct)}</span>`;
+      return `<div class="rrow">
+        <span class="rl"><span class="rdate">${fmt(r.pick_date)}</span>
+        <span class="rtk">${esc(r.ticker)}</span>${dirBadge(r.direction, true)}</span>${right}</div>`;
+    }).join("");
+
+  return `<div class="narrow">${tiles}
+    <div class="card"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Every call, logged automatically</h2>
+    ${lines}
+    <p class="footnote">Simulated results assuming the direction call was followed, close-to-close over 5 trading days.
+    This is the honesty tab &mdash; if the numbers stop beating SPY, the scoring logic needs work, not the story.
+    ${pending.length ? `${pending.length} pick(s) still ripening.` : ""}</p></div></div>`;
+}
+
+/* ---------------- CALENDAR ---------------- */
+function renderCalendar() {
+  const days = DATA.calendar || [];
+  if (!days.length) return `<div class="narrow">
+    <p style="font-size:14px;color:var(--gray-l);margin-bottom:16px">Scheduled catalysts &mdash; upcoming earnings for names in today's candidate pool.</p>
+    <div class="card"><div class="empty">No candidate-pool names report earnings in the next 7 days.<br>
+    (Populated from the cached earnings calendar after each <code>score.py</code> run.)</div></div></div>`;
+
+  const fmt = (d) => { const [y,m,dd] = d.split("-");
+    return new Date(+y, m-1, +dd).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}); };
+
+  const cards = days.map(day => `
+    <div class="card cal-day"><h3>${fmt(day.date)}</h3>
+      ${day.items.map(it => `<div class="crow">
+        <span class="ctk">${esc(it.ticker)}</span>
+        <span class="ctype">Earnings</span>
+        <span class="cnote">${esc(it.name)}${it.estimate ? ` &middot; est. EPS ${esc(it.estimate)}` : ""}</span>
+      </div>`).join("")}
+    </div>`).join("");
+
+  return `<div class="narrow">
+    <p style="font-size:14px;color:var(--gray-l);margin-bottom:16px">Scheduled catalysts &mdash; upcoming earnings for names in today's candidate pool.</p>
+    ${cards}</div>`;
+}
+
+/* ---------------- BOT ---------------- */
+function renderBot() {
+  const bot = DATA.bot;
+  if (bot && bot.equity != null) return renderBotLive(bot);
+  return renderBotDials(
+    `Paper-trading bot &mdash; built, waiting for its first run`,
+    `The bot is ready (bot.py) but hasn't traded yet. Once Alpaca paper keys
+     are in config.json and it runs at 9:45 AM ET, this tab shows the real
+     paper account: equity, open bracket positions, and the event log.
+     No fake numbers in the meantime.`);
+}
+
+function renderBotLive(bot) {
+  const start = bot.window_start_equity;
+  const chgPct = start ? ((bot.equity - start) / start * 100) : null;
+  const paused = bot.paused;
+
+  const posRows = (bot.positions || []).length ? bot.positions.map(p => {
+    const pl = p.unrealized_plpc != null ? p.unrealized_plpc
+      : p.now != null
+      ? (p.direction === "LONG" ? (p.now - p.fill_price) / p.fill_price
+                                : (p.fill_price - p.now) / p.fill_price) * 100
+      : null;
+    return `<div class="rrow">
+      <span class="rl"><span class="rtk" style="width:62px">${esc(p.ticker)}</span>
+        ${dirBadge(p.direction, true)}
+        <span class="muted">${p.qty} sh @ ${money(p.fill_price)} &middot; since ${esc(p.entry_date)}</span></span>
+      <span class="rr"><span class="rspy">stop ${money(p.stop)} &middot; tgt ${money(p.target)}</span>
+        ${pl != null ? chg(pl) : `<span class="muted">&mdash;</span>`}</span>
+    </div>`;
+  }).join("") : `<div class="empty">No open positions.</div>`;
+
+  const evRows = (bot.recent_events || []).slice().reverse().slice(0, 15).map(e => {
+    const good = ["entered", "exit", "resumed"].includes(e.event);
+    const bad = ["paused", "reconcile_mismatch", "error", "missed_day"].includes(e.event);
+    const col = bad ? "var(--amber)" : good ? "var(--green)" : "var(--gray-l)";
+    const detail = e.reason || (e.event === "entered"
+      ? `${e.qty} sh @ ${e.fill_price}` : e.event === "exit"
+      ? `${e.exit_price ? "@ " + e.exit_price : ""} ${e.result_pct != null ? (e.result_pct >= 0 ? "+" : "") + e.result_pct + "%" : ""}` : "");
+    return `<div class="rrow">
+      <span class="rl"><span class="rdate" style="width:120px">${esc(e.ts)}</span>
+        <span class="rtk">${esc(e.ticker || "")}</span>
+        <span style="font-size:12px;font-weight:600;color:${col}">${esc(e.event.replace(/_/g," "))}</span></span>
+      <span class="muted" style="max-width:45%;text-align:right">${esc(detail)}</span>
+    </div>`;
+  }).join("") || `<div class="empty">No events logged yet.</div>`;
+
+  return `<div class="narrow">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+      <span class="dot" style="background:${paused ? "var(--amber)" : "var(--green)"}"></span>
+      <span style="font-size:14px;color:var(--gray-l)">
+        ${paused ? `PAUSED &mdash; ${esc(bot.pause_reason || "circuit breaker")}`
+                 : "Alpaca Paper &middot; fake money only &middot; trades the picks mechanically"}
+        &middot; updated ${esc(bot.updated || "")}</span>
+    </div>
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div class="tile"><div class="lbl">Paper equity</div>
+        <div class="big">$${Number(bot.equity).toLocaleString(undefined,{maximumFractionDigits:0})}</div>
+        ${chgPct != null ? `<div class="sub" style="color:${chgPct>=0?"var(--green)":"var(--red)"};font-weight:600">
+          ${chgPct>=0?"+":""}${chgPct.toFixed(1)}% since ${esc(bot.window_start_date || "window start")}</div>` : ""}</div>
+      ${bot.open_pl != null ? `
+      <div class="tile"><div class="lbl">Open P&amp;L ${bot.live ? "(live)" : ""}</div>
+        <div class="big" style="color:${bot.open_pl >= 0 ? "var(--green)" : "var(--red)"}">
+          ${bot.open_pl >= 0 ? "+" : "−"}$${Math.abs(bot.open_pl).toLocaleString(undefined,{maximumFractionDigits:0})}</div>
+        <div class="sub" style="color:${bot.open_plpc >= 0 ? "var(--green)" : "var(--red)"}">
+          ${bot.open_plpc >= 0 ? "+" : ""}${Number(bot.open_plpc).toFixed(1)}% on open positions</div></div>` : ""}
+      ${bot.realized_pl != null ? `
+      <div class="tile"><div class="lbl">Realized P&amp;L</div>
+        <div class="big" style="color:${bot.realized_pl > 0 ? "var(--green)" : bot.realized_pl < 0 ? "var(--red)" : "var(--text-dim)"}">
+          ${bot.realized_pl >= 0 ? "+" : "−"}$${Math.abs(bot.realized_pl).toLocaleString(undefined,{maximumFractionDigits:0})}</div>
+        <div class="sub">${bot.closed_trades} closed trade(s)</div></div>` : ""}
+      <div class="tile"><div class="lbl">Cash available</div>
+        <div class="big" style="color:var(--text-dim)">$${Number(bot.cash ?? 0).toLocaleString(undefined,{maximumFractionDigits:0})}</div>
+        <div class="sub">${(bot.positions || []).length} open position(s)</div></div>
+      <div class="tile"><div class="lbl">Status</div>
+        <div class="big" style="color:${paused ? "var(--amber)" : "var(--green)"}">${paused ? "Paused" : "Active"}</div>
+        <div class="sub">circuit breaker at ${(DATA.bot_dials || {}).drawdown_pause_pct ?? 10}% drawdown</div></div>
+    </div>
+    <div class="card"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Open positions (bracket-protected)</h2>
+      ${posRows}</div>
+    <div class="card" style="margin-top:16px"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Event log</h2>
+      ${evRows}
+      <p class="footnote">Every pick, every day &mdash; skips, unfilled orders and mismatches included.
+      Unfilled orders are data, not failures. Full history: snapshots/bot_log.jsonl</p></div>
+  </div>`;
+}
+
+function renderBotDials(title, blurb) {
+  const d = DATA.bot_dials || {};
+  const s = DATA.scoring || {};
+  const dial = (v, k) => `<div class="dial"><div class="v">${v}</div><div class="k">${k}</div></div>`;
+  return `<div class="narrow">
+    <div class="card">
+      <h2 style="font-size:15px;font-weight:600;margin-bottom:4px">${title}</h2>
+      <p style="font-size:14px;color:var(--gray-l);line-height:1.6">${blurb}</p>
+      <div class="dials">
+        ${dial(d.score_floor ?? "&mdash;", "score floor")}
+        ${dial((d.atr_stop_multiple ?? "&mdash;") + "&times; ATR", "stop distance")}
+        ${dial((d.reward_to_risk ?? "&mdash;") + " : 1", "reward : risk")}
+        ${dial((d.risk_per_trade_pct ?? "&mdash;") + "%", "risk per trade")}
+        ${dial((d.position_cap_pct ?? "&mdash;") + "%", "position cap")}
+        ${dial(d.max_positions ?? "&mdash;", "max positions")}
+        ${dial((d.max_total_open_risk_pct ?? "&mdash;") + "%", "max open risk")}
+        ${dial(d.max_per_sector ?? "&mdash;", "max per sector")}
+        ${dial((d.time_stop_days ?? "&mdash;") + " days", "time stop")}
+        ${dial((d.entry_window_minutes ?? "&mdash;") + " min", "entry window")}
+        ${dial((d.drawdown_pause_pct ?? "&mdash;") + "%", "drawdown pause")}
+        ${dial(((s.max_atr_pct_of_price ?? 0) * 100).toFixed(0) + "%", "volatility ceiling")}
+      </div>
+      <p class="footnote">These dials live in config.json with a changelog &mdash; frozen for each 6-week evaluation window, one change at a time.</p>
+    </div></div>`;
+}
+
+/* ---------------- MOMENTUM ---------------- */
+function renderMomentum() {
+  const m = DATA.momentum;
+  if (!m) return `<div class="narrow"><div class="card"><div class="empty">
+    Momentum sleeve hasn't run yet.<br>Run <code>python3 momentum_sleeve.py --live</code></div></div></div>`;
+  const on = m.regime_on;
+  const live = m.positions && m.positions.length;
+  const holds = live ? m.positions : (m.targets || []);
+
+  const holdRows = holds.length ? holds.map(h => {
+    const mv = h.market_value != null
+      ? `<span class="price">$${Number(h.market_value).toLocaleString(undefined,{maximumFractionDigits:0})}</span>`
+      : `<span class="muted">queued</span>`;
+    const pl = h.unrealized_plpc != null ? chg(h.unrealized_plpc) : "";
+    return `<div class="rrow">
+      <span class="rl"><span class="rtk" style="width:62px">${esc(h.symbol)}</span>
+        <span class="muted">${h.qty} sh${h.price != null ? " @ " + money(h.price) : ""}</span></span>
+      <span class="rr">${mv}${pl}</span>
+    </div>`;
+  }).join("") : `<div class="empty">No holdings &mdash; regime is risk-off (all cash).</div>`;
+
+  const plTile = (m.sleeve_pl != null) ? `
+    <div class="tile"><div class="lbl">Sleeve P&amp;L ${live ? "(live)" : ""}</div>
+      <div class="big" style="color:${m.sleeve_pl >= 0 ? "var(--green)" : "var(--red)"}">
+        ${m.sleeve_pl >= 0 ? "+" : "−"}$${Math.abs(m.sleeve_pl).toLocaleString(undefined,{maximumFractionDigits:0})}</div>
+      <div class="sub" style="color:${m.sleeve_plpc >= 0 ? "var(--green)" : "var(--red)"}">
+        ${m.sleeve_plpc >= 0 ? "+" : ""}${Number(m.sleeve_plpc).toFixed(1)}% &middot; $${Number(m.sleeve_value||0).toLocaleString(undefined,{maximumFractionDigits:0})} mkt value</div></div>` : "";
+
+  const log = (m.recent_events || []).slice().reverse().slice(0, 40).map(e => {
+    const buy = e.event === "buy";
+    const col = e.error ? "var(--amber)" : buy ? "var(--green)" : "var(--red)";
+    const amt = e.notional != null ? "$" + e.notional : (e.qty != null ? e.qty + " sh" : "");
+    return `<div class="rrow">
+      <span class="rl"><span class="rdate" style="width:150px">${esc(e.ts)}</span>
+        <span class="rtk">${esc(e.symbol || "")}</span>
+        <span style="font-size:12px;font-weight:600;color:${col}">${esc(String(e.event||"").toUpperCase())} ${esc(amt)}</span></span>
+      <span class="muted" style="max-width:45%;text-align:right">${esc(e.error ? e.error : (e.regime || ""))}</span>
+    </div>`;
+  }).join("") || `<div class="empty">No trades logged yet.</div>`;
+
+  return `<div class="narrow">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+      <span class="dot" style="background:${on ? "var(--green)" : "var(--amber)"}"></span>
+      <span style="font-size:14px;color:var(--gray-l)">Momentum + regime sleeve &middot; Alpaca Paper &middot;
+        ${on ? "RISK-ON &mdash; holding the book" : "RISK-OFF &mdash; in cash"} &middot;
+        ${live ? "live P&amp;L" : "snapshot"} &middot; updated ${esc(m.updated || "")}</span>
+    </div>
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div class="tile"><div class="lbl">Regime (SPY vs 200d)</div>
+        <div class="big" style="color:${on ? "var(--green)" : "var(--amber)"}">${on ? "Risk-On" : "Risk-Off"}</div>
+        <div class="sub">SPY ${esc(m.spy)} vs MA ${esc(m.spy_ma)}</div></div>
+      ${plTile}
+      <div class="tile"><div class="lbl">Sleeve budget</div>
+        <div class="big">$${Number(m.budget || 0).toLocaleString()}</div>
+        <div class="sub">${esc(m.capital_pct)}% of equity</div></div>
+      <div class="tile"><div class="lbl">Holdings</div>
+        <div class="big" style="color:var(--text-dim)">${holds.length}</div>
+        <div class="sub">top-third momentum names</div></div>
+    </div>
+    <div class="card"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Holdings</h2>${holdRows}</div>
+    <div class="card" style="margin-top:16px"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Trade log</h2>${log}
+      <p class="footnote">Momentum + 200-day regime combo, validated in the research lab. Monthly rebalance
+      (<code>momentum_sleeve.py --live</code>), separate from the movers bot. Full history: snapshots/momentum_log.jsonl</p></div>
+  </div>`;
+}
+
+/* ---------------- FILINGS (edgar_watch.py morning read) ---------------- */
+/* "2026-08-03" -> "Aug 3"; the raw ISO stamp is noise in a list you scan. */
+function shortDate(d) {
+  if (!d) return "";
+  const p = String(d).slice(0, 10).split("-");
+  if (p.length !== 3) return d;
+  const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  return `${M[+p[1] - 1] || p[1]} ${+p[2]}`;
+}
+/* "2026-08-05T11:47:23.214340-04:00" -> "Aug 5, 11:47 AM" */
+function stampTime(s) {
+  if (!s) return "";
+  const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2})/);
+  if (!m) return String(s).slice(0, 16);
+  let h = +m[4]; const ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12;
+  return `${shortDate(`${m[1]}-${m[2]}-${m[3]}`)}, ${h}:${m[5]} ${ap}`;
+}
+
+let filingsView = "watchlist";
+function setFilingsView(v) { filingsView = v; render(); }
+
+function renderFilings() {
+  // THREE different questions, three different scans — do not merge them:
+  //   watchlist (9:31)  — did anything happen to names I follow?
+  //   movers   (10:15)  — why did today's big movers move?
+  //   market   (manual) — is there CLRO-type deal news ANYWHERE? No cron: this
+  //                       one only refreshes when the owner runs it, so it is
+  //                       labelled on-demand and its age is called out.
+  const wl = DATA.edgar, mv = DATA.edgar_movers, mk = DATA.edgar_market;
+  const e = filingsView === "movers" ? mv : filingsView === "market" ? mk : wl;
+  const toggle = `<div class="toggle" style="max-width:560px;margin-bottom:14px">
+      <button onclick="setFilingsView('watchlist')" class="${filingsView==='watchlist'?'on':''}">Watchlist</button>
+      <button onclick="setFilingsView('movers')" class="${filingsView==='movers'?'on':''}">Today's movers</button>
+      <button onclick="setFilingsView('market')" class="${filingsView==='market'?'on':''}">Market-wide</button>
+    </div>`;
+  if (!e) return `<div class="narrow">${toggle}<div class="card"><div class="empty">
+    ${filingsView === "movers"
+      ? "No movers scan yet.<br>Runs 10:15 AM ET, or <code>python3 edgar_watch.py --movers</code>"
+      : filingsView === "market"
+      ? "No market-wide scan yet.<br>Run <code>python3 edgar_watch.py --market</code> any hour"
+      : "No filing scan yet.<br>Run <code>python3 edgar_watch.py</code>"}
+    </div></div></div>`;
+  const hits = e.hits || [];
+
+  // Ordered by how much each should change what you go look at.
+  const GROUPS = [
+    ["signal",   "In play — not yet a deal",        "var(--amber)"],
+    ["clinical", "Clinical — trials, FDA, devices", "var(--purple,#7F77DD)"],
+    ["insider",  "Insider buying — open-market only (cluster buying is the signal; one buy is noise)","var(--green)"],
+    ["dilution", "Dilution — selling stock",        "var(--red)"],
+    ["deal",     "Announced — already public",      "var(--gray-l)"],
+    ["operating","Operating — guidance, contracts", "var(--gray-l)"],
+    ["capital",  "Capital return — buybacks, splits","var(--gray-l)"],
+    ["stake",    "Passive 5%+ stake",               "var(--gray-l)"],
+    ["gone",     "Delisted — drop from watchlist",  "var(--red)"],
+  ];
+  const newIds = new Set((e.new_hits || []).map(h => (h.ticker||"") + "|" + (h.accession||"")));
+
+  // Market-wide returns 200+ hits across every filer, so filing DATE is a
+  // useless sort there — what makes a row worth reading is that the tape
+  // already reacted. Sort those by size of move, biggest first, and keep the
+  // date sort for the two curated scans where every name matters equally.
+  const byMove = (a, b) =>
+    Math.abs(b.change_pct == null ? -1 : b.change_pct) -
+    Math.abs(a.change_pct == null ? -1 : a.change_pct);
+  const byDate = (a, b) => (b.filed || "").localeCompare(a.filed || "");
+
+  const section = ([kind, label, color]) => {
+    const rows = hits.filter(h => h.kind === kind)
+                     .sort(filingsView === "market" ? byMove : byDate);
+    if (!rows.length) return "";
+    return `<div class="card" style="margin-bottom:14px;padding:16px 18px 4px">
+      <div class="sec-head" style="margin-bottom:4px">
+        <h2 style="font-size:13px;font-weight:700;color:${color};letter-spacing:.02em">${esc(label)}</h2>
+        <span class="hint">${rows.length}</span></div>
+      ${rows.map(h => {
+        const fresh = newIds.has((h.ticker||"") + "|" + (h.accession||""));
+        // The meaning string repeats the form and phrase already shown to its
+        // left ('8-K contains "letter of intent" - early-stage deal talk').
+        // Strip that prefix so each row says one thing once.
+        let what = (h.meaning || "").replace(/^.*?contains\s+"[^"]*"\s*-\s*/, "");
+        what = what.charAt(0).toUpperCase() + what.slice(1);
+        // Hits from the deal-form scan have no phrase, so the headline would
+        // otherwise read as a raw form code ("4", "424B5"). Say what it means.
+        const FORM_LABEL = {
+          "4": "Insider purchase", "424B5": "Stock offering",
+          "424B4": "Offering priced", "S-1": "Share registration",
+          "S-1/A": "Share registration (amended)", "S-3": "Shelf registration",
+          "S-3ASR": "Shelf registration (immediate)",
+          "SC 13D": "5%+ stake, control intent", "SC 13D/A": "Control stake amended",
+          "SC 13G": "5%+ passive stake", "SC 13G/A": "Passive stake amended",
+          "SC 14D9": "Board response to a bid", "SC TO-T": "Tender offer",
+          "SC TO-I": "Issuer tender offer", "SC 13E3": "Going private",
+          "PREM14A": "Preliminary merger proxy", "DEFM14A": "Definitive merger proxy",
+          "DFAN14A": "Merger solicitation", "425": "Business combination notice",
+          "15-12G": "Deregistered", "15-12B": "Deregistered", "25-NSE": "Delisted",
+        };
+        const headline = h.phrase
+          ? h.phrase.charAt(0).toUpperCase() + h.phrase.slice(1)
+          : (FORM_LABEL[h.form] || h.form || "Filing");
+        // Per-row advice that repeats on every line is noise; it lives in the
+        // section footnote instead.
+        what = what.replace(/\s*-\s*cluster buying is the signal.*$/i, "");
+        // The scans have always recorded change_pct and NOTHING ever showed it —
+        // it only existed in terminal output. On a market-wide read the move is
+        // the whole point (ARX +43% on a signed merger vs LESL -42% on the SAME
+        // "strategic alternatives" phrase: the phrase says a process started,
+        // the move says which way it is resolving). null means no quote yet
+        // (thin or multi-class name) and must NOT render as 0%.
+        const mv = (typeof h.change_pct === "number") ? h.change_pct : null;
+        const mvCol = mv === null ? "var(--gray-l)" : mv >= 0 ? "var(--green)" : "var(--red)";
+        const mvTxt = mv === null ? "&mdash;" : (mv >= 0 ? "+" : "") + mv.toFixed(1) + "%";
+        // Multi-class filers come back with a CIK where the ticker should be;
+        // recover the real symbol from the company string's "(ABC)" if we can.
+        let tkr = h.ticker || "";
+        if (/^\d+$/.test(tkr)) {
+          const m = (h.company || "").match(/\(([A-Z][A-Z0-9]{0,5})\)/);
+          if (m) tkr = m[1];
+        }
+        return `<a href="${esc(h.url||"#")}" target="_blank" rel="noopener"
+          style="display:flex;gap:14px;align-items:baseline;padding:12px 2px;
+                 border-bottom:1px solid var(--line);text-decoration:none;color:inherit">
+          <span class="muted" style="width:56px;flex:none;font-size:12px;
+            font-variant-numeric:tabular-nums">${esc(shortDate(h.filed))}</span>
+          <span class="rtk" style="width:62px;flex:none">${esc(tkr)}</span>
+          <span style="width:58px;flex:none;text-align:right;font-size:12.5px;
+            font-weight:700;font-variant-numeric:tabular-nums;color:${mvCol}"
+            title="${mv === null ? "no quote yet — thin or multi-class name" : "move on the day the scan ran"}"
+            >${mvTxt}</span>
+          <span style="min-width:0;flex:1">
+            <div style="font-size:14px;font-weight:600;line-height:1.4">
+              ${esc(headline)}
+              ${fresh ? '<span class="dir small" style="color:var(--green);background:rgba(0,200,5,.14);margin-left:6px;vertical-align:middle">NEW</span>' : ""}
+            </div>
+            <div class="muted" style="font-size:12.5px;line-height:1.5;margin-top:3px">
+              ${esc(what)}</div>
+          </span>
+          <span class="muted" style="flex:none;font-size:11px;align-self:center">
+            ${esc(h.form||"")} &rsaquo;</span>
+        </a>`;
+      }).join("")}
+    </div>`;
+  };
+
+  const body = GROUPS.map(section).join("") ||
+    `<div class="card"><div class="empty">No filings in the window. Quiet is normal —
+      most days nothing happens.</div></div>`;
+
+  return `<div class="narrow">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+      <span class="dot" style="background:var(--amber)"></span>
+      <span style="font-size:14px;color:var(--gray-l)">${filingsView === "movers"
+        ? "Why today's movers moved"
+        : filingsView === "market" ? "Market-wide deal scan"
+        : "SEC filing monitor"} &middot;
+        <b>read-only, public filings</b> &middot; last scan ${esc(stampTime(e.updated))}</span>
+    </div>
+    ${toggle}
+    ${filingsView === "market" ? `<div class="card" style="margin-bottom:14px;padding:12px 16px;
+        border-left:3px solid var(--amber)">
+        <div style="font-size:13px;line-height:1.55;color:var(--gray-l)">
+          <b>On-demand — no schedule.</b> The other two scans run on a cron; this one shows
+          whatever the last manual run found, so treat the timestamp above as the as-of date.
+          Re-run any hour with <code>python3 edgar_watch.py --market</code>.
+        </div></div>` : ""}
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(130px,1fr))">
+      <div class="tile"><div class="lbl">Hits in window</div><div class="big">${hits.length}</div>
+        <div class="sub">${(e.new_hits||[]).length} new today</div></div>
+      <div class="tile"><div class="lbl">${filingsView === "movers" ? "Movers scanned"
+          : filingsView === "market" ? "Scope" : "Watchlist"}</div>
+        <div class="big" style="${filingsView === "market" ? "font-size:19px" : ""}">${esc(e.tickers_scanned||0)}</div>
+        <div class="sub">${esc(e.watchlist_file||"")}</div></div>
+      <div class="tile"><div class="lbl">Lookback</div><div class="big">${esc(e.lookback_days||0)}d</div>
+        <div class="sub">since ${esc(e.since||"")}</div></div>
+    </div>
+    ${body}
+    <p class="footnote" style="max-width:none">Every item is a filing the SEC published to the whole world.
+      This is a <b>reading list</b>, not a signal — it tells you which of your names had something real happen,
+      so you can go look at the chart yourself. It gives no timing edge: the tape reprices these in seconds.</p>
+  </div>`;
+}
+
+function renderMacro() {
+  const m = DATA.macro;
+  if (!m) return `<div class="narrow"><div class="card"><div class="empty">
+    Macro sleeve hasn't run yet.<br>Run <code>python3 macro_sleeve.py --live</code></div></div></div>`;
+  const live = m.positions && m.positions.length;
+  const nUp = m.n_uptrend != null ? m.n_uptrend : (m.signals || []).filter(s => s.signal === "HOLD").length;
+  const nAssets = m.n_assets || (m.signals || []).length || 8;
+
+  const sigRows = (m.signals || []).map(s => {
+    const hold = s.signal === "HOLD";
+    const col = s.signal === "n/a" ? "var(--text-dim)" : hold ? "var(--green)" : "var(--amber)";
+    const mom = s.mom_pct == null ? "n/a" : (s.mom_pct >= 0 ? "+" : "") + Number(s.mom_pct).toFixed(1) + "%";
+    return `<div class="rrow">
+      <span class="rl"><span class="rtk" style="width:62px">${esc(s.symbol)}</span>
+        <span class="muted">12-mo trend ${esc(mom)}</span></span>
+      <span class="rr"><span class="dir small" style="color:${col};background:rgba(156,163,175,0.10)">${esc(s.signal)}</span></span>
+    </div>`;
+  }).join("") || `<div class="empty">No signals yet.</div>`;
+
+  const holds = live ? m.positions : (m.targets || []);
+  const holdRows = holds.length ? holds.map(h => {
+    const mv = h.market_value != null
+      ? `<span class="price">$${Number(h.market_value).toLocaleString(undefined,{maximumFractionDigits:0})}</span>`
+      : `<span class="muted">queued</span>`;
+    const pl = h.unrealized_plpc != null ? chg(h.unrealized_plpc) : "";
+    return `<div class="rrow">
+      <span class="rl"><span class="rtk" style="width:62px">${esc(h.symbol)}</span>
+        <span class="muted">${h.qty} sh${h.price != null ? " @ " + money(h.price) : ""}</span></span>
+      <span class="rr">${mv}${pl}</span>
+    </div>`;
+  }).join("") : `<div class="empty">No holdings &mdash; every asset in a downtrend (all cash).</div>`;
+
+  const plTile = (m.sleeve_pl != null) ? `
+    <div class="tile"><div class="lbl">Sleeve P&amp;L ${live ? "(live)" : ""}</div>
+      <div class="big" style="color:${m.sleeve_pl >= 0 ? "var(--green)" : "var(--red)"}">
+        ${m.sleeve_pl >= 0 ? "+" : "−"}$${Math.abs(m.sleeve_pl).toLocaleString(undefined,{maximumFractionDigits:0})}</div>
+      <div class="sub" style="color:${m.sleeve_plpc >= 0 ? "var(--green)" : "var(--red)"}">
+        ${m.sleeve_plpc >= 0 ? "+" : ""}${Number(m.sleeve_plpc).toFixed(1)}% &middot; $${Number(m.sleeve_value||0).toLocaleString(undefined,{maximumFractionDigits:0})} mkt value</div></div>` : "";
+
+  const log = (m.recent_events || []).slice().reverse().slice(0, 40).map(e => {
+    const buy = e.event === "buy";
+    const col = e.error ? "var(--amber)" : buy ? "var(--green)" : "var(--red)";
+    const amt = e.notional != null ? "$" + e.notional : (e.qty != null ? e.qty + " sh" : "");
+    return `<div class="rrow">
+      <span class="rl"><span class="rdate" style="width:150px">${esc(e.ts)}</span>
+        <span class="rtk">${esc(e.symbol || "")}</span>
+        <span style="font-size:12px;font-weight:600;color:${col}">${esc(String(e.event||"").toUpperCase())} ${esc(amt)}</span></span>
+      <span class="muted" style="max-width:45%;text-align:right">${esc(e.error ? e.error : (e.trend_pct != null ? "trend " + (e.trend_pct>=0?"+":"") + e.trend_pct + "%" : ""))}</span>
+    </div>`;
+  }).join("") || `<div class="empty">No trades logged yet.</div>`;
+
+  return `<div class="narrow">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+      <span class="dot" style="background:${nUp > 0 ? "var(--green)" : "var(--amber)"}"></span>
+      <span style="font-size:14px;color:var(--gray-l)">Systematic macro trend sleeve &middot; Alpaca Paper &middot;
+        cross-asset 12-mo trend-following &middot;
+        ${live ? "live P&amp;L" : "snapshot"} &middot; updated ${esc(m.updated || "")}</span>
+    </div>
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div class="tile"><div class="lbl">In uptrend</div>
+        <div class="big" style="color:${nUp > 0 ? "var(--green)" : "var(--amber)"}">${nUp} / ${nAssets}</div>
+        <div class="sub">${esc(m.invested_pct != null ? m.invested_pct + "% invested" : "asset classes held")}</div></div>
+      ${plTile}
+      <div class="tile"><div class="lbl">Sleeve budget</div>
+        <div class="big">$${Number(m.budget || 0).toLocaleString()}</div>
+        <div class="sub">${esc(m.capital_pct)}% of equity</div></div>
+      <div class="tile"><div class="lbl">Holdings</div>
+        <div class="big" style="color:var(--text-dim)">${holds.length}</div>
+        <div class="sub">uptrending ETFs</div></div>
+    </div>
+    <div class="card"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Trend signals (12-month)</h2>${sigRows}</div>
+    <div class="card" style="margin-top:16px"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Holdings</h2>${holdRows}</div>
+    <div class="card" style="margin-top:16px"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Trade log</h2>${log}
+      <p class="footnote">The lab's one validated winner: cross-asset trend-following (8 asset-class ETFs, hold each above its 12-mo trend).
+      A diversifier / risk tool, not a return-maximizer. Monthly rebalance (<code>macro_sleeve.py --live</code>). Full history: snapshots/macro_log.jsonl</p></div>
+  </div>`;
+}
+
+/* ---------------- shell ---------------- */
+/* ---------------- HEDGE FUND (shadow analyst agent) ---------------- */
+let openVerdict = null;
+function toggleVerdict(k) { openVerdict = openVerdict === k ? null : k; render(); }
+
+function verdictBadge(v) {
+  const map = { BULLISH: ["var(--green)", "rgba(0,200,5,0.14)"],
+                BEARISH: ["var(--red)", "rgba(255,80,0,0.14)"],
+                NEUTRAL: ["var(--gray-l)", "rgba(156,163,175,0.14)"] };
+  const [c, bg] = map[v] || map.NEUTRAL;
+  return `<span class="dir small" style="color:${c};background:${bg}">${esc(v)}</span>`;
+}
+
+function brainBadge(b) {
+  // Which brain wrote this verdict. Rows logged before the LLM brain existed
+  // have no "brain" field -> treat as rule-based.
+  return b === "llm"
+    ? `<span class="dir small" title="Claude LLM verdict" style="color:var(--purple,#7F77DD);background:rgba(127,119,221,0.16)">AI</span>`
+    : `<span class="dir small" title="rule-based verdict" style="color:var(--gray-l);background:rgba(156,163,175,0.12)">rule</span>`;
+}
+
+function renderFundBook() {
+  // The analyst's SIMULATED book. No broker, no orders, no claim on the paper
+  // account — it exists to turn verdicts into an equity curve.
+  const b = DATA.fund_book;
+  if (!b || !b.stats) return `<div class="card" style="margin-bottom:18px"><div class="empty">
+    No simulated book yet.<br>Run <code>python3 analyst_book.py run</code>.</div></div>`;
+  const s = b.stats, d = b.dials || {};
+  const sgn = v => (v >= 0 ? "+" : "") + v;
+  const col = v => v == null ? "var(--text-dim)" : v >= 0 ? "var(--green)" : "var(--red)";
+  const pos = b.positions || [], closed = b.closed || [];
+
+  const sideBadge = sd => sd === "SHORT"
+    ? `<span class="dir small" style="color:var(--red);background:rgba(239,68,68,0.14)">SHORT</span>`
+    : `<span class="dir small" style="color:var(--green);background:rgba(34,197,94,0.14)">LONG</span>`;
+
+  // How a position left the book. On the intraday model these are real bracket
+  // legs walked minute by minute, so the distinction is meaningful: "target" is
+  // the take-profit filling, "stop" is the protective leg, "time stop" is
+  // rulebook §7 closing it out at the next open.
+  const outBadge = r => {
+    const c = r === "target" ? "var(--green)" : r === "stop" ? "var(--red)" : "var(--amber)";
+    const bg = r === "target" ? "rgba(34,197,94,0.14)" : r === "stop" ? "rgba(239,68,68,0.14)" : "rgba(245,158,11,0.14)";
+    return `<span class="dir small" style="color:${c};background:${bg}">${esc(r || "—")}</span>`;
+  };
+
+  const row = (t, isOpen) => `<tr>
+    <td style="font-weight:600">${esc(t.ticker)}</td>
+    <td>${sideBadge(t.side)}</td>
+    <td class="muted">${esc(t.open_date)}${t.open_time ? " " + esc(t.open_time) : ""}${isOpen ? "" : " → " + esc(t.exit_date || "") + (t.exit_time ? " " + esc(t.exit_time) : "")}</td>
+    <td class="muted">${t.entry_price}</td>
+    <td class="muted" style="font-size:12px">${t.stop_price == null ? "—" : `<span style="color:var(--red)">${t.stop_price}</span> / <span style="color:var(--green)">${t.target_price}</span>`}</td>
+    <td class="muted">${isOpen ? t.last_price : t.exit_price}</td>
+    <td style="color:${col(t.return_pct)};font-weight:600">${sgn(t.return_pct)}%</td>
+    <td style="color:${col(t.pnl)}">${t.pnl == null ? "—" : "$" + t.pnl.toLocaleString()}</td>
+    <td class="muted">${isOpen ? (t.brain === "llm" ? "AI" : "rule") : outBadge(t.exit_reason)}</td>
+  </tr>`;
+
+  const table = (title, list, isOpen) => !list.length ? "" : `
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:12px">
+      <div style="padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.08);font-weight:600;font-size:14px">
+        ${title} <span class="muted" style="font-weight:400">(${list.length})</span></div>
+      <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead><tr class="muted" style="font-size:11px;text-align:left">
+          <th style="padding:8px 14px">Name</th><th>Side</th><th>${isOpen ? "Opened" : "Held"}</th>
+          <th>Entry</th><th>Stop / Target</th><th>${isOpen ? "Now" : "Exit"}</th><th>Return</th><th>P&amp;L</th>
+          <th>${isOpen ? "Brain" : "Why out"}</th></tr></thead>
+        <tbody>${list.map(t => row(t, isOpen)).join("")}</tbody>
+      </table></div>
+    </div>`;
+
+  return `<div class="narrow">
+    <div class="sec-head" style="margin-bottom:8px">
+      <h2 style="font-size:15px;font-weight:600">Simulated book</h2>
+      <span class="hint">${s.fill_model === "intraday"
+        ? "9:45 limit + ATR bracket, walked minute by minute · no orders, no broker"
+        : "what the verdicts would have earned · no orders, no broker"}</span>
+    </div>
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(130px,1fr))">
+      <div class="tile"><div class="lbl">Book equity</div>
+        <div class="big">$${(s.equity || 0).toLocaleString()}</div>
+        <div class="sub">from $${(s.starting_equity || 0).toLocaleString()} on ${esc(s.inception || "—")}</div></div>
+      <div class="tile"><div class="lbl">Return</div>
+        <div class="big" style="color:${col(s.total_return_pct)}">${sgn(s.total_return_pct)}%</div>
+        <div class="sub">SPY ${s.benchmark_return_pct == null ? "—" : sgn(s.benchmark_return_pct) + "%"}</div></div>
+      <div class="tile"><div class="lbl">Edge vs SPY</div>
+        <div class="big" style="color:${col(s.excess_vs_benchmark_pct)}">${s.excess_vs_benchmark_pct == null ? "—" : sgn(s.excess_vs_benchmark_pct) + "%"}</div>
+        <div class="sub">${s.closed || 0} closed, ${s.open_positions || 0} open</div></div>
+      <div class="tile"><div class="lbl">Longs</div>
+        <div class="big" style="color:${col((s.long || {}).pnl)}">${(s.long || {}).pnl == null ? "—" : "$" + s.long.pnl.toLocaleString()}</div>
+        <div class="sub">${(s.long || {}).closed || 0} closed${(s.long || {}).win_rate_pct == null ? "" : ", " + s.long.win_rate_pct + "% won"}</div></div>
+      <div class="tile"><div class="lbl">Shorts</div>
+        <div class="big" style="color:${col((s.short || {}).pnl)}">${(s.short || {}).pnl == null ? "—" : "$" + s.short.pnl.toLocaleString()}</div>
+        <div class="sub">${(s.short || {}).closed || 0} closed · borrow $${(s.borrow_paid || 0).toLocaleString()}</div></div>
+      <div class="tile"><div class="lbl">Max drawdown</div>
+        <div class="big" style="color:${(s.max_drawdown_pct || 0) < -10 ? "var(--red)" : "var(--text-dim)"}">${s.max_drawdown_pct}%</div>
+        <div class="sub">peak to trough</div></div>
+    </div>
+  </div>
+  <div style="margin-top:14px">
+    ${table("Open", pos, true)}
+    ${table("Closed", closed, false)}
+    <p class="footnote" style="max-width:none">
+      <b>This book is a simulation, not a position.</b> It places no orders, talks to no broker, and holds
+      nothing in the Alpaca paper account — it replays the analyst's verdicts against the real tape so its
+      judgment gets a P&amp;L instead of just a beat-SPY bit.
+      ${s.fill_model === "intraday" ? `It fills them <b>exactly the way the movers bot trades</b>: a marketable
+      limit at 9:45 ET padded ${(DATA.bot_dials || {}).entry_limit_pad_pct}% through the touch, an ATR bracket
+      (stop ${(DATA.bot_dials || {}).atr_stop_multiple}&times;ATR, target ${(DATA.bot_dials || {}).reward_to_risk}&times;
+      that risk) off the ATR the screener computed that morning, then walked minute by minute until a leg fires
+      or rulebook §7's ${(DATA.bot_dials || {}).time_stop_days}-day time stop lands. When both legs fall inside one
+      minute the <i>stop</i> is assumed to have filled first — crediting the target would be the easiest way to
+      invent a win. Names whose IEX coverage is too thin to see a stop are excluded outright, not filled on
+      partial data.` : `Entries use the verdict day's <i>close</i>, not the 9:32 screen price, so it can't claim
+      an intraday fill it never tested.`}
+      ${s.shorts_enabled ? `<br><br><b style="color:var(--amber)">On the shorts:</b> borrow is charged at
+      ${d.borrow_cost_annual_pct}%/yr and names under $${d.min_short_price} are thrown out as unborrowable, but the sim
+      still assumes every remaining short could be located — and a mover that just spiked is exactly the one
+      that goes hard-to-borrow. Stops are close-based and exit at the real gapped close, never at the stop
+      price, so squeezes hurt honestly. Read a profitable short book as an <i>upper bound</i>.` : ""}
+    </p>
+  </div>`;
+}
+
+function renderFund() {
+  const a = DATA.analyst;
+  if (!a || !a.verdicts || !a.verdicts.length) return `<div class="narrow"><div class="card"><div class="empty">
+    No analyst verdicts yet.<br>Run <code>python3 analyst.py run</code> after a scan.</div></div></div>`;
+  const s = a.stats || {};
+
+  const beat = s.beat_spy_pct;
+  const md = ds => { const p = (ds || "").split("-"); return p.length === 3 ? `${+p[1]}/${+p[2]}` : ""; };
+
+  // One verdict card (tap to expand its bull/bear). The COLUMN it sits in
+  // conveys the verdict, so the per-row verdict badge is dropped here.
+  function verdictRow(v) {
+    const k = v.date + "|" + v.ticker;
+    const isOpen = openVerdict === k;
+    const grade = v.graded
+      ? `<span class="rspy">${v.beat_spy ? "beat SPY" : "missed"} (${v.return_pct >= 0 ? "+" : ""}${v.return_pct}% vs ${v.spy_return_pct >= 0 ? "+" : ""}${v.spy_return_pct}%)</span>`
+      : (v.verdict === "NEUTRAL" ? `<span class="muted">no call</span>` : `<span class="muted">ripening</span>`);
+    const points = isOpen ? `<div class="pick-why" style="padding:0 12px 12px 12px">
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <div style="flex:1;min-width:150px"><div class="lbl" style="color:var(--green);font-size:12px;margin-bottom:4px">Bull case</div>
+            <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--text-body)">${v.bull.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
+          <div style="flex:1;min-width:150px"><div class="lbl" style="color:var(--red);font-size:12px;margin-bottom:4px">Bear case</div>
+            <ul style="margin:0;padding-left:16px;font-size:13px;color:var(--text-body)">${v.bear.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
+        </div>
+        <div class="muted" style="margin-top:8px">vs the mechanical bot: ${v.agrees_with_bot ? "agrees" : "<b style='color:var(--amber)'>disagrees</b>"} (bot said ${esc(v.mech_dir)}, score ${v.mech_score})</div>
+      </div>` : "";
+    return `<div class="pick${isOpen ? " open" : ""}">
+      <button class="pick-btn" onclick="toggleVerdict('${esc(k)}')">
+        <span class="rtk" style="width:52px">${esc(v.ticker)}</span>
+        <span class="muted" style="width:40px">${v.confidence}%</span>
+        ${brainBadge(v.brain)}
+        <span class="spacer"></span>
+      </button>
+      <div class="muted" style="padding:0 12px 4px 12px;font-size:12px">${esc(v.thesis)}</div>
+      ${points}
+      <div style="padding:0 12px 8px 12px"><span class="muted" style="font-size:11px">${v.graded && v.graded_date ? md(v.graded_date) : md(v.date)}</span> &middot; ${grade}</div>
+    </div>`;
+  }
+
+  function column(title, color, list) {
+    const body = list.length ? list.map(verdictRow).join("")
+      : `<div class="empty" style="padding:22px 0;font-size:13px">none</div>`;
+    return `<div class="card" style="padding:0;overflow:hidden">
+      <div style="padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.08);font-weight:600;font-size:14px;color:${color}">
+        ${title} <span class="muted" style="font-weight:400">(${list.length})</span></div>
+      ${body}</div>`;
+  }
+
+  const by = { NEUTRAL: [], BEARISH: [], BULLISH: [] };
+  a.verdicts.forEach(v => { (by[v.verdict] || (by[v.verdict] = [])).push(v); });
+
+  return `<div class="narrow">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+      <span class="dot" style="background:var(--purple,#7F77DD)"></span>
+      <span style="font-size:14px;color:var(--gray-l)">Shadow analyst &middot; writes a bull + bear case, renders a verdict &middot; <b>simulated book only, never a real order</b> &middot; updated ${esc(a.updated || "")}</span>
+    </div>
+    <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(130px,1fr))">
+      <div class="tile"><div class="lbl">Verdicts</div><div class="big">${s.total || 0}</div><div class="sub">${s.calls || 0} calls, ${s.neutral || 0} neutral</div></div>
+      <div class="tile"><div class="lbl">Graded vs SPY</div><div class="big">${s.graded || 0}</div><div class="sub">${s.pending || 0} ripening</div></div>
+      <div class="tile"><div class="lbl">Beat SPY</div><div class="big" style="color:${beat == null ? "var(--text-dim)" : beat >= 50 ? "var(--green)" : "var(--red)"}">${beat == null ? "—" : beat + "%"}</div><div class="sub">${beat == null ? "needs graded calls" : "of graded calls"}</div></div>
+      <div class="tile"><div class="lbl">Avg edge vs SPY</div><div class="big" style="color:${s.avg_excess == null ? "var(--text-dim)" : s.avg_excess >= 0 ? "var(--green)" : "var(--red)"}">${s.avg_excess == null ? "—" : (s.avg_excess >= 0 ? "+" : "") + s.avg_excess + "%"}</div><div class="sub">direction-adjusted</div></div>
+      ${a.cost && a.cost.runs ? `
+      <div class="tile"><div class="lbl">LLM cost</div>
+        <div class="big">$${Number(a.cost.total_usd).toFixed(2)}</div>
+        <div class="sub">~$${Number(a.cost.projected_monthly_usd).toFixed(2)}/mo &middot; $${Number(a.cost.avg_per_call_usd).toFixed(3)}/verdict</div></div>` : ""}
+    </div>
+  </div>
+  ${renderFundBook()}
+  <div style="margin-top:4px">
+    <div class="sec-head" style="margin-bottom:8px"><h2 style="font-size:15px;font-weight:600">Verdicts</h2><span class="hint">tap a name for its bull/bear case</span></div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start">
+      ${column("Neutral", "var(--gray-l)", by.NEUTRAL)}
+      ${column("Bearish", "var(--red)", by.BEARISH)}
+      ${column("Bullish", "var(--green)", by.BULLISH)}
+    </div>
+    <p class="footnote" style="max-width:none;margin-top:16px">Agent #1 of the "fund." It's a second opinion, graded against SPY like the screener — it earns more agents only if its verdicts actually beat the market. Its brain is Claude when an API key is set (marked <b style="color:var(--purple,#7F77DD)">AI</b>), otherwise a rule-based fallback (<b>rule</b>). It has no execution: the simulated book above is a replay, not a position, and no agent verdict has ever reached a real order.</p>
+  </div>`;
+}
+
+/* ---------------- REVIEW (learning loop) ---------------- */
+function renderReview() {
+  const r = DATA.review;
+  if (!r) return `<div class="narrow"><div class="card"><div class="empty">
+    Review not available.</div></div></div>`;
+  const m = r.movers, s = r.screener;
+
+  const moversCard = m.closed === 0
+    ? `<div class="empty" style="text-align:left;line-height:1.6">${esc(m.note)}
+        <div class="muted" style="margin-top:8px">${m.open} open position(s) — they count only once closed.</div></div>`
+    : `<div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">
+        <div class="tile"><div class="lbl">Closed trades</div><div class="big">${m.closed}</div></div>
+        <div class="tile"><div class="lbl">Win rate</div><div class="big" style="color:var(--green)">${m.win_rate}%</div></div>
+        <div class="tile"><div class="lbl">Avg result</div><div class="big" style="color:${m.avg_result>=0?"var(--green)":"var(--red)"}">${m.avg_result>=0?"+":""}${m.avg_result}%</div></div>
+        <div class="tile"><div class="lbl">Beat SPY</div><div class="big" style="color:var(--text-dim)">${m.beat_spy}/${m.closed}</div></div>
+      </div>
+      ${m.exhaustion ? `<p class="footnote" style="font-size:13px">Exhaustion test: calm-half names ${m.exhaustion.calm>=0?"+":""}${m.exhaustion.calm}% vs hottest-half ${m.exhaustion.hot>=0?"+":""}${m.exhaustion.hot}% &rarr; ${esc(m.exhaustion.verdict)}</p>`
+        : m.exhaustion_pending ? `<p class="footnote">Exhaustion / friction cross-tabs: ${esc(m.exhaustion_pending)}.</p>` : ""}`;
+
+  const screenerCard = s.graded === 0
+    ? `<div class="empty" style="text-align:left;line-height:1.6">${esc(s.note)}
+        <div class="muted" style="margin-top:8px">${s.pending} pick(s) ripening.</div></div>`
+    : `<div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">
+        <div class="tile"><div class="lbl">Graded calls</div><div class="big">${s.graded}</div></div>
+        <div class="tile"><div class="lbl">Beat SPY</div><div class="big" style="color:var(--green)">${s.beat_spy_pct}%</div></div>
+        <div class="tile"><div class="lbl">Avg call</div><div class="big" style="color:${s.avg_return>=0?"var(--green)":"var(--red)"}">${s.avg_return>=0?"+":""}${s.avg_return}%</div></div>
+        <div class="tile"><div class="lbl">SPY same days</div><div class="big" style="color:var(--text-dim)">${s.avg_spy>=0?"+":""}${s.avg_spy}%</div></div>
+      </div>
+      ${s.floor ? `<p class="footnote" style="font-size:13px">Floor test: score&ge;80 ${s.floor.hi>=0?"+":""}${s.floor.hi}% vs 70-79 skipped ${s.floor.lo>=0?"+":""}${s.floor.lo}%</p>` : ""}`;
+
+  const hyps = r.hypotheses.map(h => `<li style="margin:4px 0">${esc(h)}</li>`).join("");
+
+  return `<div class="narrow">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+      <span class="dot" style="background:var(--green)"></span>
+      <span style="font-size:14px;color:var(--gray-l)">Learning loop &middot; reads the closed trades, changes nothing &middot; updated ${esc(r.generated)}</span>
+    </div>
+    <div class="card"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Movers bot — closed trades</h2>${moversCard}</div>
+    <div class="card" style="margin-top:16px"><h2 style="font-size:15px;font-weight:600;margin-bottom:12px">Screener calls — vs SPY (+5 trading days)</h2>${screenerCard}</div>
+    <div class="card" style="margin-top:16px"><h2 style="font-size:15px;font-weight:600;margin-bottom:8px">Hypotheses on trial</h2>
+      <ul style="font-size:14px;color:var(--text-body);padding-left:18px;margin:0">${hyps}</ul>
+      <p class="footnote">The window is <b>frozen</b>. These findings justify at most <b>one</b> dial change after the 6-week window, logged with its reason — never a mid-window tweak. Persistent lessons live in the memory journal.</p>
+    </div>
+  </div>`;
+}
+
+/* The Poly Bot tab was REMOVED 2026-08-12 (owner's call). Its final record:
+   24 paper trades, -$25.13 on $1,200 staked, 2/24 winners, and every single
+   one exited on TIME — the take-profit and stop never fired once in three
+   weeks, so max_hold_seconds was the only exit rule that ever ran. The code
+   still lives in polybot/ (unwired, launchd job unloaded) if it's ever
+   revisited; nothing in the app references it any more. */
+
+function render() {
+  const m = document.getElementById("main");
+  if (!DATA) { m.innerHTML = `<div class="empty">Loading&hellip;</div>`; return; }
+  m.innerHTML = page === "today" ? renderToday()
+    : page === "record" ? renderRecord()
+    : page === "calendar" ? renderCalendar()
+    : page === "momentum" ? renderMomentum()
+    : page === "macro" ? renderMacro()
+    : page === "filings" ? renderFilings()
+    : page === "fund" ? renderFund()
+    : page === "review" ? renderReview()
+    : renderBot();
+
+  const stale = document.getElementById("staleline");
+  if (stale && DATA.feed_last_updated) {
+    stale.textContent = `Feed last updated: ${DATA.feed_last_updated} — refresh data with scan.py / score.py`;
+  }
+  const mkt = document.getElementById("mkt");
+  mkt.innerHTML = DATA.market_open
+    ? `<span class="dot" style="background:var(--green)"></span><span>Market open</span>`
+    : `<span class="dot" style="background:var(--gray)"></span><span>Market closed</span>`;
+}
+
+function togglePick(t) { openPick = openPick === t ? null : t; render(); }
+function setTab(t) { tab = t; render(); }
+
+document.getElementById("nav").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-p]");
+  if (!b) return;
+  page = b.dataset.p;
+  document.querySelectorAll("#nav button").forEach(x => x.classList.toggle("on", x === b));
+  render();
+});
+
+async function load() {
+  try {
+    const r = await fetch("/api/data");
+    DATA = await r.json();
+    if (DATA.error) throw new Error(DATA.error);
+  } catch (e) {
+    document.getElementById("main").innerHTML =
+      `<div class="empty">Could not load data: ${esc(e.message)}<br>Paste this to Claude if it persists.</div>`;
+    return;
+  }
+  render();
+}
+load();
+</script>
+</body>
+</html>

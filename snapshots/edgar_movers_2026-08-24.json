@@ -1,0 +1,101 @@
+{
+  "updated": "2026-08-24T10:15:26.585298-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-08-24_0931.json",
+  "tickers_scanned": 7,
+  "lookback_days": 3,
+  "since": "2026-08-21",
+  "hits": [
+    {
+      "ticker": "XPON",
+      "company": "Expion360 Inc.  (XPON)  (CIK 0001894954)",
+      "cik": 1894954,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-08-24",
+      "accession": "0001903596-26-000317",
+      "phrase": "stock split",
+      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1894954/000190359626000317/ex10_2.htm"
+    },
+    {
+      "ticker": "SDOT",
+      "company": "Sadot Group Inc.  (SDOT)  (CIK 0001701756)",
+      "cik": 1701756,
+      "form": "8-K",
+      "kind": "deal",
+      "filed": "2026-08-21",
+      "accession": "0001731122-26-001123",
+      "phrase": "definitive agreement",
+      "meaning": "8-K contains \"definitive agreement\" - a transaction has been signed",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1701756/000173112226001123/e7883_8-k.htm"
+    },
+    {
+      "ticker": "DXST",
+      "company": "Decent Holding Inc.",
+      "cik": 1958133,
+      "form": "4",
+      "kind": "insider",
+      "filed": "2026-08-21",
+      "accession": "0001185185-26-003676",
+      "meaning": "OPEN-MARKET BUY by Sun Dingxin - 400,000 shares - cluster buying is the signal, one buy is noise",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1958133/000118518526003676/xslF345X06/ownership.xml",
+      "insider": "Sun Dingxin",
+      "insider_title": "",
+      "shares": 400000.0
+    }
+  ],
+  "new_hits": [
+    {
+      "ticker": "XPON",
+      "company": "Expion360 Inc.  (XPON)  (CIK 0001894954)",
+      "cik": 1894954,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-08-24",
+      "accession": "0001903596-26-000317",
+      "phrase": "stock split",
+      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1894954/000190359626000317/ex10_2.htm"
+    },
+    {
+      "ticker": "SDOT",
+      "company": "Sadot Group Inc.  (SDOT)  (CIK 0001701756)",
+      "cik": 1701756,
+      "form": "8-K",
+      "kind": "deal",
+      "filed": "2026-08-21",
+      "accession": "0001731122-26-001123",
+      "phrase": "definitive agreement",
+      "meaning": "8-K contains \"definitive agreement\" - a transaction has been signed",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1701756/000173112226001123/e7883_8-k.htm"
+    },
+    {
+      "ticker": "DXST",
+      "company": "Decent Holding Inc.",
+      "cik": 1958133,
+      "form": "4",
+      "kind": "insider",
+      "filed": "2026-08-21",
+      "accession": "0001185185-26-003676",
+      "meaning": "OPEN-MARKET BUY by Sun Dingxin - 400,000 shares - cluster buying is the signal, one buy is noise",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1958133/000118518526003676/xslF345X06/ownership.xml",
+      "insider": "Sun Dingxin",
+      "insider_title": "",
+      "shares": 400000.0
+    }
+  ],
+  "unresolved_tickers": [
+    "SOXL",
+    "SOXS",
+    "SNXX"
+  ],
+  "errors": []
+}

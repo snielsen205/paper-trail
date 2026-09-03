@@ -1,0 +1,341 @@
+{
+  "feed_last_updated": "2026-07-29 09:30:58",
+  "survivors": [
+    {
+      "ticker": "NCRA",
+      "price": 3.5,
+      "change_pct": 144.7552,
+      "volume": 49711127,
+      "dollar_volume": 173988944.5,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DFNS",
+      "price": 42.97,
+      "change_pct": 79.0417,
+      "volume": 4769489,
+      "dollar_volume": 204944942.32999998,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "AMIX",
+      "price": 4.29,
+      "change_pct": 56.0,
+      "volume": 16210193,
+      "dollar_volume": 69541727.97,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "VRRM",
+      "price": 5.745,
+      "change_pct": 37.4402,
+      "volume": 3961468,
+      "dollar_volume": 22758633.66,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "GMM",
+      "price": 3.3501,
+      "change_pct": 35.6316,
+      "volume": 8001063,
+      "dollar_volume": 26804361.156299997,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "VIVK",
+      "price": 2.6199,
+      "change_pct": 35.0464,
+      "volume": 28828543,
+      "dollar_volume": 75527899.8057,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "STFS",
+      "price": 4.7401,
+      "change_pct": 30.5813,
+      "volume": 8587807,
+      "dollar_volume": 40707063.9607,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "CBZ",
+      "price": 54.36,
+      "change_pct": 16.4026,
+      "volume": 1457124,
+      "dollar_volume": 79209260.64,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SOFI",
+      "price": 15.52,
+      "change_pct": -7.2879,
+      "volume": 20406140,
+      "dollar_volume": 316703292.8,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "KORU",
+      "price": 13.26,
+      "change_pct": -6.2898,
+      "volume": 27181012,
+      "dollar_volume": 360420219.12,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 7.7086,
+      "change_pct": -4.1219,
+      "volume": 34042722,
+      "dollar_volume": 262421726.8092,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SKUU",
+      "price": 15.41,
+      "change_pct": -3.2643,
+      "volume": 9107046,
+      "dollar_volume": 140339578.86,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SKDD",
+      "price": 20.8341,
+      "change_pct": 3.0371,
+      "volume": 8629188,
+      "dollar_volume": 179781365.7108,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNDU",
+      "price": 12.2,
+      "change_pct": -3.0207,
+      "volume": 10843193,
+      "dollar_volume": 132286954.6,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "price": 106.775,
+      "change_pct": -2.5242,
+      "volume": 17307626,
+      "dollar_volume": 1848021766.15,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "price": 64.455,
+      "change_pct": 2.5211,
+      "volume": 13083780,
+      "dollar_volume": 843315039.9,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SKHY",
+      "price": 128.21,
+      "change_pct": -1.5057,
+      "volume": 9254270,
+      "dollar_volume": 1186489956.7,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "MUU",
+      "price": 24.78,
+      "change_pct": 0.9369,
+      "volume": 13510590,
+      "dollar_volume": 334792420.2,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "DRAM",
+      "price": 47.45,
+      "change_pct": -0.6699,
+      "volume": 16242887,
+      "dollar_volume": 770724988.1500001,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "DFNSW",
+      "likely warrant"
+    ],
+    [
+      "DSYWW",
+      "likely warrant"
+    ],
+    [
+      "OBAI",
+      "$524,212 traded"
+    ],
+    [
+      "TERG",
+      "$1,420,303 traded"
+    ],
+    [
+      "AACBR",
+      "$64 traded"
+    ],
+    [
+      "BRAI",
+      "$1,257,488 traded"
+    ],
+    [
+      "SKYQ",
+      "$15,523,989 traded"
+    ],
+    [
+      "MWYN",
+      "$171,938 traded"
+    ],
+    [
+      "SPRC",
+      "$733,069 traded"
+    ],
+    [
+      "NEO",
+      "$2,211,437 traded"
+    ],
+    [
+      "GLNDW",
+      "likely warrant"
+    ],
+    [
+      "RCKY",
+      "$1,322,726 traded"
+    ],
+    [
+      "LMNX",
+      "$445,151 traded"
+    ],
+    [
+      "BIOT",
+      "$464,246 traded"
+    ],
+    [
+      "PCSA",
+      "$16,121,883 traded"
+    ],
+    [
+      "YYAI",
+      "$581,503 traded"
+    ],
+    [
+      "BAND",
+      "$13,364,036 traded"
+    ],
+    [
+      "CLVT",
+      "$1,763,428 traded"
+    ],
+    [
+      "PBMWW",
+      "likely warrant"
+    ],
+    [
+      "PSN",
+      "$11,376,517 traded"
+    ],
+    [
+      "SLXN",
+      "$1,250,896 traded"
+    ],
+    [
+      "LMND",
+      "$15,437,586 traded"
+    ],
+    [
+      "INLF",
+      "$1,144,398 traded"
+    ],
+    [
+      "RDGT",
+      "$100,580 traded"
+    ],
+    [
+      "STKH",
+      "$5,168,224 traded"
+    ],
+    [
+      "FVRR",
+      "$1,999,680 traded"
+    ],
+    [
+      "COOTW",
+      "likely warrant"
+    ],
+    [
+      "VRTL",
+      "$7,284,976 traded"
+    ],
+    [
+      "SXTC",
+      "$809,508 traded"
+    ],
+    [
+      "AAUC",
+      "$13,343,808 traded"
+    ],
+    [
+      "MOBBW",
+      "likely warrant"
+    ],
+    [
+      "WETO",
+      "$154,411 traded"
+    ],
+    [
+      "CISS",
+      "$3,441,727 traded"
+    ],
+    [
+      "ONMD",
+      "$10,794,383 traded"
+    ],
+    [
+      "LBGJ",
+      "$312,250 traded"
+    ]
+  ]
+}

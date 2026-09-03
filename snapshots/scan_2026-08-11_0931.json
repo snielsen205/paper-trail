@@ -1,0 +1,296 @@
+{
+  "feed_last_updated": "2026-08-11 09:30:53",
+  "survivors": [
+    {
+      "ticker": "WXM",
+      "price": 11.83,
+      "change_pct": 195.75,
+      "volume": 24256875,
+      "dollar_volume": 286958831.25,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "PLAG",
+      "price": 1.0711,
+      "change_pct": 89.3406,
+      "volume": 89139310,
+      "dollar_volume": 95477114.941,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "GLE",
+      "price": 0.7199,
+      "change_pct": 85.9246,
+      "volume": 54216585,
+      "dollar_volume": 39030519.5415,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "FRTT",
+      "price": 1.485,
+      "change_pct": 51.9959,
+      "volume": 46352228,
+      "dollar_volume": 68833058.58,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "WYHG",
+      "price": 8.265,
+      "change_pct": 44.493,
+      "volume": 6110622,
+      "dollar_volume": 50504290.830000006,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "MREO",
+      "price": 0.3501,
+      "change_pct": 28.5242,
+      "volume": 88168341,
+      "dollar_volume": 30867736.184100002,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "WAFU",
+      "price": 1.86,
+      "change_pct": 28.2759,
+      "volume": 14384679,
+      "dollar_volume": 26755502.94,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "AIHS",
+      "price": 1.91,
+      "change_pct": 27.3333,
+      "volume": 31437384,
+      "dollar_volume": 60045403.44,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ELPW",
+      "price": 5.0009,
+      "change_pct": 24.7107,
+      "volume": 7577171,
+      "dollar_volume": 37892674.453899994,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "FRMI",
+      "price": 7.0899,
+      "change_pct": 20.5765,
+      "volume": 5367719,
+      "dollar_volume": 38056590.9381,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "PLUG",
+      "price": 2.4623,
+      "change_pct": 16.6967,
+      "volume": 19476941,
+      "dollar_volume": 47958071.8243,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NCRA",
+      "price": 2.3416,
+      "change_pct": 14.2244,
+      "volume": 11509798,
+      "dollar_volume": 26951342.9968,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "price": 96.315,
+      "change_pct": -1.2356,
+      "volume": 18769983,
+      "dollar_volume": 1807830912.645,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "MRNOW",
+      "likely warrant"
+    ],
+    [
+      "RIOX",
+      "$3,600,009 traded"
+    ],
+    [
+      "BW",
+      "$16,595,118 traded"
+    ],
+    [
+      "PLBY",
+      "$1,059,787 traded"
+    ],
+    [
+      "PLUL",
+      "$581,705 traded"
+    ],
+    [
+      "STIM",
+      "$7,951,854 traded"
+    ],
+    [
+      "FF",
+      "$3,331,542 traded"
+    ],
+    [
+      "QMCO",
+      "$5,368,459 traded"
+    ],
+    [
+      "MTEN",
+      "$11,004,961 traded"
+    ],
+    [
+      "NIQ",
+      "$2,135,444 traded"
+    ],
+    [
+      "RNWWW",
+      "likely warrant"
+    ],
+    [
+      "NCPLW",
+      "likely warrant"
+    ],
+    [
+      "ZONE",
+      "$877,771 traded"
+    ],
+    [
+      "SKYAW",
+      "likely warrant"
+    ],
+    [
+      "SCKT",
+      "$5,010,955 traded"
+    ],
+    [
+      "KLXE",
+      "$294,664 traded"
+    ],
+    [
+      "UZX",
+      "$15,728,372 traded"
+    ],
+    [
+      "AREN",
+      "$79,175 traded"
+    ],
+    [
+      "CLRO",
+      "$492,413 traded"
+    ],
+    [
+      "STKH",
+      "$945,372 traded"
+    ],
+    [
+      "TOPP",
+      "$226,226 traded"
+    ],
+    [
+      "YMT",
+      "$219,164 traded"
+    ],
+    [
+      "APLMW",
+      "likely warrant"
+    ],
+    [
+      "WLDS",
+      "$1,374,091 traded"
+    ],
+    [
+      "KIDZ",
+      "$320,951 traded"
+    ],
+    [
+      "VEEA",
+      "$2,017,692 traded"
+    ],
+    [
+      "TTEC",
+      "$345,571 traded"
+    ],
+    [
+      "ABTS",
+      "$197,609 traded"
+    ],
+    [
+      "LIF",
+      "$6,504,872 traded"
+    ],
+    [
+      "CDNL",
+      "$2,111,207 traded"
+    ],
+    [
+      "RCON",
+      "$1,116,808 traded"
+    ],
+    [
+      "VTAK",
+      "$8,620,167 traded"
+    ],
+    [
+      "YYAI",
+      "$1,886,170 traded"
+    ],
+    [
+      "BYND",
+      "$8,102,170 traded"
+    ],
+    [
+      "DXF",
+      "$7,709,370 traded"
+    ],
+    [
+      "OGI",
+      "$16,661,669 traded"
+    ],
+    [
+      "CIGL",
+      "$5,130,457 traded"
+    ],
+    [
+      "MGIH",
+      "$15,833,259 traded"
+    ]
+  ]
+}

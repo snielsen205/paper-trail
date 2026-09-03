@@ -1,0 +1,295 @@
+{
+  "feed_last_updated": "2026-08-03 09:30:53",
+  "survivors": [
+    {
+      "ticker": "HYFM",
+      "price": 2.96,
+      "change_pct": 449.1651,
+      "volume": 74314526,
+      "dollar_volume": 219970996.96,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "RITR",
+      "price": 0.1756,
+      "change_pct": 205.9233,
+      "volume": 481569528,
+      "dollar_volume": 84563609.11680001,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "UPC",
+      "price": 6.915,
+      "change_pct": 118.8291,
+      "volume": 12516787,
+      "dollar_volume": 86553582.105,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "EZRA",
+      "price": 3.66,
+      "change_pct": 101.0989,
+      "volume": 31851288,
+      "dollar_volume": 116575714.08,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "MGN",
+      "price": 0.1129,
+      "change_pct": 53.3967,
+      "volume": 287615906,
+      "dollar_volume": 32471835.7874,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DFNS",
+      "price": 41.3241,
+      "change_pct": 49.2923,
+      "volume": 1604979,
+      "dollar_volume": 66324312.693900004,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "YYAI",
+      "price": 0.1731,
+      "change_pct": 44.25,
+      "volume": 307234183,
+      "dollar_volume": 53182237.077300005,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ATKR",
+      "price": 93.36,
+      "change_pct": 27.9605,
+      "volume": 1682011,
+      "dollar_volume": 157032546.96,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "FCUV",
+      "price": 14.74,
+      "change_pct": 27.069,
+      "volume": 5292864,
+      "dollar_volume": 78016815.36,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "CYCU",
+      "price": 1.125,
+      "change_pct": 26.6749,
+      "volume": 25139729,
+      "dollar_volume": 28282195.125,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "EDBL",
+      "price": 2.77,
+      "change_pct": 18.8841,
+      "volume": 14619242,
+      "dollar_volume": 40495300.34,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 8.12,
+      "change_pct": -13.0621,
+      "volume": 17353802,
+      "dollar_volume": 140912872.23999998,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "price": 104.09,
+      "change_pct": -9.266,
+      "volume": 13611589,
+      "dollar_volume": 1416830299.01,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "price": 59.168,
+      "change_pct": 9.0252,
+      "volume": 15862190,
+      "dollar_volume": 938534057.92,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "MRNOW",
+      "likely warrant"
+    ],
+    [
+      "GFAIW",
+      "likely warrant"
+    ],
+    [
+      "DSYWW",
+      "likely warrant"
+    ],
+    [
+      "DFNSW",
+      "likely warrant"
+    ],
+    [
+      "APLMW",
+      "likely warrant"
+    ],
+    [
+      "ESBA",
+      "$3,434 traded"
+    ],
+    [
+      "SXTC",
+      "$12,907,491 traded"
+    ],
+    [
+      "XAIR",
+      "$38,192 traded"
+    ],
+    [
+      "AUTL",
+      "$990,034 traded"
+    ],
+    [
+      "ANSCW",
+      "likely warrant"
+    ],
+    [
+      "ASTLW",
+      "likely warrant"
+    ],
+    [
+      "ELPW",
+      "$1,513,585 traded"
+    ],
+    [
+      "FMFC",
+      "$730,791 traded"
+    ],
+    [
+      "XBPEW",
+      "likely warrant"
+    ],
+    [
+      "FNGR",
+      "$4,816,427 traded"
+    ],
+    [
+      "JDZG",
+      "$560,937 traded"
+    ],
+    [
+      "ARQQW",
+      "likely warrant"
+    ],
+    [
+      "FLDDW",
+      "likely warrant"
+    ],
+    [
+      "WETO",
+      "$161,618 traded"
+    ],
+    [
+      "ZEO",
+      "$193,434 traded"
+    ],
+    [
+      "PWCM",
+      "$597,117 traded"
+    ],
+    [
+      "LNZAW",
+      "likely warrant"
+    ],
+    [
+      "INHD",
+      "$6,635,969 traded"
+    ],
+    [
+      "MGRX",
+      "$1,749,030 traded"
+    ],
+    [
+      "MBRX",
+      "$223,871 traded"
+    ],
+    [
+      "CIGL",
+      "$167,821 traded"
+    ],
+    [
+      "SBEV",
+      "$315,658 traded"
+    ],
+    [
+      "SRAD",
+      "$9,443,957 traded"
+    ],
+    [
+      "AXTX",
+      "$9,233,004 traded"
+    ],
+    [
+      "ZBAO",
+      "$15,965,291 traded"
+    ],
+    [
+      "VSEE",
+      "$3,149,112 traded"
+    ],
+    [
+      "ONFO",
+      "$2,836,209 traded"
+    ],
+    [
+      "KIDZ",
+      "$15,422,168 traded"
+    ],
+    [
+      "HAO",
+      "$3,644,370 traded"
+    ],
+    [
+      "OMH",
+      "$2,508,831 traded"
+    ]
+  ]
+}

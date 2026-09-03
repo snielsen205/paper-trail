@@ -1,0 +1,44 @@
+{
+  "updated": "2026-08-28T10:15:43.857442-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-08-28_0931.json",
+  "tickers_scanned": 10,
+  "lookback_days": 3,
+  "since": "2026-08-25",
+  "hits": [
+    {
+      "ticker": "SOLS",
+      "company": "Solstice Advanced Materials Inc.  (SOLS)  (CIK 0002064953)",
+      "cik": 2064953,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-08-27",
+      "accession": "0001104659-26-102503",
+      "phrase": "share repurchase program",
+      "meaning": "8-K contains \"share repurchase program\" - buyback authorized - company thinks it's cheap",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/2064953/000110465926102503/tm2620579d9_ex99-1.htm"
+    }
+  ],
+  "new_hits": [
+    {
+      "ticker": "SOLS",
+      "company": "Solstice Advanced Materials Inc.  (SOLS)  (CIK 0002064953)",
+      "cik": 2064953,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-08-27",
+      "accession": "0001104659-26-102503",
+      "phrase": "share repurchase program",
+      "meaning": "8-K contains \"share repurchase program\" - buyback authorized - company thinks it's cheap",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/2064953/000110465926102503/tm2620579d9_ex99-1.htm"
+    }
+  ],
+  "unresolved_tickers": [],
+  "errors": [
+    "full-text search \"stock split\": HTTP Error 500: Internal Server Error",
+    "full-text search \"positive topline\": HTTP Error 500: Internal Server Error"
+  ]
+}

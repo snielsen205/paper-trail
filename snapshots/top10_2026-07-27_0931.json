@@ -1,0 +1,177 @@
+[
+  {
+    "ticker": "ENTX",
+    "price": 2.88,
+    "change_pct": 40.4878,
+    "volume": 20834723,
+    "dollar_volume": 60004002.239999995,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 80,
+    "direction": "LONG",
+    "atr": 0.217,
+    "atr_pct_of_price": 0.0753,
+    "stop": 2.50025,
+    "target": 3.6395,
+    "why": "4 fresh articles, avg sentiment +0.18 | put/call 0.00 (bullish flow)"
+  },
+  {
+    "ticker": "FBRX",
+    "price": 76.42,
+    "change_pct": 39.5035,
+    "volume": 6123549,
+    "dollar_volume": 467961614.58,
+    "lists": [
+      "gainer"
+    ],
+    "score": 60,
+    "direction": "WATCH",
+    "atr": 5.9217,
+    "atr_pct_of_price": 0.0775,
+    "stop": null,
+    "target": null,
+    "why": "5 fresh articles, avg sentiment +0.55 | put/call 61.80 (bearish flow) | CONFLICT: news and options disagree -> no call"
+  },
+  {
+    "ticker": "NOK",
+    "price": 9.355,
+    "change_pct": 2.8022,
+    "volume": 10223876,
+    "dollar_volume": 95644359.98,
+    "lists": [
+      "active"
+    ],
+    "score": 53,
+    "direction": "LONG",
+    "atr": 0.7201,
+    "atr_pct_of_price": 0.077,
+    "stop": 8.094825,
+    "target": 11.875350000000001,
+    "why": "3 fresh articles, avg sentiment +0.08 | put/call 0.39 (bullish flow)"
+  },
+  {
+    "ticker": "BIYA",
+    "price": 2.94,
+    "change_pct": 52.3316,
+    "volume": 14700489,
+    "dollar_volume": 43219437.66,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 36,
+    "direction": "WATCH",
+    "atr": 1.6475,
+    "atr_pct_of_price": 0.5604,
+    "stop": null,
+    "target": null,
+    "why": "1 fresh articles, avg sentiment -0.33 | no options data | TOO VOLATILE: ATR 56% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "DFNS",
+    "price": 6.54,
+    "change_pct": 50.3448,
+    "volume": 18547260,
+    "dollar_volume": 121299080.4,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 36,
+    "direction": "WATCH",
+    "atr": 3.3253,
+    "atr_pct_of_price": 0.5085,
+    "stop": null,
+    "target": null,
+    "why": "1 fresh articles, avg sentiment -0.24 | no options data | TOO VOLATILE: ATR 51% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "SOXS",
+    "price": 50.2601,
+    "change_pct": -2.4644,
+    "volume": 7952110,
+    "dollar_volume": 399673843.811,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": 7.291,
+    "atr_pct_of_price": 0.1451,
+    "stop": 37.50085,
+    "target": 75.77860000000001,
+    "why": "no fresh relevant news | put/call 0.16 (bullish flow)"
+  },
+  {
+    "ticker": "LGHL",
+    "price": 1.94,
+    "change_pct": 113.0697,
+    "volume": 37242940,
+    "dollar_volume": 72251303.6,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 34,
+    "direction": "WATCH",
+    "atr": 0.7295,
+    "atr_pct_of_price": 0.376,
+    "stop": null,
+    "target": null,
+    "why": "3 fresh articles, avg sentiment -0.10 | no options data | TOO VOLATILE: ATR 38% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "MTNB",
+    "price": 0.3534,
+    "change_pct": 46.396,
+    "volume": 115405675,
+    "dollar_volume": 40784365.545,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 32,
+    "direction": "WATCH",
+    "atr": 0.0795,
+    "atr_pct_of_price": 0.225,
+    "stop": null,
+    "target": null,
+    "why": "3 fresh articles, avg sentiment +0.07 | no options data | TOO VOLATILE: ATR 22% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "CAPR",
+    "price": 6.1,
+    "change_pct": -69.0355,
+    "volume": 4623192,
+    "dollar_volume": 28201471.2,
+    "lists": [
+      "loser"
+    ],
+    "score": 31,
+    "direction": "WATCH",
+    "atr": 2.414,
+    "atr_pct_of_price": 0.3957,
+    "stop": null,
+    "target": null,
+    "why": "2 fresh articles, avg sentiment +0.15 | put/call 0.19 (bullish flow) | TOO VOLATILE: ATR 40% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "TSLL",
+    "price": 7.51,
+    "change_pct": 1.2129,
+    "volume": 7336771,
+    "dollar_volume": 55099150.21,
+    "lists": [
+      "active"
+    ],
+    "score": 30,
+    "direction": "LONG",
+    "atr": 1.0949,
+    "atr_pct_of_price": 0.1458,
+    "stop": 5.593925,
+    "target": 11.34215,
+    "why": "no fresh relevant news | put/call 0.26 (bullish flow)"
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "ticker": "SOXL",
+    "price": 146.7002,
+    "change_pct": 10.3009,
+    "volume": 12864623,
+    "dollar_volume": 1887242767.0246,
+    "lists": [
+      "active"
+    ],
+    "score": 49,
+    "direction": "SHORT",
+    "atr": 22.1177,
+    "atr_pct_of_price": 0.1508,
+    "stop": 185.406175,
+    "target": 69.28825,
+    "why": "1 fresh articles, avg sentiment +0.04 | put/call 1.89 (bearish flow)"
+  },
+  {
+    "ticker": "CRWV",
+    "price": 108.76,
+    "change_pct": 20.4163,
+    "volume": 11872488,
+    "dollar_volume": 1291251794.88,
+    "lists": [
+      "active"
+    ],
+    "score": 46,
+    "direction": "WATCH",
+    "atr": 8.2649,
+    "atr_pct_of_price": 0.076,
+    "stop": null,
+    "target": null,
+    "why": "3 fresh articles, avg sentiment -0.13 | put/call 0.58 (bullish flow) | CONFLICT: news and options disagree -> no call"
+  },
+  {
+    "ticker": "NOK",
+    "price": 10.37,
+    "change_pct": 9.8517,
+    "volume": 12630146,
+    "dollar_volume": 130974614.02,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "WATCH",
+    "atr": 0.6441,
+    "atr_pct_of_price": 0.0621,
+    "stop": null,
+    "target": null,
+    "why": "2 fresh articles, avg sentiment -0.13 | put/call 0.21 (bullish flow) | CONFLICT: news and options disagree -> no call"
+  },
+  {
+    "ticker": "CRWG",
+    "price": 30.9,
+    "change_pct": 40.8387,
+    "volume": 906356,
+    "dollar_volume": 28006400.4,
+    "lists": [
+      "gainer"
+    ],
+    "score": 30,
+    "direction": "LONG",
+    "atr": 4.0053,
+    "atr_pct_of_price": 0.1296,
+    "stop": 23.890724999999996,
+    "target": 44.918549999999996,
+    "why": "no fresh relevant news | put/call 0.18 (bullish flow)"
+  },
+  {
+    "ticker": "CRWU",
+    "price": 5.9,
+    "change_pct": 40.1425,
+    "volume": 5841828,
+    "dollar_volume": 34466785.2,
+    "lists": [
+      "gainer"
+    ],
+    "score": 30,
+    "direction": "LONG",
+    "atr": 0.7631,
+    "atr_pct_of_price": 0.1293,
+    "stop": 4.5645750000000005,
+    "target": 8.57085,
+    "why": "no fresh relevant news | put/call 0.32 (bullish flow)"
+  },
+  {
+    "ticker": "BOXL",
+    "price": 4.675,
+    "change_pct": 59.5563,
+    "volume": 18486464,
+    "dollar_volume": 86424219.2,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 20,
+    "direction": "WATCH",
+    "atr": 0.4703,
+    "atr_pct_of_price": 0.1006,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data | earnings today (2026-08-12) - catalyst"
+  },
+  {
+    "ticker": "CYCU",
+    "price": 0.6699,
+    "change_pct": 13.9092,
+    "volume": 31213580,
+    "dollar_volume": 20909977.242000002,
+    "lists": [
+      "active"
+    ],
+    "score": 20,
+    "direction": "WATCH",
+    "atr": 0.1782,
+    "atr_pct_of_price": 0.266,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data | earnings today (2026-08-12) - catalyst | TOO VOLATILE: ATR 27% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "NBIL",
+    "price": 26.15,
+    "change_pct": 26.2675,
+    "volume": 3261036,
+    "dollar_volume": 85276091.39999999,
+    "lists": [
+      "gainer"
+    ],
+    "score": 17,
+    "direction": "WATCH",
+    "atr": 6.1951,
+    "atr_pct_of_price": 0.2369,
+    "stop": null,
+    "target": null,
+    "why": "1 fresh articles, avg sentiment +0.02 | no options data | TOO VOLATILE: ATR 24% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "OFAL",
+    "price": 2.7,
+    "change_pct": 278.5754,
+    "volume": 114915032,
+    "dollar_volume": 310270586.40000004,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 15,
+    "direction": "WATCH",
+    "atr": 0.3317,
+    "atr_pct_of_price": 0.1229,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  },
+  {
+    "ticker": "RMCF",
+    "price": 1.675,
+    "change_pct": 149.0706,
+    "volume": 117519251,
+    "dollar_volume": 196844745.425,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 15,
+    "direction": "WATCH",
+    "atr": 0.1619,
+    "atr_pct_of_price": 0.0967,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  }
+]

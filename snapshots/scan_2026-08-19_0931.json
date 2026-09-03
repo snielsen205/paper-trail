@@ -1,0 +1,342 @@
+{
+  "feed_last_updated": "2026-08-19 09:31:02",
+  "survivors": [
+    {
+      "ticker": "YJ",
+      "price": 5.01,
+      "change_pct": 187.931,
+      "volume": 85335813,
+      "dollar_volume": 427532423.13,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "MRNX",
+      "price": 83.92,
+      "change_pct": 167.8583,
+      "volume": 460971,
+      "dollar_volume": 38684686.32,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "RDAC",
+      "price": 13.4201,
+      "change_pct": 129.4034,
+      "volume": 6145898,
+      "dollar_volume": 82478565.7498,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "TNON",
+      "price": 11.38,
+      "change_pct": 108.8073,
+      "volume": 15834019,
+      "dollar_volume": 180191136.22,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "price": 116.25,
+      "change_pct": 84.641,
+      "volume": 24370701,
+      "dollar_volume": 2833093991.25,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "MRNY",
+      "price": 27.9,
+      "change_pct": 78.8462,
+      "volume": 1176026,
+      "dollar_volume": 32811125.4,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "EHGO",
+      "price": 2.605,
+      "change_pct": 43.9227,
+      "volume": 39021432,
+      "dollar_volume": 101650830.36,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "FEMY",
+      "price": 3.1,
+      "change_pct": 40.9091,
+      "volume": 8399424,
+      "dollar_volume": 26038214.400000002,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "MSS",
+      "price": 2.0692,
+      "change_pct": 31.7962,
+      "volume": 11559541,
+      "dollar_volume": 23919002.2372,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ZNB",
+      "price": 2.7099,
+      "change_pct": 21.5202,
+      "volume": 20400474,
+      "dollar_volume": 55283244.4926,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "WYFI",
+      "price": 21.29,
+      "change_pct": -21.3521,
+      "volume": 1283721,
+      "dollar_volume": 27330420.09,
+      "lists": [
+        "loser"
+      ]
+    },
+    {
+      "ticker": "VRAX",
+      "price": 3.2,
+      "change_pct": 15.942,
+      "volume": 9428706,
+      "dollar_volume": 30171859.200000003,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "KORU",
+      "price": 20.2,
+      "change_pct": 13.2287,
+      "volume": 19272544,
+      "dollar_volume": 389305388.8,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNDQ",
+      "price": 13.45,
+      "change_pct": -6.7268,
+      "volume": 20871061,
+      "dollar_volume": 280715770.45,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 16.69,
+      "change_pct": 6.5773,
+      "volume": 38746507,
+      "dollar_volume": 646679201.83,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SKHY",
+      "price": 163.34,
+      "change_pct": 4.9608,
+      "volume": 10363874,
+      "dollar_volume": 1692835179.16,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "CAST",
+      "price": 2.1599,
+      "change_pct": 2.8524,
+      "volume": 25871337,
+      "dollar_volume": 55879500.786299996,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "price": 43.3,
+      "change_pct": -2.014,
+      "volume": 15641909,
+      "dollar_volume": 677294659.6999999,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "price": 131.515,
+      "change_pct": 1.8706,
+      "volume": 13752384,
+      "dollar_volume": 1808644781.7599998,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "AACBR",
+      "$618 traded"
+    ],
+    [
+      "TNONW",
+      "likely warrant"
+    ],
+    [
+      "LIMNW",
+      "likely warrant"
+    ],
+    [
+      "OPENZ",
+      "$413,650 traded"
+    ],
+    [
+      "SLDPW",
+      "likely warrant"
+    ],
+    [
+      "TEMT",
+      "$2,253,647 traded"
+    ],
+    [
+      "BIVI",
+      "$19,364,826 traded"
+    ],
+    [
+      "TCGX",
+      "$165,028 traded"
+    ],
+    [
+      "ARCT",
+      "$15,766,527 traded"
+    ],
+    [
+      "ICUCW",
+      "likely warrant"
+    ],
+    [
+      "OPENW",
+      "likely warrant"
+    ],
+    [
+      "CINGW",
+      "likely warrant"
+    ],
+    [
+      "HUBCZ",
+      "$13 traded"
+    ],
+    [
+      "WYFL",
+      "$875,137 traded"
+    ],
+    [
+      "PFSA",
+      "$7,347,019 traded"
+    ],
+    [
+      "IVDAW",
+      "likely warrant"
+    ],
+    [
+      "WETO",
+      "$6,457,264 traded"
+    ],
+    [
+      "BRLSW",
+      "likely warrant"
+    ],
+    [
+      "DAIC",
+      "$118,189 traded"
+    ],
+    [
+      "PGYWW",
+      "likely warrant"
+    ],
+    [
+      "TOYO",
+      "$4,049,778 traded"
+    ],
+    [
+      "VBIO",
+      "$472,576 traded"
+    ],
+    [
+      "UCL",
+      "$411,300 traded"
+    ],
+    [
+      "JABRW",
+      "likely warrant"
+    ],
+    [
+      "GDXD",
+      "$9,604,544 traded"
+    ],
+    [
+      "SGLY",
+      "$414,173 traded"
+    ],
+    [
+      "SMTK",
+      "$325,995 traded"
+    ],
+    [
+      "TPET",
+      "$90,641 traded"
+    ],
+    [
+      "SKYE",
+      "$62,526 traded"
+    ],
+    [
+      "CDTG",
+      "$572,113 traded"
+    ],
+    [
+      "DVLT",
+      "$14,677,236 traded"
+    ],
+    [
+      "AEON",
+      "$3,338,963 traded"
+    ],
+    [
+      "AZI",
+      "$18,195,096 traded"
+    ],
+    [
+      "RIME",
+      "$3,006,529 traded"
+    ],
+    [
+      "GOVX",
+      "$6,389,509 traded"
+    ]
+  ]
+}

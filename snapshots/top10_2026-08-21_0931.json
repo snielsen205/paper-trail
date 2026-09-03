@@ -1,0 +1,174 @@
+[
+  {
+    "ticker": "NVDA",
+    "price": 217.74,
+    "change_pct": 0.4104,
+    "volume": 11692221,
+    "dollar_volume": 2545864200.54,
+    "lists": [
+      "active"
+    ],
+    "score": 100,
+    "direction": "LONG",
+    "atr": 6.0782,
+    "atr_pct_of_price": 0.0279,
+    "stop": 207.10315,
+    "target": 239.0137,
+    "why": "50 fresh articles, avg sentiment +0.19 | put/call 0.44 (bullish flow) | earnings in 5d (2026-08-26) - catalyst"
+  },
+  {
+    "ticker": "HOWL",
+    "price": 0.9768,
+    "change_pct": 126.5306,
+    "volume": 110963614,
+    "dollar_volume": 108389258.1552,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 88,
+    "direction": "LONG",
+    "atr": 0.0771,
+    "atr_pct_of_price": 0.0789,
+    "stop": 0.8418749999999999,
+    "target": 1.24665,
+    "why": "3 fresh articles, avg sentiment +0.65 | put/call 0.00 (bullish flow)"
+  },
+  {
+    "ticker": "INTC",
+    "price": 92.27,
+    "change_pct": 0.152,
+    "volume": 12744159,
+    "dollar_volume": 1175903550.93,
+    "lists": [
+      "active"
+    ],
+    "score": 67,
+    "direction": "LONG",
+    "atr": 6.3905,
+    "atr_pct_of_price": 0.0693,
+    "stop": 81.086625,
+    "target": 114.63674999999999,
+    "why": "17 fresh articles, avg sentiment +0.03 | put/call 0.28 (bullish flow)"
+  },
+  {
+    "ticker": "RFAI",
+    "price": 45.86,
+    "change_pct": 248.7452,
+    "volume": 1000794,
+    "dollar_volume": 45896412.839999996,
+    "lists": [
+      "gainer"
+    ],
+    "score": 56,
+    "direction": "LONG",
+    "atr": 2.8395,
+    "atr_pct_of_price": 0.0619,
+    "stop": 40.890875,
+    "target": 55.798249999999996,
+    "why": "1 fresh articles, avg sentiment +0.72 | no options data"
+  },
+  {
+    "ticker": "SUGP",
+    "price": 3.66,
+    "change_pct": 31.8919,
+    "volume": 21228053,
+    "dollar_volume": 77694673.98,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 56,
+    "direction": "LONG",
+    "atr": 0.5117,
+    "atr_pct_of_price": 0.1398,
+    "stop": 2.764525,
+    "target": 5.450950000000001,
+    "why": "1 fresh articles, avg sentiment +0.45 | no options data"
+  },
+  {
+    "ticker": "IBIT",
+    "price": 43.565,
+    "change_pct": 5.7403,
+    "volume": 21253291,
+    "dollar_volume": 925899622.415,
+    "lists": [
+      "active"
+    ],
+    "score": 54,
+    "direction": "LONG",
+    "atr": 1.1694,
+    "atr_pct_of_price": 0.0268,
+    "stop": 41.51855,
+    "target": 47.6579,
+    "why": "2 fresh articles, avg sentiment +0.03 | put/call 0.37 (bullish flow)"
+  },
+  {
+    "ticker": "BITX",
+    "price": 17.15,
+    "change_pct": 11.6536,
+    "volume": 8673512,
+    "dollar_volume": 148750730.79999998,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": 0.8133,
+    "atr_pct_of_price": 0.0474,
+    "stop": 15.726724999999998,
+    "target": 19.99655,
+    "why": "no fresh relevant news | put/call 0.08 (bullish flow)"
+  },
+  {
+    "ticker": "CONL",
+    "price": 6.05,
+    "change_pct": 12.4535,
+    "volume": 9327642,
+    "dollar_volume": 56432234.1,
+    "lists": [
+      "active"
+    ],
+    "score": 30,
+    "direction": "LONG",
+    "atr": 0.5583,
+    "atr_pct_of_price": 0.0923,
+    "stop": 5.072975,
+    "target": 8.00405,
+    "why": "no fresh relevant news | put/call 0.16 (bullish flow)"
+  },
+  {
+    "ticker": "MSTU",
+    "price": 2.7,
+    "change_pct": 11.1111,
+    "volume": 27691814,
+    "dollar_volume": 74767897.80000001,
+    "lists": [
+      "active"
+    ],
+    "score": 30,
+    "direction": "LONG",
+    "atr": 0.2714,
+    "atr_pct_of_price": 0.1005,
+    "stop": 2.2250500000000004,
+    "target": 3.6499,
+    "why": "no fresh relevant news | put/call 0.16 (bullish flow)"
+  },
+  {
+    "ticker": "SNXX",
+    "price": 15.2,
+    "change_pct": 0.3963,
+    "volume": 9026112,
+    "dollar_volume": 137196902.4,
+    "lists": [
+      "active"
+    ],
+    "score": 23,
+    "direction": "WATCH",
+    "atr": 3.1201,
+    "atr_pct_of_price": 0.2053,
+    "stop": null,
+    "target": null,
+    "why": "1 fresh articles, avg sentiment +0.04 | put/call 0.52 (bullish flow) | TOO VOLATILE: ATR 21% of price (ceiling 18%) -> not tradeable"
+  }
+]

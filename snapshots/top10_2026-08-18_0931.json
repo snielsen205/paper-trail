@@ -1,0 +1,175 @@
+[
+  {
+    "ticker": "XOS",
+    "price": 4.52,
+    "change_pct": 116.2679,
+    "volume": 57348901,
+    "dollar_volume": 259217032.51999998,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 76,
+    "direction": "LONG",
+    "atr": 0.4141,
+    "atr_pct_of_price": 0.0916,
+    "stop": 3.7953249999999996,
+    "target": 5.9693499999999995,
+    "why": "5 fresh articles, avg sentiment +0.27 | no options data"
+  },
+  {
+    "ticker": "NOK",
+    "price": 10.33,
+    "change_pct": -4.1744,
+    "volume": 11818741,
+    "dollar_volume": 122087594.53,
+    "lists": [
+      "active"
+    ],
+    "score": 76,
+    "direction": "LONG",
+    "atr": 0.6022,
+    "atr_pct_of_price": 0.0583,
+    "stop": 9.27615,
+    "target": 12.4377,
+    "why": "1 fresh articles, avg sentiment +0.43 | put/call 0.21 (bullish flow)"
+  },
+  {
+    "ticker": "TRUG",
+    "price": 1.665,
+    "change_pct": 8.1169,
+    "volume": 28772738,
+    "dollar_volume": 47906608.77,
+    "lists": [
+      "active"
+    ],
+    "score": 72,
+    "direction": "LONG",
+    "atr": 0.1734,
+    "atr_pct_of_price": 0.1041,
+    "stop": 1.36155,
+    "target": 2.2719,
+    "why": "2 fresh articles, avg sentiment +0.45 | no options data | earnings today (2026-08-18) - catalyst"
+  },
+  {
+    "ticker": "DRAM",
+    "price": 57.12,
+    "change_pct": -5.4148,
+    "volume": 8385490,
+    "dollar_volume": 478979188.79999995,
+    "lists": [
+      "active"
+    ],
+    "score": 63,
+    "direction": "LONG",
+    "atr": 4.1797,
+    "atr_pct_of_price": 0.0732,
+    "stop": 49.805524999999996,
+    "target": 71.74895,
+    "why": "2 fresh articles, avg sentiment +0.27 | put/call 0.79 (neutral)"
+  },
+  {
+    "ticker": "SLE",
+    "price": 6.85,
+    "change_pct": 126.8212,
+    "volume": 22114916,
+    "dollar_volume": 151487174.6,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 61,
+    "direction": "LONG",
+    "atr": 0.6137,
+    "atr_pct_of_price": 0.0896,
+    "stop": 5.776025,
+    "target": 8.99795,
+    "why": "1 fresh articles, avg sentiment +0.46 | no options data"
+  },
+  {
+    "ticker": "KLAR",
+    "price": 15.85,
+    "change_pct": -18.7596,
+    "volume": 4890940,
+    "dollar_volume": 77521399.0,
+    "lists": [
+      "loser"
+    ],
+    "score": 61,
+    "direction": "WATCH",
+    "atr": 1.1623,
+    "atr_pct_of_price": 0.0733,
+    "stop": null,
+    "target": null,
+    "why": "4 fresh articles, avg sentiment -0.29 | put/call 0.43 (bullish flow) | earnings today (2026-08-18) - catalyst | CONFLICT: news and options disagree -> no call"
+  },
+  {
+    "ticker": "AMLX",
+    "price": 29.305,
+    "change_pct": 36.7476,
+    "volume": 4751177,
+    "dollar_volume": 139233241.98499998,
+    "lists": [
+      "gainer"
+    ],
+    "score": 59,
+    "direction": "WATCH",
+    "atr": 1.8363,
+    "atr_pct_of_price": 0.0627,
+    "stop": null,
+    "target": null,
+    "why": "4 fresh articles, avg sentiment +0.33 | put/call 1.98 (bearish flow) | CONFLICT: news and options disagree -> no call"
+  },
+  {
+    "ticker": "SNXX",
+    "price": 17.28,
+    "change_pct": -9.3389,
+    "volume": 19123137,
+    "dollar_volume": 330447807.36,
+    "lists": [
+      "active"
+    ],
+    "score": 59,
+    "direction": "WATCH",
+    "atr": 3.4028,
+    "atr_pct_of_price": 0.1969,
+    "stop": null,
+    "target": null,
+    "why": "4 fresh articles, avg sentiment +0.40 | put/call 0.98 (neutral) | TOO VOLATILE: ATR 20% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "SGLY",
+    "price": 6.2901,
+    "change_pct": 40.0913,
+    "volume": 9041103,
+    "dollar_volume": 56869441.9803,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 55,
+    "direction": "LONG",
+    "atr": 1.0378,
+    "atr_pct_of_price": 0.165,
+    "stop": 4.473949999999999,
+    "target": 9.9224,
+    "why": "2 fresh articles, avg sentiment +0.21 | no options data"
+  },
+  {
+    "ticker": "DT",
+    "price": 47.805,
+    "change_pct": 0.4096,
+    "volume": 8510828,
+    "dollar_volume": 406860132.54,
+    "lists": [
+      "active"
+    ],
+    "score": 54,
+    "direction": "LONG",
+    "atr": 2.0768,
+    "atr_pct_of_price": 0.0434,
+    "stop": 44.1706,
+    "target": 55.0738,
+    "why": "2 fresh articles, avg sentiment +0.12 | put/call 0.00 (bullish flow)"
+  }
+]

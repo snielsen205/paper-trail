@@ -1,0 +1,43 @@
+{
+  "updated": "2026-08-26T10:15:26.744938-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-08-26_0931.json",
+  "tickers_scanned": 9,
+  "lookback_days": 3,
+  "since": "2026-08-23",
+  "hits": [
+    {
+      "ticker": "ANF",
+      "company": "ABERCROMBIE & FITCH CO /DE/  (ANF)  (CIK 0001018840)",
+      "cik": 1018840,
+      "form": "8-K",
+      "kind": "signal",
+      "filed": "2026-08-26",
+      "accession": "0001018840-26-000041",
+      "phrase": "strategic alternatives",
+      "meaning": "8-K contains \"strategic alternatives\" - hired a bank / exploring a sale",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018840/000101884026000041/q22026pressrelease.htm"
+    }
+  ],
+  "new_hits": [
+    {
+      "ticker": "ANF",
+      "company": "ABERCROMBIE & FITCH CO /DE/  (ANF)  (CIK 0001018840)",
+      "cik": 1018840,
+      "form": "8-K",
+      "kind": "signal",
+      "filed": "2026-08-26",
+      "accession": "0001018840-26-000041",
+      "phrase": "strategic alternatives",
+      "meaning": "8-K contains \"strategic alternatives\" - hired a bank / exploring a sale",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018840/000101884026000041/q22026pressrelease.htm"
+    }
+  ],
+  "unresolved_tickers": [
+    "SNXX"
+  ],
+  "errors": []
+}

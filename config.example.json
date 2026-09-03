@@ -1,0 +1,67 @@
+{
+  "config_version": "1.2",
+
+  "alpha_vantage_api_key": "PASTE_YOUR_PREMIUM_KEY_HERE",
+  "entitlement": "realtime",
+
+  "alpaca": {
+    "api_key_id": "PASTE_YOUR_PAPER_KEY_ID_HERE",
+    "api_secret_key": "PASTE_YOUR_PAPER_SECRET_HERE"
+  },
+
+  "notifications": {
+    "ntfy_topic": ""
+  },
+
+  "requests_per_minute": 150,
+
+  "filters": {
+    "min_dollar_volume": 20000000,
+    "skip_ticker_symbols_containing": ["+", "=", "^"]
+  },
+
+  "scoring": {
+    "max_atr_pct_of_price": 0.18,
+    "earnings_catalyst_days": 7,
+    "earnings_catalyst_points": 10
+  },
+
+  "track_record": {
+    "grade_after_trading_days": 5,
+    "benchmark": "SPY"
+  },
+
+  "bot_dials": {
+    "score_floor": 80,
+    "entry_window_minutes": 20,
+    "entry_limit_pad_pct": 0.1,
+    "atr_stop_multiple": 1.75,
+    "reward_to_risk": 2.0,
+    "risk_per_trade_pct": 1.0,
+    "position_cap_pct": 10.0,
+    "max_positions": 5,
+    "max_total_open_risk_pct": 5.0,
+    "max_per_sector": 2,
+    "time_stop_days": 5,
+    "drawdown_pause_pct": 10.0,
+    "evaluation_window_weeks": 6
+  },
+
+  "config_changelog": [
+    {
+      "date": "2026-07-17",
+      "change": "M3: added scoring.max_atr_pct_of_price=0.18",
+      "reason": "Live run produced absurd brackets on STAK/SDOT/BIYA where ATR was 39-56% of price. Names too volatile to bracket sanely are now capped to WATCH, never traded."
+    },
+    {
+      "date": "2026-07-17",
+      "change": "M3: added scoring.earnings_catalyst_days=7 / earnings_catalyst_points=10",
+      "reason": "Imminent earnings is a real catalyst; give confident credit to movers with a scheduled reason to move."
+    },
+    {
+      "date": "2026-07-17",
+      "change": "M3: added track_record.grade_after_trading_days=5 / benchmark=SPY",
+      "reason": "Rulebook: each day's picks graded at close +5 trading days vs SPY. Grading rule frozen once set."
+    }
+  ]
+}

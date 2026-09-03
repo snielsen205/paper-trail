@@ -1,0 +1,120 @@
+{
+  "updated": "2026-08-21T10:15:28.529951-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-08-21_0931.json",
+  "tickers_scanned": 6,
+  "lookback_days": 3,
+  "since": "2026-08-18",
+  "hits": [
+    {
+      "ticker": "HOWL",
+      "company": "Werewolf Therapeutics, Inc.",
+      "cik": 1785530,
+      "form": "425",
+      "kind": "deal",
+      "filed": "2026-08-21",
+      "accession": "0001193125-26-360063",
+      "meaning": "business-combination communication",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785530/000119312526360063/d102535d425.htm"
+    },
+    {
+      "ticker": "HOWL",
+      "company": "Werewolf Therapeutics, Inc.  (HOWL)  (CIK 0001785530)",
+      "cik": 1785530,
+      "form": "8-K",
+      "kind": "operating",
+      "filed": "2026-08-21",
+      "accession": "0001193125-26-360059",
+      "phrase": "breakthrough therapy",
+      "meaning": "8-K contains \"breakthrough therapy\" - FDA designation - accelerates a drug program",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785530/000119312526360059/d102535dex991.htm"
+    },
+    {
+      "ticker": "RFAI",
+      "company": "RF Acquisition Corp II",
+      "cik": 2012807,
+      "form": "425",
+      "kind": "deal",
+      "filed": "2026-08-20",
+      "accession": "0001829126-26-009169",
+      "meaning": "business-combination communication",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012807/000182912626009169/rfacquisition2_425.htm"
+    },
+    {
+      "ticker": "HOWL",
+      "company": "Werewolf Therapeutics, Inc.  (HOWL)  (CIK 0001785530)",
+      "cik": 1785530,
+      "form": "8-K",
+      "kind": "deal",
+      "filed": "2026-08-20",
+      "accession": "0001193125-26-359185",
+      "phrase": "definitive agreement",
+      "meaning": "8-K contains \"definitive agreement\" - a transaction has been signed",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785530/000119312526359185/d141219d8k.htm"
+    }
+  ],
+  "new_hits": [
+    {
+      "ticker": "HOWL",
+      "company": "Werewolf Therapeutics, Inc.",
+      "cik": 1785530,
+      "form": "425",
+      "kind": "deal",
+      "filed": "2026-08-21",
+      "accession": "0001193125-26-360063",
+      "meaning": "business-combination communication",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785530/000119312526360063/d102535d425.htm"
+    },
+    {
+      "ticker": "HOWL",
+      "company": "Werewolf Therapeutics, Inc.  (HOWL)  (CIK 0001785530)",
+      "cik": 1785530,
+      "form": "8-K",
+      "kind": "operating",
+      "filed": "2026-08-21",
+      "accession": "0001193125-26-360059",
+      "phrase": "breakthrough therapy",
+      "meaning": "8-K contains \"breakthrough therapy\" - FDA designation - accelerates a drug program",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785530/000119312526360059/d102535dex991.htm"
+    },
+    {
+      "ticker": "RFAI",
+      "company": "RF Acquisition Corp II",
+      "cik": 2012807,
+      "form": "425",
+      "kind": "deal",
+      "filed": "2026-08-20",
+      "accession": "0001829126-26-009169",
+      "meaning": "business-combination communication",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012807/000182912626009169/rfacquisition2_425.htm"
+    },
+    {
+      "ticker": "HOWL",
+      "company": "Werewolf Therapeutics, Inc.  (HOWL)  (CIK 0001785530)",
+      "cik": 1785530,
+      "form": "8-K",
+      "kind": "deal",
+      "filed": "2026-08-20",
+      "accession": "0001193125-26-359185",
+      "phrase": "definitive agreement",
+      "meaning": "8-K contains \"definitive agreement\" - a transaction has been signed",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1785530/000119312526359185/d141219d8k.htm"
+    }
+  ],
+  "unresolved_tickers": [
+    "BITX",
+    "CONL",
+    "MSTU",
+    "SNXX"
+  ],
+  "errors": []
+}

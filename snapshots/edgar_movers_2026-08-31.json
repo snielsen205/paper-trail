@@ -1,0 +1,19 @@
+{
+  "updated": "2026-08-31T10:15:39.971631-04:00",
+  "read_only": true,
+  "mode": "movers",
+  "watchlist_file": "top10_2026-08-31_0931.json",
+  "tickers_scanned": 9,
+  "lookback_days": 3,
+  "since": "2026-08-28",
+  "hits": [],
+  "new_hits": [],
+  "unresolved_tickers": [
+    "SOXS"
+  ],
+  "errors": [
+    "full-text search \"priority review\": HTTP Error 500: Internal Server Error",
+    "full-text search \"awarded a contract\": HTTP Error 500: Internal Server Error",
+    "full-text search \"multi-year agreement\": HTTP Error 500: Internal Server Error"
+  ]
+}

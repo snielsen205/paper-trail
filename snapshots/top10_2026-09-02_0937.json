@@ -1,0 +1,173 @@
+[
+  {
+    "ticker": "NVDA",
+    "price": 219.34,
+    "change_pct": 0.8738,
+    "volume": 7120849,
+    "dollar_volume": 1561887019.66,
+    "lists": [
+      "active"
+    ],
+    "score": 93,
+    "direction": "LONG",
+    "atr": 7.0177,
+    "atr_pct_of_price": 0.032,
+    "stop": 207.059025,
+    "target": 243.90195,
+    "why": "50 fresh articles, avg sentiment +0.22 | put/call 0.46 (bullish flow)"
+  },
+  {
+    "ticker": "NIO",
+    "price": 3.92,
+    "change_pct": -3.4483,
+    "volume": 8766769,
+    "dollar_volume": 34365734.48,
+    "lists": [
+      "active"
+    ],
+    "score": 64,
+    "direction": "LONG",
+    "atr": 0.1505,
+    "atr_pct_of_price": 0.0384,
+    "stop": 3.656625,
+    "target": 4.44675,
+    "why": "1 fresh articles, avg sentiment +0.22 | put/call 0.29 (bullish flow)"
+  },
+  {
+    "ticker": "BIAF",
+    "price": 9.62,
+    "change_pct": 45.9788,
+    "volume": 3960701,
+    "dollar_volume": 38101943.62,
+    "lists": [
+      "gainer"
+    ],
+    "score": 56,
+    "direction": "LONG",
+    "atr": 1.2081,
+    "atr_pct_of_price": 0.1256,
+    "stop": 7.505825,
+    "target": 13.84835,
+    "why": "1 fresh articles, avg sentiment +0.34 | no options data"
+  },
+  {
+    "ticker": "SOXL",
+    "price": 104.17,
+    "change_pct": -1.6429,
+    "volume": 7848082,
+    "dollar_volume": 817534701.94,
+    "lists": [
+      "active"
+    ],
+    "score": 40,
+    "direction": "SHORT",
+    "atr": 13.8991,
+    "atr_pct_of_price": 0.1334,
+    "stop": 128.493425,
+    "target": 55.52315,
+    "why": "no fresh relevant news | put/call 1.85 (bearish flow)"
+  },
+  {
+    "ticker": "PPBT",
+    "price": 2.31,
+    "change_pct": 39.1566,
+    "volume": 43833271,
+    "dollar_volume": 101254856.01,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": 0.1986,
+    "atr_pct_of_price": 0.086,
+    "stop": 1.96245,
+    "target": 3.0051,
+    "why": "no fresh relevant news | put/call 0.00 (bullish flow)"
+  },
+  {
+    "ticker": "CRDO",
+    "price": 178.48,
+    "change_pct": -13.6234,
+    "volume": 2514834,
+    "dollar_volume": 448847572.32,
+    "lists": [
+      "loser"
+    ],
+    "score": 35,
+    "direction": "SHORT",
+    "atr": 19.6651,
+    "atr_pct_of_price": 0.1102,
+    "stop": 212.893925,
+    "target": 109.65214999999999,
+    "why": "no fresh relevant news | put/call 1.65 (bearish flow)"
+  },
+  {
+    "ticker": "MDB",
+    "price": 375.775,
+    "change_pct": -13.4578,
+    "volume": 1051740,
+    "dollar_volume": 395217598.5,
+    "lists": [
+      "loser"
+    ],
+    "score": 35,
+    "direction": "SHORT",
+    "atr": 24.4684,
+    "atr_pct_of_price": 0.0651,
+    "stop": 418.5947,
+    "target": 290.13559999999995,
+    "why": "no fresh relevant news | put/call 1.05 (bearish flow)"
+  },
+  {
+    "ticker": "SNXX",
+    "price": 13.975,
+    "change_pct": 1.9329,
+    "volume": 10133905,
+    "dollar_volume": 141621322.375,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": 2.4889,
+    "atr_pct_of_price": 0.1781,
+    "stop": 9.619425,
+    "target": 22.686149999999998,
+    "why": "no fresh relevant news | put/call 0.26 (bullish flow)"
+  },
+  {
+    "ticker": "SOXS",
+    "price": 52.96,
+    "change_pct": 1.4171,
+    "volume": 8112645,
+    "dollar_volume": 429645679.2,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": 4.9634,
+    "atr_pct_of_price": 0.0937,
+    "stop": 44.27405,
+    "target": 70.3319,
+    "why": "no fresh relevant news | put/call 0.35 (bullish flow)"
+  },
+  {
+    "ticker": "IBIT",
+    "price": 43.39,
+    "change_pct": -0.8455,
+    "volume": 7718760,
+    "dollar_volume": 334916996.4,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "SHORT",
+    "atr": 1.1703,
+    "atr_pct_of_price": 0.027,
+    "stop": 45.438025,
+    "target": 39.29395,
+    "why": "no fresh relevant news | put/call 1.24 (bearish flow)"
+  }
+]

@@ -1,0 +1,33 @@
+# --- SECRETS: never commit ---
+config.json
+polybot/config.json
+keys.json
+.env
+
+# --- live account / trading state (private) ---
+snapshots/bot_account.json
+snapshots/analyst_account.json
+snapshots/bot_state.json
+snapshots/*.log
+snapshots/*.bak-*
+edgar_watchlist.txt
+
+# --- bulk API cache (61MB, regenerates itself) ---
+cache/
+av_cache/
+av_options_cache/
+
+# --- python noise ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# --- editor / OS ---
+.DS_Store
+*.bak-*
+
+# polybot config backups (contain keys)
+polybot/config.json.bak*
+config.json.bak*
+alphavantage_support_email.txt

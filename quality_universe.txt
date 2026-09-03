@@ -1,0 +1,75 @@
+# quality_universe.txt — the hunting ground for quality_screen.py.
+# One ticker per line. Lines starting with # are ignored. Edit freely.
+#
+# This is a CURATED QUALITY UNIVERSE, deliberately NOT the S&P 500 mega-caps —
+# durable, profitable businesses that are less picked-over than the giant names
+# everyone already watches (that's where mispricings actually live). Swap in
+# whatever universe you want; the screen just reads this file.
+
+# --- Consumer / retail ---
+WSM
+POOL
+ULTA
+DECK
+RL
+WING
+TXRH
+DPZ
+CROX
+YETI
+
+# --- Industrials ---
+WSO
+GGG
+NDSN
+AOS
+WAB
+FAST
+PWR
+GNRC
+BLDR
+DOV
+IEX
+CSL
+ODFL
+LII
+
+# --- Software / tech (mid-cap) ---
+MANH
+TYL
+FICO
+ANSS
+PTC
+ZBRA
+NTAP
+EPAM
+CDW
+VRSN
+
+# --- Healthcare ---
+MASI
+RMD
+PODD
+WST
+COO
+DGX
+LH
+HOLX
+CHE
+
+# --- Financials ---
+RJF
+TROW
+NDAQ
+FDS
+MKTX
+EVR
+LPLA
+SEIC
+CBOE
+
+# --- Materials / other ---
+RPM
+ALB
+MLI
+EXPO

@@ -1,0 +1,318 @@
+{
+  "feed_last_updated": "2026-08-14 09:30:57",
+  "survivors": [
+    {
+      "ticker": "WETO",
+      "price": 9.7187,
+      "change_pct": 169.2161,
+      "volume": 29348008,
+      "dollar_volume": 285224485.3496,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "STKH",
+      "price": 5.34,
+      "change_pct": 85.4167,
+      "volume": 14412374,
+      "dollar_volume": 76962077.16,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "CAPR",
+      "price": 7.083,
+      "change_pct": 68.2423,
+      "volume": 23527659,
+      "dollar_volume": 166646408.697,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "SURG",
+      "price": 0.3874,
+      "change_pct": 57.0965,
+      "volume": 167175892,
+      "dollar_volume": 64763940.5608,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "AKAN",
+      "price": 7.7101,
+      "change_pct": 53.8942,
+      "volume": 6992786,
+      "dollar_volume": 53915079.338599995,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SXTC",
+      "price": 4.425,
+      "change_pct": 34.0909,
+      "volume": 13261750,
+      "dollar_volume": 58683243.75,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "BOXL",
+      "price": 9.1058,
+      "change_pct": 33.9088,
+      "volume": 2475713,
+      "dollar_volume": 22543347.4354,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "CGTL",
+      "price": 4.805,
+      "change_pct": 31.6438,
+      "volume": 14842940,
+      "dollar_volume": 71320326.7,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "CYCU",
+      "price": 0.9001,
+      "change_pct": 28.5857,
+      "volume": 46091568,
+      "dollar_volume": 41487020.3568,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "LBGJ",
+      "price": 3.68,
+      "change_pct": 23.0769,
+      "volume": 10630775,
+      "dollar_volume": 39121252.0,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "ONFO",
+      "price": 2.715,
+      "change_pct": 17.5325,
+      "volume": 7818371,
+      "dollar_volume": 21226877.265,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NU",
+      "price": 15.76,
+      "change_pct": 13.1371,
+      "volume": 12547184,
+      "dollar_volume": 197743619.84,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 15.8,
+      "change_pct": 12.1363,
+      "volume": 32534187,
+      "dollar_volume": 514040154.6,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNDQ",
+      "price": 15.3501,
+      "change_pct": -11.9329,
+      "volume": 8253206,
+      "dollar_volume": 126687537.4206,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "ONDS",
+      "price": 9.5282,
+      "change_pct": 6.9383,
+      "volume": 10805704,
+      "dollar_volume": 102958908.8528,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "DRAM",
+      "price": 57.89,
+      "change_pct": 1.6863,
+      "volume": 9483309,
+      "dollar_volume": 548988758.01,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "AACBR",
+      "$1,201 traded"
+    ],
+    [
+      "DAICW",
+      "likely warrant"
+    ],
+    [
+      "MDXH",
+      "$9,599,057 traded"
+    ],
+    [
+      "HHS",
+      "$9,652,710 traded"
+    ],
+    [
+      "MF",
+      "$6,910,189 traded"
+    ],
+    [
+      "UMAL",
+      "$982,576 traded"
+    ],
+    [
+      "DAAQ",
+      "$490,977 traded"
+    ],
+    [
+      "BRUNW",
+      "likely warrant"
+    ],
+    [
+      "ETON",
+      "$9,508,305 traded"
+    ],
+    [
+      "DFSCW",
+      "likely warrant"
+    ],
+    [
+      "LUNL",
+      "$1,680,460 traded"
+    ],
+    [
+      "GDEVW",
+      "likely warrant"
+    ],
+    [
+      "TMCWW",
+      "likely warrant"
+    ],
+    [
+      "RNWWW",
+      "likely warrant"
+    ],
+    [
+      "BZAIW",
+      "likely warrant"
+    ],
+    [
+      "PARAW",
+      "likely warrant"
+    ],
+    [
+      "INV",
+      "$6,301,293 traded"
+    ],
+    [
+      "MVIS",
+      "$6,036,301 traded"
+    ],
+    [
+      "MUA^",
+      "warrant/unit symbol"
+    ],
+    [
+      "DRMAW",
+      "likely warrant"
+    ],
+    [
+      "YXT",
+      "$703,532 traded"
+    ],
+    [
+      "BZAI",
+      "$1,346,455 traded"
+    ],
+    [
+      "BRNX",
+      "$471,526 traded"
+    ],
+    [
+      "CXAI",
+      "$713,071 traded"
+    ],
+    [
+      "AMPG",
+      "$3,923,762 traded"
+    ],
+    [
+      "KLC",
+      "$661,198 traded"
+    ],
+    [
+      "DAAQW",
+      "likely warrant"
+    ],
+    [
+      "XOS",
+      "$222,302 traded"
+    ],
+    [
+      "SSTI",
+      "$294,284 traded"
+    ],
+    [
+      "DGNX",
+      "$1,385,027 traded"
+    ],
+    [
+      "VERI",
+      "$1,572,708 traded"
+    ],
+    [
+      "SCNX",
+      "$10,518,273 traded"
+    ],
+    [
+      "GPUS",
+      "$2,379,322 traded"
+    ],
+    [
+      "RCON",
+      "$583,295 traded"
+    ],
+    [
+      "MGRX",
+      "$8,179,643 traded"
+    ],
+    [
+      "YYAI",
+      "$572,445 traded"
+    ]
+  ]
+}

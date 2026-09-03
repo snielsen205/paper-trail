@@ -1,0 +1,291 @@
+{
+  "feed_last_updated": "2026-07-27 09:30:58",
+  "survivors": [
+    {
+      "ticker": "EDBL",
+      "price": 8.3,
+      "change_pct": 164.3312,
+      "volume": 20998980,
+      "dollar_volume": 174291534.00000003,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "LGHL",
+      "price": 1.94,
+      "change_pct": 113.0697,
+      "volume": 37242940,
+      "dollar_volume": 72251303.6,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "CAPR",
+      "price": 6.1,
+      "change_pct": -69.0355,
+      "volume": 4623192,
+      "dollar_volume": 28201471.2,
+      "lists": [
+        "loser"
+      ]
+    },
+    {
+      "ticker": "BIYA",
+      "price": 2.94,
+      "change_pct": 52.3316,
+      "volume": 14700489,
+      "dollar_volume": 43219437.66,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DFNS",
+      "price": 6.54,
+      "change_pct": 50.3448,
+      "volume": 18547260,
+      "dollar_volume": 121299080.4,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "MTNB",
+      "price": 0.3534,
+      "change_pct": 46.396,
+      "volume": 115405675,
+      "dollar_volume": 40784365.545,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ENTX",
+      "price": 2.88,
+      "change_pct": 40.4878,
+      "volume": 20834723,
+      "dollar_volume": 60004002.239999995,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "FBRX",
+      "price": 76.42,
+      "change_pct": 39.5035,
+      "volume": 6123549,
+      "dollar_volume": 467961614.58,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "KIDZ",
+      "price": 0.5101,
+      "change_pct": 21.7132,
+      "volume": 47742891,
+      "dollar_volume": 24353648.6991,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "GMEX",
+      "price": 1.7201,
+      "change_pct": 17.0136,
+      "volume": 14378751,
+      "dollar_volume": 24732889.5951,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "price": 9.355,
+      "change_pct": 2.8022,
+      "volume": 10223876,
+      "dollar_volume": 95644359.98,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "price": 50.2601,
+      "change_pct": -2.4644,
+      "volume": 7952110,
+      "dollar_volume": 399673843.811,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "TSLL",
+      "price": 7.51,
+      "change_pct": 1.2129,
+      "volume": 7336771,
+      "dollar_volume": 55099150.21,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 14.42,
+      "change_pct": 0.0,
+      "volume": 8205133,
+      "dollar_volume": 118318017.86,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "EDBLW",
+      "likely warrant"
+    ],
+    [
+      "CCIXW",
+      "likely warrant"
+    ],
+    [
+      "GOSS",
+      "$14,793,766 traded"
+    ],
+    [
+      "WYHG",
+      "$77,295 traded"
+    ],
+    [
+      "TRAX",
+      "$17,705,744 traded"
+    ],
+    [
+      "NMPAR",
+      "$39 traded"
+    ],
+    [
+      "RACC",
+      "$917,913 traded"
+    ],
+    [
+      "VEEE",
+      "$8,431,552 traded"
+    ],
+    [
+      "QBTX",
+      "$6,315,819 traded"
+    ],
+    [
+      "OMER",
+      "$2,707,491 traded"
+    ],
+    [
+      "SCNI",
+      "$1,115 traded"
+    ],
+    [
+      "CISS",
+      "$271,523 traded"
+    ],
+    [
+      "MPLT",
+      "$10,905,462 traded"
+    ],
+    [
+      "STAK",
+      "$11,465,438 traded"
+    ],
+    [
+      "OMH",
+      "$10,495,357 traded"
+    ],
+    [
+      "AMZE",
+      "$144,607 traded"
+    ],
+    [
+      "BIOT",
+      "$178,353 traded"
+    ],
+    [
+      "WETO",
+      "$692,217 traded"
+    ],
+    [
+      "VTIX",
+      "$15,115,846 traded"
+    ],
+    [
+      "OFAL",
+      "$29,308 traded"
+    ],
+    [
+      "PFSA",
+      "$6,328,985 traded"
+    ],
+    [
+      "BNRG",
+      "$302,447 traded"
+    ],
+    [
+      "ILLRW",
+      "likely warrant"
+    ],
+    [
+      "QBTZ",
+      "$1,735,782 traded"
+    ],
+    [
+      "DCOY",
+      "$3,468,630 traded"
+    ],
+    [
+      "VWAVW",
+      "likely warrant"
+    ],
+    [
+      "WLDS",
+      "$887,934 traded"
+    ],
+    [
+      "IMCC",
+      "$143,750 traded"
+    ],
+    [
+      "VIVK",
+      "$2,973,274 traded"
+    ],
+    [
+      "REPL",
+      "$2,737,388 traded"
+    ],
+    [
+      "SXTC",
+      "$15,884,924 traded"
+    ],
+    [
+      "LBGJ",
+      "$1,152,805 traded"
+    ],
+    [
+      "VTAK",
+      "$6,937,473 traded"
+    ],
+    [
+      "JZXN",
+      "$10,752,384 traded"
+    ]
+  ]
+}

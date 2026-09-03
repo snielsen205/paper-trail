@@ -1,0 +1,177 @@
+[
+  {
+    "ticker": "SOXS",
+    "price": 48.7648,
+    "change_pct": -2.118,
+    "volume": 6931935,
+    "dollar_volume": 338034423.888,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "SHORT",
+    "atr": 5.2571,
+    "atr_pct_of_price": 0.1078,
+    "stop": 57.964725,
+    "target": 30.36495,
+    "why": "no fresh relevant news | put/call 1.67 (bearish flow)"
+  },
+  {
+    "ticker": "IBIT",
+    "price": 44.2199,
+    "change_pct": 0.7287,
+    "volume": 6819078,
+    "dollar_volume": 301538947.2522,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "SHORT",
+    "atr": 1.1687,
+    "atr_pct_of_price": 0.0264,
+    "stop": 46.265125000000005,
+    "target": 40.129450000000006,
+    "why": "no fresh relevant news | put/call 1.27 (bearish flow)"
+  },
+  {
+    "ticker": "EIX",
+    "price": 55.01,
+    "change_pct": -21.6047,
+    "volume": 942568,
+    "dollar_volume": 51850665.68,
+    "lists": [
+      "loser"
+    ],
+    "score": 30,
+    "direction": "SHORT",
+    "atr": 3.5316,
+    "atr_pct_of_price": 0.0642,
+    "stop": 61.1903,
+    "target": 42.6494,
+    "why": "no fresh relevant news | put/call 1.64 (bearish flow)"
+  },
+  {
+    "ticker": "SY",
+    "price": 2.665,
+    "change_pct": 11.0417,
+    "volume": 8778484,
+    "dollar_volume": 23394659.86,
+    "lists": [
+      "active"
+    ],
+    "score": 20,
+    "direction": "WATCH",
+    "atr": 0.1557,
+    "atr_pct_of_price": 0.0584,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data | earnings today (2026-08-31) - catalyst"
+  },
+  {
+    "ticker": "AEHL",
+    "price": 7.02,
+    "change_pct": 98.3051,
+    "volume": 15592745,
+    "dollar_volume": 109461069.89999999,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 15,
+    "direction": "WATCH",
+    "atr": 1.7251,
+    "atr_pct_of_price": 0.2457,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data | TOO VOLATILE: ATR 25% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "VVOS",
+    "price": 0.4216,
+    "change_pct": 87.4611,
+    "volume": 290182475,
+    "dollar_volume": 122340931.46,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 15,
+    "direction": "WATCH",
+    "atr": 0.0512,
+    "atr_pct_of_price": 0.1214,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  },
+  {
+    "ticker": "PCG",
+    "price": 13.3,
+    "change_pct": -19.8795,
+    "volume": 11083433,
+    "dollar_volume": 147409658.9,
+    "lists": [
+      "loser",
+      "active"
+    ],
+    "score": 15,
+    "direction": "WATCH",
+    "atr": 0.8525,
+    "atr_pct_of_price": 0.0641,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  },
+  {
+    "ticker": "RDHL",
+    "price": 1.4201,
+    "change_pct": 117.74,
+    "volume": 55260532,
+    "dollar_volume": 78475481.49319999,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 10,
+    "direction": "WATCH",
+    "atr": 0.1003,
+    "atr_pct_of_price": 0.0706,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  },
+  {
+    "ticker": "YDDL",
+    "price": 2.4399,
+    "change_pct": 49.6871,
+    "volume": 22304690,
+    "dollar_volume": 54421213.131000005,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 10,
+    "direction": "WATCH",
+    "atr": 0.1611,
+    "atr_pct_of_price": 0.066,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  },
+  {
+    "ticker": "MOVE",
+    "price": 14.61,
+    "change_pct": 27.154,
+    "volume": 4087511,
+    "dollar_volume": 59718535.71,
+    "lists": [
+      "gainer"
+    ],
+    "score": 10,
+    "direction": "WATCH",
+    "atr": 1.6386,
+    "atr_pct_of_price": 0.1122,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | no options data"
+  }
+]

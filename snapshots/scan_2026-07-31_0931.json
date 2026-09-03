@@ -1,0 +1,333 @@
+{
+  "feed_last_updated": "2026-07-31 09:30:50",
+  "survivors": [
+    {
+      "ticker": "FCUV",
+      "price": 10.795,
+      "change_pct": 474.2021,
+      "volume": 26073003,
+      "dollar_volume": 281458067.385,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "WETO",
+      "price": 0.0976,
+      "change_pct": 225.3333,
+      "volume": 802166705,
+      "dollar_volume": 78291470.408,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "REPL",
+      "price": 11.8799,
+      "change_pct": 119.5915,
+      "volume": 6945641,
+      "dollar_volume": 82513520.5159,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "MGRX",
+      "price": 0.622,
+      "change_pct": 111.8529,
+      "volume": 114572139,
+      "dollar_volume": 71263870.458,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "AXTX",
+      "price": 8.455,
+      "change_pct": 79.8936,
+      "volume": 5216196,
+      "dollar_volume": 44102937.18,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "LBGJ",
+      "price": 0.0294,
+      "change_pct": 63.3333,
+      "volume": 726196724,
+      "dollar_volume": 21350183.685599998,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ZBAO",
+      "price": 0.2721,
+      "change_pct": 57.7391,
+      "volume": 129812551,
+      "dollar_volume": 35321995.1271,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DFNS",
+      "price": 37.22,
+      "change_pct": -56.2015,
+      "volume": 810373,
+      "dollar_volume": 30162083.06,
+      "lists": [
+        "loser"
+      ]
+    },
+    {
+      "ticker": "KUST",
+      "price": 1.745,
+      "change_pct": 47.8814,
+      "volume": 25161316,
+      "dollar_volume": 43906496.42,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "AXTI",
+      "price": 66.13,
+      "change_pct": 40.882,
+      "volume": 3729017,
+      "dollar_volume": 246599894.20999998,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "AAOX",
+      "price": 12.025,
+      "change_pct": 26.5789,
+      "volume": 1822297,
+      "dollar_volume": 21913121.425,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "BEX",
+      "price": 28.585,
+      "change_pct": 24.1746,
+      "volume": 1101346,
+      "dollar_volume": 31481975.41,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 12.4,
+      "change_pct": 18.3206,
+      "volume": 33456247,
+      "dollar_volume": 414857462.8,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "CYCU",
+      "price": 1.3703,
+      "change_pct": -14.8882,
+      "volume": 97875904,
+      "dollar_volume": 134119351.2512,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "price": 130.4898,
+      "change_pct": 13.7463,
+      "volume": 17538975,
+      "dollar_volume": 2288657339.955,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "ONFO",
+      "price": 0.0946,
+      "change_pct": 12.3515,
+      "volume": 230141097,
+      "dollar_volume": 21771347.7762,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "KORU",
+      "price": 17.49,
+      "change_pct": 7.4324,
+      "volume": 22720097,
+      "dollar_volume": 397374496.53,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "DRAM",
+      "price": 55.13,
+      "change_pct": 5.3305,
+      "volume": 17960481,
+      "dollar_volume": 990161317.5300001,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "ASTLW",
+      "likely warrant"
+    ],
+    [
+      "AXTU",
+      "$1,622,312 traded"
+    ],
+    [
+      "AXTL",
+      "$1,702,039 traded"
+    ],
+    [
+      "SBEV",
+      "$6,889,518 traded"
+    ],
+    [
+      "NWL",
+      "$7,638,750 traded"
+    ],
+    [
+      "MPWX",
+      "$277,958 traded"
+    ],
+    [
+      "CUPR",
+      "$6,809 traded"
+    ],
+    [
+      "AAOG",
+      "$1,130,473 traded"
+    ],
+    [
+      "COHX",
+      "$3,094,965 traded"
+    ],
+    [
+      "DUKRW",
+      "likely warrant"
+    ],
+    [
+      "KPTI",
+      "$4,988,409 traded"
+    ],
+    [
+      "BIOA",
+      "$8,424,730 traded"
+    ],
+    [
+      "NUWE",
+      "$5,009,961 traded"
+    ],
+    [
+      "DFNSW",
+      "likely warrant"
+    ],
+    [
+      "MYGN",
+      "$1,474,305 traded"
+    ],
+    [
+      "ARBEW",
+      "likely warrant"
+    ],
+    [
+      "RBLU",
+      "$3,064,069 traded"
+    ],
+    [
+      "KVACW",
+      "likely warrant"
+    ],
+    [
+      "RDTL",
+      "$8,453,493 traded"
+    ],
+    [
+      "PN",
+      "$2,027,928 traded"
+    ],
+    [
+      "GLUE",
+      "$13,495,531 traded"
+    ],
+    [
+      "KIDZW",
+      "likely warrant"
+    ],
+    [
+      "LTRYW",
+      "likely warrant"
+    ],
+    [
+      "GCTK",
+      "$4,752,311 traded"
+    ],
+    [
+      "AMZO",
+      "$771,173 traded"
+    ],
+    [
+      "ALHC",
+      "$5,600,561 traded"
+    ],
+    [
+      "YYAI",
+      "$1,821,655 traded"
+    ],
+    [
+      "GDDY",
+      "$10,206,284 traded"
+    ],
+    [
+      "KWM",
+      "$19,083,263 traded"
+    ],
+    [
+      "RITR",
+      "$5,560,620 traded"
+    ],
+    [
+      "VSEE",
+      "$5,480,513 traded"
+    ],
+    [
+      "MGN",
+      "$2,704,976 traded"
+    ],
+    [
+      "SXTC",
+      "$2,193,294 traded"
+    ],
+    [
+      "ELPW",
+      "$7,062,499 traded"
+    ],
+    [
+      "JUNS",
+      "$1,667,996 traded"
+    ]
+  ]
+}

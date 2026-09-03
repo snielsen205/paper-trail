@@ -1,0 +1,296 @@
+{
+  "feed_last_updated": "2026-08-26 09:30:56",
+  "survivors": [
+    {
+      "ticker": "CRE",
+      "price": 6.6205,
+      "change_pct": 155.6178,
+      "volume": 23759987,
+      "dollar_volume": 157302993.9335,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "SOAR",
+      "price": 0.263,
+      "change_pct": 68.1586,
+      "volume": 220148546,
+      "dollar_volume": 57899067.598000005,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "YYGH",
+      "price": 1.88,
+      "change_pct": 63.4783,
+      "volume": 50695050,
+      "dollar_volume": 95306694.0,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "DAIC",
+      "price": 6.32,
+      "change_pct": 62.8866,
+      "volume": 19746054,
+      "dollar_volume": 124795061.28,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "MSS",
+      "price": 1.97,
+      "change_pct": 33.1081,
+      "volume": 18116044,
+      "dollar_volume": 35688606.68,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "RDIB",
+      "price": 12.76,
+      "change_pct": 30.2041,
+      "volume": 3829071,
+      "dollar_volume": 48858945.96,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "LGCL",
+      "price": 0.0571,
+      "change_pct": 30.0683,
+      "volume": 599295998,
+      "dollar_volume": 34219801.4858,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ANF",
+      "price": 133.5,
+      "change_pct": 22.5895,
+      "volume": 644506,
+      "dollar_volume": 86041551.0,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "VCIG",
+      "price": 3.4801,
+      "change_pct": 22.5387,
+      "volume": 16683854,
+      "dollar_volume": 58061480.30540001,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "CDTG",
+      "price": 1.145,
+      "change_pct": 16.8367,
+      "volume": 20712524,
+      "dollar_volume": 23715839.98,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "ZCMD",
+      "price": 0.786,
+      "change_pct": 8.0412,
+      "volume": 25457202,
+      "dollar_volume": 20009360.772,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 12.535,
+      "change_pct": -2.6786,
+      "volume": 9531877,
+      "dollar_volume": 119482078.19500001,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "IBIT",
+      "price": 44.29,
+      "change_pct": -0.9615,
+      "volume": 5491904,
+      "dollar_volume": 243236428.16,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "DAICW",
+      "likely warrant"
+    ],
+    [
+      "KLXER",
+      "$374 traded"
+    ],
+    [
+      "PSNYW",
+      "likely warrant"
+    ],
+    [
+      "WVVIP",
+      "$13,029,060 traded"
+    ],
+    [
+      "BIOTW",
+      "likely warrant"
+    ],
+    [
+      "SLDPW",
+      "likely warrant"
+    ],
+    [
+      "SDOT",
+      "$14,791,631 traded"
+    ],
+    [
+      "NXGLW",
+      "likely warrant"
+    ],
+    [
+      "SMTK",
+      "$15,128,806 traded"
+    ],
+    [
+      "XPON",
+      "$12,232,431 traded"
+    ],
+    [
+      "SOGP",
+      "$1,463,537 traded"
+    ],
+    [
+      "GRML",
+      "$3,531,169 traded"
+    ],
+    [
+      "NCPL",
+      "$1,386,365 traded"
+    ],
+    [
+      "JEM",
+      "$1,133,517 traded"
+    ],
+    [
+      "CRANR",
+      "$4,755 traded"
+    ],
+    [
+      "ADBT",
+      "$543,021 traded"
+    ],
+    [
+      "NEXR",
+      "$5,266,522 traded"
+    ],
+    [
+      "WETO",
+      "$1,134,096 traded"
+    ],
+    [
+      "SYRE",
+      "$16,695,729 traded"
+    ],
+    [
+      "RCON",
+      "$505,512 traded"
+    ],
+    [
+      "AIXI",
+      "$8,352,926 traded"
+    ],
+    [
+      "VEEA",
+      "$2,821,680 traded"
+    ],
+    [
+      "AKAN",
+      "$533,408 traded"
+    ],
+    [
+      "BTCT",
+      "$2,539,693 traded"
+    ],
+    [
+      "ARQQW",
+      "likely warrant"
+    ],
+    [
+      "VWAVW",
+      "likely warrant"
+    ],
+    [
+      "PFSA",
+      "$146,304 traded"
+    ],
+    [
+      "IPST",
+      "$159,349 traded"
+    ],
+    [
+      "QFIN",
+      "$7,985,454 traded"
+    ],
+    [
+      "XXRP",
+      "$3,184,843 traded"
+    ],
+    [
+      "PARAW",
+      "likely warrant"
+    ],
+    [
+      "FGL",
+      "$10,490,073 traded"
+    ],
+    [
+      "NUWE",
+      "$18,588,271 traded"
+    ],
+    [
+      "VNRX",
+      "$7,018,511 traded"
+    ],
+    [
+      "VVOS",
+      "$3,310,513 traded"
+    ],
+    [
+      "TRUG",
+      "$7,148,048 traded"
+    ],
+    [
+      "RITR",
+      "$776,033 traded"
+    ],
+    [
+      "LGHL",
+      "$4,927,592 traded"
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "updated": "2026-08-03T09:45:57.268818-04:00",
+  "read_only": true,
+  "watchlist_file": "quality_universe.txt",
+  "tickers_scanned": 56,
+  "lookback_days": 14,
+  "since": "2026-07-20",
+  "hits": [
+    {
+      "ticker": "MKTX",
+      "company": "MARKETAXESS HOLDINGS INC",
+      "cik": 1278021,
+      "form": "DFAN14A",
+      "kind": "deal",
+      "filed": "2026-07-30",
+      "accession": "0001193125-26-326367",
+      "meaning": "merger solicitation material",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1278021/000119312526326367/d153002ddfan14a.htm"
+    }
+  ],
+  "new_hits": [],
+  "unresolved_tickers": [],
+  "errors": []
+}

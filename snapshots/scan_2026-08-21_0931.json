@@ -1,0 +1,317 @@
+{
+  "feed_last_updated": "2026-08-21 09:30:46",
+  "survivors": [
+    {
+      "ticker": "RFAI",
+      "price": 45.86,
+      "change_pct": 248.7452,
+      "volume": 998851,
+      "dollar_volume": 45807306.86,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "HOWL",
+      "price": 0.9709,
+      "change_pct": 125.1623,
+      "volume": 110278452,
+      "dollar_volume": 107069349.0468,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "JUNS",
+      "price": 8.5586,
+      "change_pct": 66.1864,
+      "volume": 23928376,
+      "dollar_volume": 204793398.8336,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "SUGP",
+      "price": 3.61,
+      "change_pct": 30.0901,
+      "volume": 21202429,
+      "dollar_volume": 76540768.69,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ADXN",
+      "price": 5.8117,
+      "change_pct": 27.1707,
+      "volume": 6318297,
+      "dollar_volume": 36720046.6749,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "USDE",
+      "price": 4.95,
+      "change_pct": 23.75,
+      "volume": 9838495,
+      "dollar_volume": 48700550.25,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "CONL",
+      "price": 6.03,
+      "change_pct": 12.0818,
+      "volume": 9142517,
+      "dollar_volume": 55129377.510000005,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "BITX",
+      "price": 17.16,
+      "change_pct": 11.7188,
+      "volume": 8664746,
+      "dollar_volume": 148687041.36,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "MSTZ",
+      "price": 6.62,
+      "change_pct": -10.5405,
+      "volume": 9530554,
+      "dollar_volume": 63092267.480000004,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "MSTU",
+      "price": 2.68,
+      "change_pct": 10.2881,
+      "volume": 27259771,
+      "dollar_volume": 73056186.28,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "IBIT",
+      "price": 43.575,
+      "change_pct": 5.7646,
+      "volume": 21070702,
+      "dollar_volume": 918155839.6500001,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "KORU",
+      "price": 20.96,
+      "change_pct": 3.0989,
+      "volume": 8037425,
+      "dollar_volume": 168464428.0,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "price": 218.02,
+      "change_pct": 0.5395,
+      "volume": 11560848,
+      "dollar_volume": 2520496080.96,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "SNXX",
+      "price": 15.065,
+      "change_pct": -0.4954,
+      "volume": 8925983,
+      "dollar_volume": 134469933.89499998,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "price": 91.9,
+      "change_pct": -0.2496,
+      "volume": 12600546,
+      "dollar_volume": 1157990177.4,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "PDYNW",
+      "likely warrant"
+    ],
+    [
+      "RFAIR",
+      "$77,429 traded"
+    ],
+    [
+      "EXYNW",
+      "likely warrant"
+    ],
+    [
+      "XXRP",
+      "$13,363,998 traded"
+    ],
+    [
+      "USDEW",
+      "likely warrant"
+    ],
+    [
+      "XRPT",
+      "$13,291,236 traded"
+    ],
+    [
+      "UXRP",
+      "$1,927,502 traded"
+    ],
+    [
+      "BTDL",
+      "$100,238 traded"
+    ],
+    [
+      "LASC",
+      "$12,808 traded"
+    ],
+    [
+      "TXXS",
+      "$33,268 traded"
+    ],
+    [
+      "CYPH",
+      "$1,655,408 traded"
+    ],
+    [
+      "ELAB",
+      "$172,415 traded"
+    ],
+    [
+      "KALA",
+      "$16,119 traded"
+    ],
+    [
+      "BRNX",
+      "$2,462,360 traded"
+    ],
+    [
+      "DAICW",
+      "likely warrant"
+    ],
+    [
+      "JZ",
+      "$829,640 traded"
+    ],
+    [
+      "KIDZW",
+      "likely warrant"
+    ],
+    [
+      "KWMWW",
+      "likely warrant"
+    ],
+    [
+      "FLUX",
+      "$268,389 traded"
+    ],
+    [
+      "MMA",
+      "$944,198 traded"
+    ],
+    [
+      "ISPC",
+      "$938,782 traded"
+    ],
+    [
+      "TWG",
+      "$114,173 traded"
+    ],
+    [
+      "FBDT",
+      "$287,657 traded"
+    ],
+    [
+      "CAST",
+      "$768,958 traded"
+    ],
+    [
+      "DFNS",
+      "$757,578 traded"
+    ],
+    [
+      "HOOZ",
+      "$202,885 traded"
+    ],
+    [
+      "GAUZ",
+      "$9,591,765 traded"
+    ],
+    [
+      "OMH",
+      "$315,415 traded"
+    ],
+    [
+      "LGCL",
+      "$2,975,166 traded"
+    ],
+    [
+      "CONI",
+      "$4,986,948 traded"
+    ],
+    [
+      "BEEP",
+      "$6,695 traded"
+    ],
+    [
+      "SGLY",
+      "$773,540 traded"
+    ],
+    [
+      "CRCD",
+      "$3,836,832 traded"
+    ],
+    [
+      "PFSA",
+      "$476,867 traded"
+    ],
+    [
+      "GOSS",
+      "$13,793,596 traded"
+    ],
+    [
+      "KNRX",
+      "$14,554,349 traded"
+    ],
+    [
+      "RITR",
+      "$1,257,600 traded"
+    ],
+    [
+      "CAN",
+      "$2,884,703 traded"
+    ],
+    [
+      "IPDN",
+      "$1,380,561 traded"
+    ]
+  ]
+}

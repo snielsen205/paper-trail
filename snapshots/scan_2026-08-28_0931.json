@@ -1,0 +1,301 @@
+{
+  "feed_last_updated": "2026-08-28 09:30:59",
+  "survivors": [
+    {
+      "ticker": "FNGR",
+      "price": 0.327,
+      "change_pct": 88.5813,
+      "volume": 297806978,
+      "dollar_volume": 97382881.80600001,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "QNRX",
+      "price": 7.3154,
+      "change_pct": 52.0873,
+      "volume": 14883246,
+      "dollar_volume": 108876897.78840001,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "AEMD",
+      "price": 2.9399,
+      "change_pct": 35.4793,
+      "volume": 17536080,
+      "dollar_volume": 51554321.592,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "WHLR",
+      "price": 1.48,
+      "change_pct": 32.1429,
+      "volume": 35010785,
+      "dollar_volume": 51815961.8,
+      "lists": [
+        "gainer",
+        "active"
+      ]
+    },
+    {
+      "ticker": "ESTC",
+      "price": 105.88,
+      "change_pct": 26.439,
+      "volume": 478383,
+      "dollar_volume": 50651192.04,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "GAP",
+      "price": 25.16,
+      "change_pct": 21.0197,
+      "volume": 1531714,
+      "dollar_volume": 38537924.24,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "SOLS",
+      "price": 66.58,
+      "change_pct": 18.1754,
+      "volume": 1099202,
+      "dollar_volume": 73184869.16,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "AFRM",
+      "price": 88.72,
+      "change_pct": 14.4922,
+      "volume": 1847303,
+      "dollar_volume": 163892722.16,
+      "lists": [
+        "gainer"
+      ]
+    },
+    {
+      "ticker": "PYPL",
+      "price": 52.9399,
+      "change_pct": -13.8769,
+      "volume": 7446323,
+      "dollar_volume": 394207594.9877,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "TNON",
+      "price": 5.489,
+      "change_pct": 9.3426,
+      "volume": 6318415,
+      "dollar_volume": 34681779.935,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "price": 37.31,
+      "change_pct": -7.9447,
+      "volume": 6216962,
+      "dollar_volume": 231954852.22000003,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NA",
+      "price": 2.2799,
+      "change_pct": 7.5425,
+      "volume": 11423466,
+      "dollar_volume": 26044360.1334,
+      "lists": [
+        "active"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "price": 226.75,
+      "change_pct": -0.5395,
+      "volume": 9169208,
+      "dollar_volume": 2079117914.0,
+      "lists": [
+        "active"
+      ]
+    }
+  ],
+  "junked": [
+    [
+      "GFAIW",
+      "likely warrant"
+    ],
+    [
+      "ARQQW",
+      "likely warrant"
+    ],
+    [
+      "AFRU",
+      "$1,583,090 traded"
+    ],
+    [
+      "CYAB",
+      "$12,096,442 traded"
+    ],
+    [
+      "MRCOW",
+      "likely warrant"
+    ],
+    [
+      "CYCUW",
+      "likely warrant"
+    ],
+    [
+      "CRACW",
+      "likely warrant"
+    ],
+    [
+      "NRSNW",
+      "likely warrant"
+    ],
+    [
+      "IREZ",
+      "$4,373,461 traded"
+    ],
+    [
+      "BIOTW",
+      "likely warrant"
+    ],
+    [
+      "RADX",
+      "$388,453 traded"
+    ],
+    [
+      "AEAQW",
+      "likely warrant"
+    ],
+    [
+      "BTAI",
+      "$2,880,192 traded"
+    ],
+    [
+      "KXIN",
+      "$894,633 traded"
+    ],
+    [
+      "BCAB",
+      "$417,535 traded"
+    ],
+    [
+      "WCT",
+      "$258,097 traded"
+    ],
+    [
+      "AEHL",
+      "$331,355 traded"
+    ],
+    [
+      "LGPS",
+      "$732,560 traded"
+    ],
+    [
+      "PYPG",
+      "$3,849,521 traded"
+    ],
+    [
+      "KTCC",
+      "$90,319 traded"
+    ],
+    [
+      "PYPU",
+      "$168,925 traded"
+    ],
+    [
+      "ONFOW",
+      "likely warrant"
+    ],
+    [
+      "XAIR",
+      "$461,475 traded"
+    ],
+    [
+      "SMJF",
+      "$1,762,001 traded"
+    ],
+    [
+      "DAICW",
+      "likely warrant"
+    ],
+    [
+      "LGCL",
+      "$9,292,920 traded"
+    ],
+    [
+      "FGL",
+      "$292,958 traded"
+    ],
+    [
+      "WETO",
+      "$2,803,439 traded"
+    ],
+    [
+      "IRE",
+      "$8,628,620 traded"
+    ],
+    [
+      "BLIV",
+      "$1,920 traded"
+    ],
+    [
+      "PARAW",
+      "likely warrant"
+    ],
+    [
+      "MRVX",
+      "$61,129 traded"
+    ],
+    [
+      "EPOW",
+      "$13,759,596 traded"
+    ],
+    [
+      "XTNT",
+      "$9,333,464 traded"
+    ],
+    [
+      "CHAI",
+      "$4,902,812 traded"
+    ],
+    [
+      "DUO",
+      "$11,222,502 traded"
+    ],
+    [
+      "CHGA",
+      "$2,151,201 traded"
+    ],
+    [
+      "CAST",
+      "$10,876,730 traded"
+    ],
+    [
+      "VNRX",
+      "$3,519,546 traded"
+    ],
+    [
+      "CELU",
+      "$13,117,962 traded"
+    ]
+  ]
+}

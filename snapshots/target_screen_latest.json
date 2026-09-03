@@ -1,0 +1,5855 @@
+{
+ "generated": "2026-08-13T23:52:36",
+ "band": [
+  1.0,
+  10.0
+ ],
+ "clean": [
+  {
+   "ticker": "GRAB",
+   "name": "Grab Holdings Ltd",
+   "sector": "TECHNOLOGY",
+   "price": 3.7,
+   "target": 5.86,
+   "upside": 58.37837837837838,
+   "analysts": 26,
+   "cap": 14725190000.0,
+   "rev": 3731000000.0,
+   "eps": 0.11,
+   "opm": 0.0211,
+   "grow": 0.217,
+   "roe": 0.0774,
+   "off_high": -44.10876132930513,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 2%",
+    "rev +22% YoY",
+    "ROE 8%",
+    "$1B+ revenue",
+    "26 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "YMM",
+   "name": "Full Truck Alliance Co Ltd ADR",
+   "sector": "TECHNOLOGY",
+   "price": 8.87,
+   "target": 12.64,
+   "upside": 42.502818489289766,
+   "analysts": 16,
+   "cap": 9695440000.0,
+   "rev": 12638334000.0,
+   "eps": 0.59,
+   "opm": 0.353,
+   "grow": 0.055,
+   "roe": 0.104,
+   "off_high": -35.208181154127104,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 35%",
+    "rev +6% YoY",
+    "ROE 10%",
+    "$1B+ revenue",
+    "16 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "HLMN",
+   "name": "Hillman Solutions Corp",
+   "sector": "INDUSTRIALS",
+   "price": 8.8,
+   "target": 12.43,
+   "upside": 41.249999999999986,
+   "analysts": 8,
+   "cap": 1733396000.0,
+   "rev": 1602402000.0,
+   "eps": 0.2,
+   "opm": 0.0832,
+   "grow": 0.098,
+   "roe": 0.0339,
+   "off_high": -18.894009216589858,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 8%",
+    "rev +10% YoY",
+    "ROE 3%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ARCO",
+   "name": "Arcos Dorados Holdings Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 8.135,
+   "target": 11.29,
+   "upside": 38.783036263060836,
+   "analysts": 9,
+   "cap": 1664238000.0,
+   "rev": 4817630000.0,
+   "eps": 1.11,
+   "opm": 0.0516,
+   "grow": 0.129,
+   "roe": 0.363,
+   "off_high": -15.873836608066183,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 5%",
+    "rev +13% YoY",
+    "ROE 36%",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "TBLA",
+   "name": "Taboola",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 3.94,
+   "target": 5.46,
+   "upside": 38.57868020304569,
+   "analysts": 8,
+   "cap": 1048203000.0,
+   "rev": 1962294000.0,
+   "eps": 0.37,
+   "opm": 0.0277,
+   "grow": 0.024,
+   "roe": 0.128,
+   "off_high": -30.998248686514884,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 3%",
+    "rev +2% YoY",
+    "ROE 13%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PAGS",
+   "name": "PagSeguro Digital Ltd",
+   "sector": "TECHNOLOGY",
+   "price": 8.82,
+   "target": 11.4,
+   "upside": 29.25170068027212,
+   "analysts": 15,
+   "cap": 2437409000.0,
+   "rev": 19814046000.0,
+   "eps": 1.44,
+   "opm": 0.373,
+   "grow": 0.015,
+   "roe": 0.145,
+   "off_high": -26.683291770573557,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 37%",
+    "rev +2% YoY",
+    "ROE 14%",
+    "$1B+ revenue",
+    "15 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "WOOF",
+   "name": "Petco Health and Wellness Company, I",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 2.86,
+   "target": 3.544,
+   "upside": 23.91608391608393,
+   "analysts": 12,
+   "cap": 779593000.0,
+   "rev": 5964800000.0,
+   "eps": 0.02,
+   "opm": 0.0164,
+   "grow": 0.002,
+   "roe": 0.0049,
+   "off_high": -31.74224343675418,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 2%",
+    "rev +0% YoY",
+    "ROE 0%",
+    "$1B+ revenue",
+    "12 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "CCC",
+   "name": "CCC Intelligent Solutions Holdings I",
+   "sector": "TECHNOLOGY",
+   "price": 7.12,
+   "target": 8.75,
+   "upside": 22.8932584269663,
+   "analysts": 11,
+   "cap": 4105293000.0,
+   "rev": 1112190000.0,
+   "eps": 0.07,
+   "opm": 0.167,
+   "grow": 0.098,
+   "roe": 0.0217,
+   "off_high": -29.713721618953603,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 17%",
+    "rev +10% YoY",
+    "ROE 2%",
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ITUB",
+   "name": "Itau Unibanco Banco Holding SA",
+   "sector": "FINANCIAL SERVICES",
+   "price": 7.35,
+   "target": 8.84,
+   "upside": 20.272108843537428,
+   "analysts": 8,
+   "cap": 81561854000.0,
+   "rev": 143713993000.0,
+   "eps": 0.81,
+   "opm": 0.391,
+   "grow": 0.175,
+   "roe": 0.215,
+   "off_high": -22.386483632523767,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 39%",
+    "rev +18% YoY",
+    "ROE 22%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "WB",
+   "name": "Weibo Corp",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 7.64,
+   "target": 9.04,
+   "upside": 18.324607329842934,
+   "analysts": 17,
+   "cap": 1906419000.0,
+   "rev": 1781686000.0,
+   "eps": 1.41,
+   "opm": 0.263,
+   "grow": 0.062,
+   "roe": 0.104,
+   "off_high": -36.911643270024776,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 26%",
+    "rev +6% YoY",
+    "ROE 10%",
+    "$1B+ revenue",
+    "17 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ABEV",
+   "name": "Ambev SA ADR",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 2.835,
+   "target": 3.334,
+   "upside": 17.601410934744276,
+   "analysts": 11,
+   "cap": 43484393000.0,
+   "rev": 88268292000.0,
+   "eps": 0.2,
+   "opm": 0.237,
+   "grow": 0.003,
+   "roe": 0.184,
+   "off_high": -17.58720930232558,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 24%",
+    "rev +0% YoY",
+    "ROE 18%",
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "BTG",
+   "name": "B2Gold Corp",
+   "sector": "BASIC MATERIALS",
+   "price": 5.065,
+   "target": 5.95,
+   "upside": 17.472852912142155,
+   "analysts": 13,
+   "cap": 6882779000.0,
+   "rev": 3784934000.0,
+   "eps": 0.58,
+   "opm": 0.457,
+   "grow": 0.14,
+   "roe": 0.226,
+   "off_high": -18.69983948635634,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 46%",
+    "rev +14% YoY",
+    "ROE 23%",
+    "$1B+ revenue",
+    "13 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "TASK",
+   "name": "Taskus Inc",
+   "sector": "TECHNOLOGY",
+   "price": 7.27,
+   "target": 8.5,
+   "upside": 16.918844566712533,
+   "analysts": 8,
+   "cap": 634474000.0,
+   "rev": 1226790000.0,
+   "eps": 1.16,
+   "opm": 0.116,
+   "grow": 0.05,
+   "roe": 0.254,
+   "off_high": -39.366138448707254,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 12%",
+    "rev +5% YoY",
+    "ROE 25%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "AQN",
+   "name": "Algonquin Power & Utilities Corp",
+   "sector": "UTILITIES",
+   "price": 5.825,
+   "target": 6.75,
+   "upside": 15.879828326180245,
+   "analysts": 12,
+   "cap": 4442334000.0,
+   "rev": 2549700000.0,
+   "eps": 0.24,
+   "opm": 0.159,
+   "grow": 0.031,
+   "roe": 0.0249,
+   "off_high": -16.307471264367813,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 16%",
+    "rev +3% YoY",
+    "ROE 2%",
+    "$1B+ revenue",
+    "12 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "UGP",
+   "name": "Ultrapar Participacoes SA ADR",
+   "sector": "ENERGY",
+   "price": 6.155,
+   "target": 6.72,
+   "upside": 9.17952883834281,
+   "analysts": 9,
+   "cap": 6224507000.0,
+   "rev": 145791844000.0,
+   "eps": 0.55,
+   "opm": 0.0498,
+   "grow": 0.103,
+   "roe": 0.192,
+   "off_high": -6.600910470409705,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 5%",
+    "rev +10% YoY",
+    "ROE 19%",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ARHS",
+   "name": "Arhaus Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 9.7,
+   "target": 10.35,
+   "upside": 6.70103092783505,
+   "analysts": 15,
+   "cap": 1365862000.0,
+   "rev": 1408588000.0,
+   "eps": 0.5,
+   "opm": 0.141,
+   "grow": 0.074,
+   "roe": 0.173,
+   "off_high": -21.26623376623378,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 14%",
+    "rev +7% YoY",
+    "ROE 17%",
+    "$1B+ revenue",
+    "15 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "STGW",
+   "name": "Stagwell Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 9.31,
+   "target": 9.86,
+   "upside": 5.907626208378081,
+   "analysts": 8,
+   "cap": 2285846000.0,
+   "rev": 3040892000.0,
+   "eps": 0.06,
+   "opm": 0.0259,
+   "grow": 0.112,
+   "roe": 0.0241,
+   "off_high": -2.5130890052356025,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 3%",
+    "rev +11% YoY",
+    "ROE 2%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PAYO",
+   "name": "Payoneer Global Inc",
+   "sector": "TECHNOLOGY",
+   "price": 7.14,
+   "target": 7.4,
+   "upside": 3.6414565826330625,
+   "analysts": 8,
+   "cap": 2412618000.0,
+   "rev": 1081396000.0,
+   "eps": 0.14,
+   "opm": 0.0617,
+   "grow": 0.052,
+   "roe": 0.0706,
+   "off_high": -0.5571030640668551,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 6%",
+    "rev +5% YoY",
+    "ROE 7%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PRTH",
+   "name": "Priority Technology Holdings Inc",
+   "sector": "TECHNOLOGY",
+   "price": 5.56,
+   "target": 9.1,
+   "upside": 63.66906474820144,
+   "analysts": 5,
+   "cap": 427041000.0,
+   "rev": 1000381000.0,
+   "eps": 0.67,
+   "opm": 0.132,
+   "grow": 0.094,
+   "roe": 0.564,
+   "off_high": -35.27357392316648,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 13%",
+    "rev +9% YoY",
+    "ROE 56%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "VTEX",
+   "name": "VTEX",
+   "sector": "TECHNOLOGY",
+   "price": 3.815,
+   "target": 5.96,
+   "upside": 56.225425950196595,
+   "analysts": 10,
+   "cap": 639835000.0,
+   "rev": 252647000.0,
+   "eps": 0.17,
+   "opm": 0.15,
+   "grow": 0.095,
+   "roe": 0.128,
+   "off_high": -19.344608879492608,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 15%",
+    "rev +10% YoY",
+    "ROE 13%",
+    "10 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "RERE",
+   "name": "ATRenew Inc DRC",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 4.605,
+   "target": 7.15,
+   "upside": 55.26601520086862,
+   "analysts": 4,
+   "cap": 987849000.0,
+   "rev": 22554925000.0,
+   "eps": 0.26,
+   "opm": 0.0301,
+   "grow": 0.324,
+   "roe": 0.112,
+   "off_high": -27.251184834123222,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 3%",
+    "rev +32% YoY",
+    "ROE 11%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "LOMA",
+   "name": "Loma Negra Compania Industrial Argen",
+   "sector": "BASIC MATERIALS",
+   "price": 9.49,
+   "target": 14.7,
+   "upside": 54.899894625922016,
+   "analysts": 5,
+   "cap": 1129623000.0,
+   "rev": 855633625000.0,
+   "eps": 0.25,
+   "opm": 0.0599,
+   "grow": 0.219,
+   "roe": 0.0382,
+   "off_high": -28.106060606060602,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 6%",
+    "rev +22% YoY",
+    "ROE 4%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ARVN",
+   "name": "Arvinas Inc",
+   "sector": "HEALTHCARE",
+   "price": 9.01,
+   "target": 13.93,
+   "upside": 54.605993340732525,
+   "analysts": 16,
+   "cap": 572303000.0,
+   "rev": 316700000.0,
+   "eps": 0.26,
+   "opm": 0.664,
+   "grow": 10.15,
+   "roe": 0.0159,
+   "off_high": -37.90489317711923,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 66%",
+    "rev +1015% YoY",
+    "ROE 2%",
+    "16 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "HLLY",
+   "name": "Holley Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 2.985,
+   "target": 4.579,
+   "upside": 53.4003350083752,
+   "analysts": 9,
+   "cap": 384312000.0,
+   "rev": 613146000.0,
+   "eps": 0.09,
+   "opm": 0.185,
+   "grow": 0.032,
+   "roe": 0.0233,
+   "off_high": -33.37053571428572,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 18%",
+    "rev +3% YoY",
+    "ROE 2%",
+    "9 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "AGRO",
+   "name": "Adecoagro SA",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 9.055,
+   "target": 13.58,
+   "upside": 49.972390944229716,
+   "analysts": 7,
+   "cap": 1357943000.0,
+   "rev": 1500908000.0,
+   "eps": 0.02,
+   "opm": 0.0036,
+   "grow": 0.225,
+   "roe": 0.0109,
+   "off_high": -42.507936507936506,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 0%",
+    "rev +22% YoY",
+    "ROE 1%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "RLX",
+   "name": "RLX Technology Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 2.005,
+   "target": 2.96,
+   "upside": 47.63092269326683,
+   "analysts": 5,
+   "cap": 2468954000.0,
+   "rev": 4378491000.0,
+   "eps": 0.11,
+   "opm": 0.167,
+   "grow": 1.074,
+   "roe": 0.0624,
+   "off_high": -26.042050903725567,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 17%",
+    "rev +107% YoY",
+    "ROE 6%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "SBS",
+   "name": "Companhia de Saneamento Basico do Es",
+   "sector": "UTILITIES",
+   "price": 4.7,
+   "target": 6.84,
+   "upside": 45.53191489361701,
+   "analysts": 7,
+   "cap": 17935198000.0,
+   "rev": 39630692000.0,
+   "eps": 0.51,
+   "opm": 0.339,
+   "grow": 0.183,
+   "roe": 0.212,
+   "off_high": -34.35754189944134,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 34%",
+    "rev +18% YoY",
+    "ROE 21%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PTON",
+   "name": "Peloton Interactive Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 5.56,
+   "target": 8.03,
+   "upside": 44.424460431654666,
+   "analysts": 21,
+   "cap": 2378685000.0,
+   "rev": 2446000000.0,
+   "eps": 0.14,
+   "opm": 0.144,
+   "grow": 0.001,
+   "roe": -8.47,
+   "off_high": -39.56521739130435,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 14%",
+    "rev +0% YoY",
+    "$1B+ revenue",
+    "21 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "BBD",
+   "name": "Banco Bradesco SA ADR",
+   "sector": "FINANCIAL SERVICES",
+   "price": 3.16,
+   "target": 4.548,
+   "upside": 43.92405063291138,
+   "analysts": 6,
+   "cap": 34853360000.0,
+   "rev": 93278077000.0,
+   "eps": 0.43,
+   "opm": 0.345,
+   "grow": 0.072,
+   "roe": 0.138,
+   "off_high": -24.743986663491302,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 34%",
+    "rev +7% YoY",
+    "ROE 14%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "SHLS",
+   "name": "Shoals Technologies Group Inc",
+   "sector": "TECHNOLOGY",
+   "price": 8.14,
+   "target": 11.32,
+   "upside": 39.066339066339054,
+   "analysts": 20,
+   "cap": 1403622000.0,
+   "rev": 588058000.0,
+   "eps": 0.18,
+   "opm": 0.138,
+   "grow": 0.474,
+   "roe": 0.0534,
+   "off_high": -38.23975720789073,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 14%",
+    "rev +47% YoY",
+    "ROE 5%",
+    "20 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "MLCO",
+   "name": "Melco Resorts & Entertainment Ltd",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 5.5,
+   "target": 7.56,
+   "upside": 37.45454545454545,
+   "analysts": 12,
+   "cap": 2143369000.0,
+   "rev": 5297705000.0,
+   "eps": 0.58,
+   "opm": 0.131,
+   "grow": 0.109,
+   "roe": -21.57,
+   "off_high": -45.812807881773395,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 13%",
+    "rev +11% YoY",
+    "$1B+ revenue",
+    "12 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "LZ",
+   "name": "LegalZoom.com Inc",
+   "sector": "INDUSTRIALS",
+   "price": 5.8,
+   "target": 7.9,
+   "upside": 36.20689655172416,
+   "analysts": 8,
+   "cap": 929968000.0,
+   "rev": 792494000.0,
+   "eps": 0.09,
+   "opm": 0.0537,
+   "grow": 0.066,
+   "roe": 0.105,
+   "off_high": -53.2258064516129,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 5%",
+    "rev +7% YoY",
+    "ROE 10%",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "BORR",
+   "name": "Borr Drilling Ltd",
+   "sector": "ENERGY",
+   "price": 4.035,
+   "target": 5.01,
+   "upside": 24.1635687732342,
+   "analysts": 7,
+   "cap": 1268702000.0,
+   "rev": 1051200000.0,
+   "eps": 0.14,
+   "opm": 0.186,
+   "grow": 0.14,
+   "roe": 0.0303,
+   "off_high": -39.41441441441441,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 19%",
+    "rev +14% YoY",
+    "ROE 3%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PTLO",
+   "name": "Portillo's Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 5.025,
+   "target": 6.22,
+   "upside": 23.781094527363166,
+   "analysts": 13,
+   "cap": 345189000.0,
+   "rev": 748750000.0,
+   "eps": 0.18,
+   "opm": 0.0844,
+   "grow": 0.056,
+   "roe": 0.0275,
+   "off_high": -35.57692307692307,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 8%",
+    "rev +6% YoY",
+    "ROE 3%",
+    "13 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "BSBR",
+   "name": "Banco Santander Brasil SA ADR",
+   "sector": "FINANCIAL SERVICES",
+   "price": 5.765,
+   "target": 7.1,
+   "upside": 23.156981786643538,
+   "analysts": 5,
+   "cap": 43053281000.0,
+   "rev": 48286806000.0,
+   "eps": 0.35,
+   "opm": 0.332,
+   "grow": 0.288,
+   "roe": 0.112,
+   "off_high": -18.226950354609926,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 33%",
+    "rev +29% YoY",
+    "ROE 11%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "HLN",
+   "name": "Haleon plc",
+   "sector": "HEALTHCARE",
+   "price": 9.81,
+   "target": 11.99,
+   "upside": 22.22222222222221,
+   "analysts": 5,
+   "cap": 43157864000.0,
+   "rev": 11152000000.0,
+   "eps": 0.49,
+   "opm": 0.239,
+   "grow": 0.022,
+   "roe": 0.101,
+   "off_high": -11.85983827493262,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 24%",
+    "rev +2% YoY",
+    "ROE 10%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PMT",
+   "name": "PennyMac Mortgage Investment Trust",
+   "sector": "REAL ESTATE",
+   "price": 9.485,
+   "target": 11.46,
+   "upside": 20.82235108065369,
+   "analysts": 9,
+   "cap": 826678000.0,
+   "rev": 684412000.0,
+   "eps": 1.44,
+   "opm": 0.109,
+   "grow": 0.061,
+   "roe": 0.0894,
+   "off_high": -26.12928348909658,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 11%",
+    "rev +6% YoY",
+    "ROE 9%",
+    "9 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "FLO",
+   "name": "Flowers Foods Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 7.535,
+   "target": 8.8,
+   "upside": 16.788321167883225,
+   "analysts": 5,
+   "cap": 1596309000.0,
+   "rev": 5273826000.0,
+   "eps": 0.35,
+   "opm": 0.0828,
+   "grow": 0.068,
+   "roe": 0.0536,
+   "off_high": -49.39556749496307,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 8%",
+    "rev +7% YoY",
+    "ROE 5%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "RNW",
+   "name": "Renew Energy Global PLC",
+   "sector": "UTILITIES",
+   "price": 6.8,
+   "target": 7.94,
+   "upside": 16.76470588235295,
+   "analysts": 4,
+   "cap": 2482661000.0,
+   "rev": 132196000000.0,
+   "eps": 0.28,
+   "opm": 0.451,
+   "grow": 0.095,
+   "roe": 0.0754,
+   "off_high": -17.47572815533981,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 45%",
+    "rev +10% YoY",
+    "ROE 8%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "GGB",
+   "name": "Gerdau SA ADR",
+   "sector": "BASIC MATERIALS",
+   "price": 4.795,
+   "target": 5.51,
+   "upside": 14.911366006256511,
+   "analysts": 5,
+   "cap": 9477071000.0,
+   "rev": 69543739000.0,
+   "eps": 0.23,
+   "opm": 0.128,
+   "grow": 0.02,
+   "roe": 0.0418,
+   "off_high": -7.432432432432434,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 13%",
+    "rev +2% YoY",
+    "ROE 4%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "SWIM",
+   "name": "Latham Group Inc",
+   "sector": "INDUSTRIALS",
+   "price": 7.56,
+   "target": 8.61,
+   "upside": 13.888888888888884,
+   "analysts": 8,
+   "cap": 921169000.0,
+   "rev": 576642000.0,
+   "eps": 0.05,
+   "opm": 0.141,
+   "grow": 0.144,
+   "roe": 0.0132,
+   "off_high": -15.719063545150513,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 14%",
+    "rev +14% YoY",
+    "ROE 1%",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "RWAY",
+   "name": "Runway Growth Finance Corp",
+   "sector": "FINANCIAL SERVICES",
+   "price": 6.97,
+   "target": 7.85,
+   "upside": 12.62553802008608,
+   "analysts": 8,
+   "cap": 284149000.0,
+   "rev": 133260000.0,
+   "eps": 0.24,
+   "opm": 0.842,
+   "grow": 0.053,
+   "roe": 0.0155,
+   "off_high": -27.471383975026008,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 84%",
+    "rev +5% YoY",
+    "ROE 2%",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "CXM",
+   "name": "Sprinklr Inc",
+   "sector": "TECHNOLOGY",
+   "price": 7.035,
+   "target": 7.88,
+   "upside": 12.01137171286424,
+   "analysts": 9,
+   "cap": 1548252000.0,
+   "rev": 871179000.0,
+   "eps": 0.12,
+   "opm": 0.0454,
+   "grow": 0.068,
+   "roe": 0.0508,
+   "off_high": -20.508474576271183,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 5%",
+    "rev +7% YoY",
+    "ROE 5%",
+    "9 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ADT",
+   "name": "ADT Inc",
+   "sector": "INDUSTRIALS",
+   "price": 7.465,
+   "target": 8.23,
+   "upside": 10.247823174815807,
+   "analysts": 5,
+   "cap": 5340388000.0,
+   "rev": 5164895000.0,
+   "eps": 0.71,
+   "opm": 0.241,
+   "grow": 0.02,
+   "roe": 0.172,
+   "off_high": -14.490263459335628,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 24%",
+    "rev +2% YoY",
+    "ROE 17%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "BB",
+   "name": "BlackBerry Ltd",
+   "sector": "TECHNOLOGY",
+   "price": 8.99,
+   "target": 9.71,
+   "upside": 8.008898776418238,
+   "analysts": 8,
+   "cap": 5140101000.0,
+   "rev": 580300000.0,
+   "eps": 0.1,
+   "opm": 0.103,
+   "grow": 0.256,
+   "roe": 0.081,
+   "off_high": -33.84841795437822,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 10%",
+    "rev +26% YoY",
+    "ROE 8%",
+    "8 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ICL",
+   "name": "ICL Israel Chemicals Ltd",
+   "sector": "BASIC MATERIALS",
+   "price": 5.395,
+   "target": 5.81,
+   "upside": 7.692307692307687,
+   "analysts": 4,
+   "cap": 7060229000.0,
+   "rev": 7712000000.0,
+   "eps": 0.25,
+   "opm": 0.125,
+   "grow": 0.165,
+   "roe": 0.0563,
+   "off_high": -21.9247467438495,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 12%",
+    "rev +16% YoY",
+    "ROE 6%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "UNIT",
+   "name": "Uniti Group Inc",
+   "sector": "REAL ESTATE",
+   "price": 9.79,
+   "target": 10.31,
+   "upside": 5.311542390194091,
+   "analysts": 9,
+   "cap": 2308316000.0,
+   "rev": 3537100000.0,
+   "eps": 3.95,
+   "opm": 0.0414,
+   "grow": 2.025,
+   "roe": 0.0,
+   "off_high": -24.343122102009275,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 4%",
+    "rev +202% YoY",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "LYG",
+   "name": "Lloyds Banking Group PLC ADR",
+   "sector": "FINANCIAL SERVICES",
+   "price": 6.215,
+   "target": 6.46,
+   "upside": 3.942075623491559,
+   "analysts": 4,
+   "cap": 89809551000.0,
+   "rev": 19693001000.0,
+   "eps": 0.44,
+   "opm": 0.45,
+   "grow": 0.123,
+   "roe": 0.113,
+   "off_high": -0.5600000000000049,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 45%",
+    "rev +12% YoY",
+    "ROE 11%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "GBTG",
+   "name": "Global Business Travel Group Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 9.45,
+   "target": 9.75,
+   "upside": 3.1746031746031855,
+   "analysts": 5,
+   "cap": 4931205000.0,
+   "rev": 3176000000.0,
+   "eps": 0.16,
+   "opm": 0.114,
+   "grow": 0.379,
+   "roe": 0.0635,
+   "off_high": -0.9433962264150941,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 11%",
+    "rev +38% YoY",
+    "ROE 6%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "RES",
+   "name": "RPC Inc",
+   "sector": "ENERGY",
+   "price": 6.28,
+   "target": 6.4,
+   "upside": 1.9108280254777066,
+   "analysts": 5,
+   "cap": 1396439000.0,
+   "rev": 1788504000.0,
+   "eps": 0.11,
+   "opm": 0.0448,
+   "grow": 0.095,
+   "roe": 0.0208,
+   "off_high": -22.084367245657567,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 4%",
+    "rev +10% YoY",
+    "ROE 2%",
+    "$1B+ revenue"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ITRG",
+   "name": "Integra Resources Corp",
+   "sector": "BASIC MATERIALS",
+   "price": 2.715,
+   "target": 5.88,
+   "upside": 116.57458563535914,
+   "analysts": 7,
+   "cap": 547487000.0,
+   "rev": 248625000.0,
+   "eps": 0.04,
+   "opm": 0.255,
+   "grow": 0.082,
+   "roe": 0.0479,
+   "off_high": -44.25051334702259,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 26%",
+    "rev +8% YoY",
+    "ROE 5%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "GAU",
+   "name": "Galiano Gold Inc",
+   "sector": "BASIC MATERIALS",
+   "price": 2.095,
+   "target": 4.25,
+   "upside": 102.86396181384245,
+   "analysts": 5,
+   "cap": 546727000.0,
+   "rev": 530547000.0,
+   "eps": 0.27,
+   "opm": 0.487,
+   "grow": 1.167,
+   "roe": 0.289,
+   "off_high": -42.12707182320442,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 49%",
+    "rev +117% YoY",
+    "ROE 29%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "VFF",
+   "name": "Village Farms International Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 2.47,
+   "target": 4.917,
+   "upside": 99.06882591093115,
+   "analysts": 4,
+   "cap": 306939000.0,
+   "rev": 230573000.0,
+   "eps": 0.18,
+   "opm": 0.174,
+   "grow": 0.068,
+   "roe": 0.0753,
+   "off_high": -50.50100200400802,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 17%",
+    "rev +7% YoY",
+    "ROE 8%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "CRMD",
+   "name": "CorMedix Inc",
+   "sector": "HEALTHCARE",
+   "price": 8.14,
+   "target": 15.0,
+   "upside": 84.27518427518426,
+   "analysts": 5,
+   "cap": 557008000.0,
+   "rev": 400054000.0,
+   "eps": 2.11,
+   "opm": 0.5,
+   "grow": 2.261,
+   "roe": 0.656,
+   "off_high": -45.58823529411765,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 50%",
+    "rev +226% YoY",
+    "ROE 66%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ALLT",
+   "name": "Allot Communications Ltd",
+   "sector": "TECHNOLOGY",
+   "price": 7.93,
+   "target": 13.5,
+   "upside": 70.23959646910467,
+   "analysts": 6,
+   "cap": 376708000.0,
+   "rev": 105268000.0,
+   "eps": 0.13,
+   "opm": 0.0578,
+   "grow": 0.141,
+   "roe": 0.0723,
+   "off_high": -33.47315436241611,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 6%",
+    "rev +14% YoY",
+    "ROE 7%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ABX",
+   "name": "Abacus Global Management, Inc.",
+   "sector": "FINANCIAL SERVICES",
+   "price": 8.525,
+   "target": 14.08,
+   "upside": 65.16129032258064,
+   "analysts": 6,
+   "cap": 834168000.0,
+   "rev": 267284000.0,
+   "eps": 0.26,
+   "opm": 0.294,
+   "grow": 0.299,
+   "roe": 0.0655,
+   "off_high": -31.471061093247588,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 29%",
+    "rev +30% YoY",
+    "ROE 7%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "FBRT",
+   "name": "Franklin BSP Realty Trust Inc",
+   "sector": "REAL ESTATE",
+   "price": 8.13,
+   "target": 12.75,
+   "upside": 56.82656826568264,
+   "analysts": 5,
+   "cap": 668516000.0,
+   "rev": 292606000.0,
+   "eps": 0.44,
+   "opm": 0.0856,
+   "grow": 0.142,
+   "roe": 0.0412,
+   "off_high": -22.93838862559241,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 9%",
+    "rev +14% YoY",
+    "ROE 4%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "TTI",
+   "name": "Tetra Technologies Inc",
+   "sector": "INDUSTRIALS",
+   "price": 8.455,
+   "target": 13.12,
+   "upside": 55.17445298639858,
+   "analysts": 4,
+   "cap": 1251215000.0,
+   "rev": 641830000.0,
+   "eps": 0.04,
+   "opm": 0.108,
+   "grow": 0.068,
+   "roe": 0.0213,
+   "off_high": -32.57575757575757,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 11%",
+    "rev +7% YoY",
+    "ROE 2%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "JBI",
+   "name": "Janus International Group Inc",
+   "sector": "INDUSTRIALS",
+   "price": 5.035,
+   "target": 7.7,
+   "upside": 52.9294935451837,
+   "analysts": 5,
+   "cap": 664442000.0,
+   "rev": 901800000.0,
+   "eps": 0.23,
+   "opm": 0.0882,
+   "grow": 0.024,
+   "roe": 0.0595,
+   "off_high": -53.37962962962963,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 9%",
+    "rev +2% YoY",
+    "ROE 6%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "MFA",
+   "name": "MFA Financial Inc",
+   "sector": "REAL ESTATE",
+   "price": 9.195,
+   "target": 14.0,
+   "upside": 52.256661228928756,
+   "analysts": 7,
+   "cap": 924955000.0,
+   "rev": 302829000.0,
+   "eps": 1.01,
+   "opm": 0.54,
+   "grow": 0.202,
+   "roe": 0.0824,
+   "off_high": -8.50746268656717,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 54%",
+    "rev +20% YoY",
+    "ROE 8%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ASM",
+   "name": "Avino Silver & Gold Mines Ltd",
+   "sector": "BASIC MATERIALS",
+   "price": 6.915,
+   "target": 10.32,
+   "upside": 49.24078091106292,
+   "analysts": 4,
+   "cap": 1247808000.0,
+   "rev": 112824000.0,
+   "eps": 0.21,
+   "opm": 0.495,
+   "grow": 1.093,
+   "roe": 0.181,
+   "off_high": -42.32693911592994,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 50%",
+    "rev +109% YoY",
+    "ROE 18%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "RPC",
+   "name": "Ridgepost Capital, Inc",
+   "sector": "FINANCIAL SERVICES",
+   "price": 8.96,
+   "target": 13.0,
+   "upside": 45.0892857142857,
+   "analysts": 4,
+   "cap": 972303000.0,
+   "rev": 312913000.0,
+   "eps": 0.24,
+   "opm": 0.316,
+   "grow": 0.113,
+   "roe": 0.0712,
+   "off_high": -29.393223010244274,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 32%",
+    "rev +11% YoY",
+    "ROE 7%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "PFLT",
+   "name": "PennantPark Floating Rate Capital Lt",
+   "sector": "FINANCIAL SERVICES",
+   "price": 7.575,
+   "target": 10.08,
+   "upside": 33.069306930693074,
+   "analysts": 7,
+   "cap": 742150000.0,
+   "rev": 271111000.0,
+   "eps": 0.51,
+   "opm": 0.771,
+   "grow": 0.041,
+   "roe": 0.0477,
+   "off_high": -17.48366013071895,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 77%",
+    "rev +4% YoY",
+    "ROE 5%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ESRT",
+   "name": "Empire State Realty Trust Inc",
+   "sector": "REAL ESTATE",
+   "price": 4.835,
+   "target": 6.1,
+   "upside": 26.163391933815916,
+   "analysts": 6,
+   "cap": 1445952000.0,
+   "rev": 782822000.0,
+   "eps": 0.02,
+   "opm": 0.167,
+   "grow": 0.032,
+   "roe": 0.0052,
+   "off_high": -38.797468354430386,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 17%",
+    "rev +3% YoY",
+    "ROE 1%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "TGB",
+   "name": "Taseko Mines Ltd",
+   "sector": "BASIC MATERIALS",
+   "price": 8.415,
+   "target": 10.58,
+   "upside": 25.727866904337503,
+   "analysts": 7,
+   "cap": 3078256000.0,
+   "rev": 985319000.0,
+   "eps": 0.02,
+   "opm": 0.225,
+   "grow": 1.848,
+   "roe": 0.0221,
+   "off_high": -9.027027027027035,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 22%",
+    "rev +185% YoY",
+    "ROE 2%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "OPRT",
+   "name": "Oportun Financial Corp",
+   "sector": "FINANCIAL SERVICES",
+   "price": 7.64,
+   "target": 9.6,
+   "upside": 25.654450261780106,
+   "analysts": 5,
+   "cap": 345824000.0,
+   "rev": 743953000.0,
+   "eps": 0.4,
+   "opm": 0.116,
+   "grow": 0.094,
+   "roe": 0.0498,
+   "off_high": -7.9518072289156745,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 12%",
+    "rev +9% YoY",
+    "ROE 5%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "NRDS",
+   "name": "Nerdwallet Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 10.0,
+   "target": 11.8,
+   "upside": 18.000000000000014,
+   "analysts": 6,
+   "cap": 616859000.0,
+   "rev": 860000000.0,
+   "eps": 0.89,
+   "opm": 0.035,
+   "grow": 0.056,
+   "roe": 0.182,
+   "off_high": -38.42364532019704,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 4%",
+    "rev +6% YoY",
+    "ROE 18%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "GPRK",
+   "name": "GeoPark Ltd",
+   "sector": "ENERGY",
+   "price": 9.3,
+   "target": 10.85,
+   "upside": 16.66666666666665,
+   "analysts": 5,
+   "cap": 601584000.0,
+   "rev": 507080000.0,
+   "eps": 1.42,
+   "opm": 0.275,
+   "grow": 0.196,
+   "roe": 0.286,
+   "off_high": -21.651221566975554,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 28%",
+    "rev +20% YoY",
+    "ROE 29%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "GDYN",
+   "name": "Grid Dynamics Holdings Inc",
+   "sector": "TECHNOLOGY",
+   "price": 7.94,
+   "target": 9.2,
+   "upside": 15.8690176322418,
+   "analysts": 6,
+   "cap": 631978000.0,
+   "rev": 422581000.0,
+   "eps": 0.03,
+   "opm": 0.0362,
+   "grow": 0.07,
+   "roe": 0.0054,
+   "off_high": -22.233104799216452,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 4%",
+    "rev +7% YoY",
+    "ROE 1%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ORC",
+   "name": "Orchid Island Capital Inc.",
+   "sector": "REAL ESTATE",
+   "price": 6.625,
+   "target": 7.5,
+   "upside": 13.207547169811317,
+   "analysts": 4,
+   "cap": 1330643000.0,
+   "rev": 270141000.0,
+   "eps": 1.75,
+   "opm": 0.929,
+   "grow": 10.03,
+   "roe": 0.208,
+   "off_high": -13.17169069462647,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 93%",
+    "rev +1003% YoY",
+    "ROE 21%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "IVR",
+   "name": "Invesco Mortgage Capital Inc",
+   "sector": "REAL ESTATE",
+   "price": 7.475,
+   "target": 8.33,
+   "upside": 11.438127090301009,
+   "analysts": 6,
+   "cap": 765848000.0,
+   "rev": 139440000.0,
+   "eps": 1.58,
+   "opm": 0.865,
+   "grow": 5.58,
+   "roe": 0.141,
+   "off_high": -12.675233644859818,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 86%",
+    "rev +558% YoY",
+    "ROE 14%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "GOOS",
+   "name": "Canada Goose Holdings Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 8.7,
+   "target": 9.49,
+   "upside": 9.080459770114956,
+   "analysts": 11,
+   "cap": 843788000.0,
+   "rev": 1539300000.0,
+   "eps": 0.42,
+   "opm": -0.873,
+   "grow": 0.103,
+   "roe": 0.122,
+   "off_high": -43.50649350649351,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "rev +10% YoY",
+    "ROE 12%",
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "UROY",
+   "name": "Uranium Royalty\u00a0Corp",
+   "sector": "ENERGY",
+   "price": 4.07,
+   "target": 4.1,
+   "upside": 0.7371007371007154,
+   "analysts": 5,
+   "cap": 1558565000.0,
+   "rev": 186952000.0,
+   "eps": 0.28,
+   "opm": 0.321,
+   "grow": 43.43,
+   "roe": 0.152,
+   "off_high": -26.26811594202898,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 32%",
+    "rev +4343% YoY",
+    "ROE 15%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "IRWD",
+   "name": "Ironwood Pharmaceuticals Inc",
+   "sector": "HEALTHCARE",
+   "price": 4.08,
+   "target": 6.1,
+   "upside": 49.509803921568604,
+   "analysts": 4,
+   "cap": 713837000.0,
+   "rev": 389316000.0,
+   "eps": 0.79,
+   "opm": 0.702,
+   "grow": 0.326,
+   "roe": -5.75,
+   "off_high": -29.41176470588236,
+   "quality": 5,
+   "why": [
+    "profitable",
+    "op margin 70%",
+    "rev +33% YoY"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "SG",
+   "name": "Sweetgreen Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 6.055,
+   "target": 6.73,
+   "upside": 11.147811725846424,
+   "analysts": 15,
+   "cap": 692820000.0,
+   "rev": 681770000.0,
+   "eps": 0.09,
+   "opm": -0.126,
+   "grow": 0.038,
+   "roe": 0.0307,
+   "off_high": -43.03857008466605,
+   "quality": 5,
+   "why": [
+    "profitable",
+    "rev +4% YoY",
+    "ROE 3%",
+    "15 analysts"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ZIP",
+   "name": "Ziprecruiter Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 4.725,
+   "target": 4.75,
+   "upside": 0.5291005291005346,
+   "analysts": 5,
+   "cap": 404553000.0,
+   "rev": 452263000.0,
+   "eps": 0.33,
+   "opm": 0.0351,
+   "grow": 0.052,
+   "roe": -28.97,
+   "off_high": -15.775401069518724,
+   "quality": 5,
+   "why": [
+    "profitable",
+    "op margin 4%",
+    "rev +5% YoY"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "ORN",
+   "name": "Orion Group Holdings Inc",
+   "sector": "INDUSTRIALS",
+   "price": 9.675,
+   "target": 15.32,
+   "upside": 58.34625322997415,
+   "analysts": 6,
+   "cap": 391994000.0,
+   "rev": 896500000.0,
+   "eps": 0.08,
+   "opm": -0.0066,
+   "grow": 0.081,
+   "roe": 0.0227,
+   "off_high": -44.39655172413792,
+   "quality": 4,
+   "why": [
+    "profitable",
+    "rev +8% YoY",
+    "ROE 2%"
+   ],
+   "flags": []
+  },
+  {
+   "ticker": "LXU",
+   "name": "Lsb Industries Inc",
+   "sector": "BASIC MATERIALS",
+   "price": 9.87,
+   "target": 13.7,
+   "upside": 38.804457953394135,
+   "analysts": 5,
+   "cap": 710615000.0,
+   "rev": 658059000.0,
+   "eps": 0.49,
+   "opm": -0.0163,
+   "grow": 0.111,
+   "roe": 0.071,
+   "off_high": -42.6829268292683,
+   "quality": 4,
+   "why": [
+    "profitable",
+    "rev +11% YoY",
+    "ROE 7%"
+   ],
+   "flags": []
+  }
+ ],
+ "flagged": [
+  {
+   "ticker": "ABR",
+   "name": "Arbor Realty Trust",
+   "sector": "REAL ESTATE",
+   "price": 5.28,
+   "target": 5.88,
+   "upside": 11.363636363636353,
+   "analysts": 5,
+   "cap": 1058241000.0,
+   "rev": 498069000.0,
+   "eps": 0.09,
+   "opm": -0.127,
+   "grow": -0.248,
+   "roe": 0.0198,
+   "off_high": -53.68421052631579,
+   "quality": 3,
+   "why": [
+    "profitable",
+    "ROE 2%"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "ACB",
+   "name": "Aurora Cannabis Inc",
+   "sector": "HEALTHCARE",
+   "price": 3.79,
+   "target": 6.23,
+   "upside": 64.37994722955148,
+   "analysts": 6,
+   "cap": 236619000.0,
+   "rev": 314071000.0,
+   "eps": -0.66,
+   "opm": -0.129,
+   "grow": -0.088,
+   "roe": -0.094,
+   "off_high": -43.1784107946027,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "ACVA",
+   "name": "ACV Auctions Inc.",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 7.965,
+   "target": 9.29,
+   "upside": 16.63527934714375,
+   "analysts": 13,
+   "cap": 1317710000.0,
+   "rev": 801339000.0,
+   "eps": -0.4,
+   "opm": -0.0283,
+   "grow": 0.104,
+   "roe": -0.151,
+   "off_high": -34.76658476658477,
+   "quality": 2,
+   "why": [
+    "rev +10% YoY",
+    "13 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ADMA",
+   "name": "ADMA Biologics Inc",
+   "sector": "HEALTHCARE",
+   "price": 9.41,
+   "target": 17.0,
+   "upside": 80.65887353878851,
+   "analysts": 5,
+   "cap": 2190570000.0,
+   "rev": 512275000.0,
+   "eps": 0.7,
+   "opm": -1.234,
+   "grow": 0.159,
+   "roe": 0.419,
+   "off_high": -54.00782013685239,
+   "quality": 4,
+   "why": [
+    "profitable",
+    "rev +16% YoY",
+    "ROE 42%"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "ADTN",
+   "name": "ADTRAN Inc",
+   "sector": "TECHNOLOGY",
+   "price": 8.07,
+   "target": 14.67,
+   "upside": 81.78438661710037,
+   "analysts": 9,
+   "cap": 664888000.0,
+   "rev": 1138227000.0,
+   "eps": -0.29,
+   "opm": -0.0354,
+   "grow": 0.061,
+   "roe": -0.0317,
+   "off_high": -59.60960960960961,
+   "quality": 3,
+   "why": [
+    "rev +6% YoY",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "AHCO",
+   "name": "Adapthealth Corp",
+   "sector": "HEALTHCARE",
+   "price": 5.7,
+   "target": 9.14,
+   "upside": 60.350877192982466,
+   "analysts": 7,
+   "cap": 769771000.0,
+   "rev": 3363390000.0,
+   "eps": -1.75,
+   "opm": 0.0084,
+   "grow": 0.127,
+   "roe": -0.152,
+   "off_high": -57.55770662695458,
+   "quality": 4,
+   "why": [
+    "op margin 1%",
+    "rev +13% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "AHRT",
+   "name": "Armada Hoffler Properties, Inc.",
+   "sector": "REAL ESTATE",
+   "price": 6.795,
+   "target": 7.35,
+   "upside": 8.167770419426045,
+   "analysts": 4,
+   "cap": 644510000.0,
+   "rev": 288837000.0,
+   "eps": -0.15,
+   "opm": 0.241,
+   "grow": 0.039,
+   "roe": -0.0031,
+   "off_high": -5.625000000000002,
+   "quality": 3,
+   "why": [
+    "op margin 24%",
+    "rev +4% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "AIOT",
+   "name": "PowerFleet, Inc.",
+   "sector": "TECHNOLOGY",
+   "price": 3.14,
+   "target": 8.4,
+   "upside": 167.51592356687897,
+   "analysts": 7,
+   "cap": 421469000.0,
+   "rev": 450449000.0,
+   "eps": -0.14,
+   "opm": 0.0168,
+   "grow": 0.064,
+   "roe": -0.0378,
+   "off_high": -46.59863945578231,
+   "quality": 3,
+   "why": [
+    "op margin 2%",
+    "rev +6% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ALVO",
+   "name": "Alvotech",
+   "sector": "HEALTHCARE",
+   "price": 4.09,
+   "target": 5.75,
+   "upside": 40.58679706601467,
+   "analysts": 5,
+   "cap": 1383319000.0,
+   "rev": 562043000.0,
+   "eps": -0.29,
+   "opm": 0.0913,
+   "grow": -0.202,
+   "roe": 0.0,
+   "off_high": -55.78378378378379,
+   "quality": 2,
+   "why": [
+    "op margin 9%"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "AMC",
+   "name": "AMC Entertainment Holdings Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 2.625,
+   "target": 2.717,
+   "upside": 3.5047619047618994,
+   "analysts": 7,
+   "cap": 2311846000.0,
+   "rev": 5230600000.0,
+   "eps": -1.12,
+   "opm": 0.149,
+   "grow": 0.142,
+   "roe": 0.0,
+   "off_high": -17.452830188679247,
+   "quality": 4,
+   "why": [
+    "op margin 15%",
+    "rev +14% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ANGX",
+   "name": "Angel Studios, Inc.",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 4.32,
+   "target": 8.0,
+   "upside": 85.18518518518516,
+   "analysts": 5,
+   "cap": 687263000.0,
+   "rev": 413287000.0,
+   "eps": -0.8,
+   "opm": -0.166,
+   "grow": 0.275,
+   "roe": -4.409,
+   "off_high": -78.81314369789112,
+   "quality": 1,
+   "why": [
+    "rev +28% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ARDX",
+   "name": "Ardelyx Inc",
+   "sector": "HEALTHCARE",
+   "price": 3.91,
+   "target": 13.0,
+   "upside": 232.48081841432224,
+   "analysts": 11,
+   "cap": 1025005000.0,
+   "rev": 450894000.0,
+   "eps": -0.23,
+   "opm": -0.103,
+   "grow": 0.238,
+   "roe": -0.386,
+   "off_high": -53.45238095238095,
+   "quality": 2,
+   "why": [
+    "rev +24% YoY",
+    "11 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ARI",
+   "name": "Apollo Commercial Real Estate Financ",
+   "sector": "REAL ESTATE",
+   "price": 6.92,
+   "target": 8.0,
+   "upside": 15.606936416184979,
+   "analysts": 4,
+   "cap": 884663000.0,
+   "rev": 624293000.0,
+   "eps": 0.82,
+   "opm": 0.912,
+   "grow": 5.25,
+   "roe": 0.0851,
+   "off_high": -2.5352112676056304,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 91%",
+    "rev +525% YoY",
+    "ROE 9%"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "ARRY",
+   "name": "Array Technologies\u00a0Inc",
+   "sector": "TECHNOLOGY",
+   "price": 5.17,
+   "target": 9.36,
+   "upside": 81.04448742746615,
+   "analysts": 23,
+   "cap": 798359000.0,
+   "rev": 1185012000.0,
+   "eps": -0.93,
+   "opm": 0.109,
+   "grow": -0.056,
+   "roe": -0.26,
+   "off_high": -57.72690106295993,
+   "quality": 4,
+   "why": [
+    "op margin 11%",
+    "$1B+ revenue",
+    "23 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "ASPN",
+   "name": "Aspen Aerogels Inc",
+   "sector": "BASIC MATERIALS",
+   "price": 6.055,
+   "target": 7.75,
+   "upside": 27.99339388934765,
+   "analysts": 6,
+   "cap": 510381000.0,
+   "rev": 202089000.0,
+   "eps": -1.52,
+   "opm": -0.292,
+   "grow": -0.361,
+   "roe": -0.504,
+   "off_high": -35.24064171122995,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "ATEC",
+   "name": "Alphatec Holdings Inc",
+   "sector": "HEALTHCARE",
+   "price": 9.75,
+   "target": 15.79,
+   "upside": 61.94871794871795,
+   "analysts": 14,
+   "cap": 1505898000.0,
+   "rev": 815052000.0,
+   "eps": -0.71,
+   "opm": -0.0093,
+   "grow": 0.151,
+   "roe": -3.734,
+   "off_high": -58.13653928724774,
+   "quality": 2,
+   "why": [
+    "rev +15% YoY",
+    "14 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BAK",
+   "name": "Braskem SA Class A",
+   "sector": "BASIC MATERIALS",
+   "price": 2.08,
+   "target": 3.404,
+   "upside": 63.653846153846146,
+   "analysts": 6,
+   "cap": 812908000.0,
+   "rev": 66745000000.0,
+   "eps": -4.16,
+   "opm": -0.0103,
+   "grow": -0.204,
+   "roe": -5.49,
+   "off_high": -61.41001855287569,
+   "quality": 1,
+   "why": [
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "BBDC",
+   "name": "Barings BDC Inc",
+   "sector": "FINANCIAL SERVICES",
+   "price": 9.435,
+   "target": 9.88,
+   "upside": 4.716481187069421,
+   "analysts": 6,
+   "cap": 966444000.0,
+   "rev": 266141000.0,
+   "eps": 0.81,
+   "opm": 0.773,
+   "grow": -0.124,
+   "roe": 0.075,
+   "off_high": -0.15873015873014706,
+   "quality": 5,
+   "why": [
+    "profitable",
+    "op margin 77%",
+    "ROE 8%"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "BGS",
+   "name": "B&G Foods Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 3.685,
+   "target": 4.8,
+   "upside": 30.257801899592927,
+   "analysts": 6,
+   "cap": 290967000.0,
+   "rev": 1812221000.0,
+   "eps": -0.88,
+   "opm": 0.0902,
+   "grow": -0.039,
+   "roe": -0.167,
+   "off_high": -38.583333333333336,
+   "quality": 3,
+   "why": [
+    "op margin 9%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "BHC",
+   "name": "Bausch Health Companies Inc",
+   "sector": "HEALTHCARE",
+   "price": 6.345,
+   "target": 7.5,
+   "upside": 18.20330969267141,
+   "analysts": 7,
+   "cap": 2322481000.0,
+   "rev": 10853000000.0,
+   "eps": -2.94,
+   "opm": 0.272,
+   "grow": 0.127,
+   "roe": 0.436,
+   "off_high": -26.985040276179518,
+   "quality": 5,
+   "why": [
+    "op margin 27%",
+    "rev +13% YoY",
+    "ROE 44%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BLDP",
+   "name": "Ballard Power Systems Inc",
+   "sector": "INDUSTRIALS",
+   "price": 2.62,
+   "target": 4.105,
+   "upside": 56.679389312977115,
+   "analysts": 12,
+   "cap": 789947000.0,
+   "rev": 106158000.0,
+   "eps": -0.26,
+   "opm": -0.62,
+   "grow": 0.154,
+   "roe": -0.129,
+   "off_high": -60.12176560121766,
+   "quality": 2,
+   "why": [
+    "rev +15% YoY",
+    "12 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BLND",
+   "name": "Blend Labs Inc",
+   "sector": "TECHNOLOGY",
+   "price": 1.555,
+   "target": 3.26,
+   "upside": 109.64630225080386,
+   "analysts": 6,
+   "cap": 331119000.0,
+   "rev": 129791000.0,
+   "eps": -0.07,
+   "opm": -0.0465,
+   "grow": 0.07,
+   "roe": 0.0211,
+   "off_high": -65.36748329621382,
+   "quality": 2,
+   "why": [
+    "rev +7% YoY",
+    "ROE 2%"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BMBL",
+   "name": "Bumble Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 2.72,
+   "target": 3.9,
+   "upside": 43.38235294117645,
+   "analysts": 15,
+   "cap": 399896000.0,
+   "rev": 893237000.0,
+   "eps": -3.89,
+   "opm": 0.281,
+   "grow": -0.152,
+   "roe": -0.769,
+   "off_high": -62.841530054644814,
+   "quality": 3,
+   "why": [
+    "op margin 28%",
+    "15 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "BRSP",
+   "name": "Brightspire Capital Inc",
+   "sector": "REAL ESTATE",
+   "price": 4.985,
+   "target": 6.34,
+   "upside": 27.1815446339017,
+   "analysts": 8,
+   "cap": 627560000.0,
+   "rev": 332787000.0,
+   "eps": -0.23,
+   "opm": 0.351,
+   "grow": -0.035,
+   "roe": -0.0374,
+   "off_high": -16.218487394957982,
+   "quality": 3,
+   "why": [
+    "op margin 35%",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "BTBT",
+   "name": "Bit Digital Inc",
+   "sector": "FINANCIAL SERVICES",
+   "price": 1.49,
+   "target": 4.125,
+   "upside": 176.84563758389262,
+   "analysts": 5,
+   "cap": 509433000.0,
+   "rev": 114780000.0,
+   "eps": -0.48,
+   "opm": -5.2,
+   "grow": 0.109,
+   "roe": -0.346,
+   "off_high": -67.25274725274726,
+   "quality": 1,
+   "why": [
+    "rev +11% YoY"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BTDR",
+   "name": "Bitdeer Technologies Group Class A O",
+   "sector": "TECHNOLOGY",
+   "price": 8.76,
+   "target": 22.83,
+   "upside": 160.61643835616434,
+   "analysts": 12,
+   "cap": 2451476000.0,
+   "rev": 812257000.0,
+   "eps": -1.98,
+   "opm": -0.425,
+   "grow": 0.471,
+   "roe": -0.253,
+   "off_high": -68.48920863309354,
+   "quality": 2,
+   "why": [
+    "rev +47% YoY",
+    "12 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BTE",
+   "name": "Baytex Energy Corp",
+   "sector": "ENERGY",
+   "price": 4.295,
+   "target": 5.1,
+   "upside": 18.74272409778812,
+   "analysts": 11,
+   "cap": 2999568000.0,
+   "rev": 1673614000.0,
+   "eps": -0.25,
+   "opm": 0.408,
+   "grow": 0.513,
+   "roe": -0.0877,
+   "off_high": -19.569288389513105,
+   "quality": 5,
+   "why": [
+    "op margin 41%",
+    "rev +51% YoY",
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "BTGO",
+   "name": "BitGo Holdings, Inc.",
+   "sector": "FINANCIAL SERVICES",
+   "price": 5.535,
+   "target": 13.31,
+   "upside": 140.46973803071364,
+   "analysts": 12,
+   "cap": 578637000.0,
+   "rev": 18151031000.0,
+   "eps": -0.43,
+   "opm": -0.0037,
+   "grow": 1.126,
+   "roe": -0.13,
+   "off_high": -77.40816326530611,
+   "quality": 3,
+   "why": [
+    "rev +113% YoY",
+    "$1B+ revenue",
+    "12 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CGC",
+   "name": "Canopy Growth Corp",
+   "sector": "HEALTHCARE",
+   "price": 1.01,
+   "target": 1.247,
+   "upside": 23.465346534653463,
+   "analysts": 8,
+   "cap": 452901000.0,
+   "rev": 293634000.0,
+   "eps": -0.47,
+   "opm": -0.217,
+   "grow": 0.125,
+   "roe": -0.395,
+   "off_high": -57.56302521008403,
+   "quality": 2,
+   "why": [
+    "rev +12% YoY",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CGNT",
+   "name": "Cognyte Software Ltd",
+   "sector": "TECHNOLOGY",
+   "price": 9.36,
+   "target": 12.33,
+   "upside": 31.73076923076923,
+   "analysts": 4,
+   "cap": 672935000.0,
+   "rev": 409987000.0,
+   "eps": -0.04,
+   "opm": 0.0418,
+   "grow": 0.104,
+   "roe": 0.0114,
+   "off_high": -23.964256701868404,
+   "quality": 4,
+   "why": [
+    "op margin 4%",
+    "rev +10% YoY",
+    "ROE 1%"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CLNE",
+   "name": "Clean Energy Fuels Corp",
+   "sector": "ENERGY",
+   "price": 1.79,
+   "target": 4.342,
+   "upside": 142.5698324022346,
+   "analysts": 6,
+   "cap": 394597000.0,
+   "rev": 442371000.0,
+   "eps": -0.43,
+   "opm": -0.0482,
+   "grow": 0.037,
+   "roe": -0.164,
+   "off_high": -42.443729903536976,
+   "quality": 1,
+   "why": [
+    "rev +4% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CLVT",
+   "name": "CLARIVATE PLC",
+   "sector": "TECHNOLOGY",
+   "price": 1.96,
+   "target": 2.967,
+   "upside": 51.37755102040818,
+   "analysts": 8,
+   "cap": 1189775000.0,
+   "rev": 2412900000.0,
+   "eps": -0.51,
+   "opm": 0.0613,
+   "grow": -0.055,
+   "roe": -0.0701,
+   "off_high": -57.01754385964912,
+   "quality": 4,
+   "why": [
+    "op margin 6%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "COTY",
+   "name": "Coty Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 2.755,
+   "target": 3.133,
+   "upside": 13.720508166969147,
+   "analysts": 17,
+   "cap": 2430087000.0,
+   "rev": 5789800000.0,
+   "eps": -0.61,
+   "opm": -0.0062,
+   "grow": -0.013,
+   "roe": -0.139,
+   "off_high": -45.76771653543308,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "17 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "COUR",
+   "name": "Coursera Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 5.79,
+   "target": 8.17,
+   "upside": 41.10535405872193,
+   "analysts": 11,
+   "cap": 1597881000.0,
+   "rev": 885400000.0,
+   "eps": -0.7,
+   "opm": -0.0164,
+   "grow": 0.596,
+   "roe": -0.152,
+   "off_high": -53.00324675324675,
+   "quality": 2,
+   "why": [
+    "rev +60% YoY",
+    "11 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CRNC",
+   "name": "Cerence\u00a0Inc",
+   "sector": "TECHNOLOGY",
+   "price": 8.61,
+   "target": 10.75,
+   "upside": 24.854819976771214,
+   "analysts": 5,
+   "cap": 390789000.0,
+   "rev": 309494000.0,
+   "eps": -0.37,
+   "opm": 0.045,
+   "grow": 0.118,
+   "roe": -0.0956,
+   "off_high": -37.33624454148472,
+   "quality": 3,
+   "why": [
+    "op margin 4%",
+    "rev +12% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CSAN",
+   "name": "Cosan SA ADR",
+   "sector": "ENERGY",
+   "price": 2.605,
+   "target": 3.655,
+   "upside": 40.307101727447204,
+   "analysts": 4,
+   "cap": 2524394000.0,
+   "rev": 39784796000.0,
+   "eps": -2.61,
+   "opm": 0.307,
+   "grow": 0.265,
+   "roe": -0.299,
+   "off_high": -56.58333333333334,
+   "quality": 4,
+   "why": [
+    "op margin 31%",
+    "rev +26% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CTKB",
+   "name": "Cytek Biosciences Inc",
+   "sector": "HEALTHCARE",
+   "price": 4.89,
+   "target": 5.56,
+   "upside": 13.70143149284253,
+   "analysts": 4,
+   "cap": 621320000.0,
+   "rev": 206709000.0,
+   "eps": -0.64,
+   "opm": -0.295,
+   "grow": 0.056,
+   "roe": -0.23,
+   "off_high": -20.873786407766993,
+   "quality": 1,
+   "why": [
+    "rev +6% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "CWH",
+   "name": "Camping World Holdings Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 6.53,
+   "target": 10.6,
+   "upside": 62.32771822358345,
+   "analysts": 12,
+   "cap": 659022000.0,
+   "rev": 6268321000.0,
+   "eps": -1.57,
+   "opm": 0.0532,
+   "grow": -0.021,
+   "roe": -0.265,
+   "off_high": -63.722222222222214,
+   "quality": 4,
+   "why": [
+    "op margin 5%",
+    "$1B+ revenue",
+    "12 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "CYH",
+   "name": "Community Health Systems Inc",
+   "sector": "HEALTHCARE",
+   "price": 2.98,
+   "target": 3.179,
+   "upside": 6.677852348993274,
+   "analysts": 9,
+   "cap": 410337000.0,
+   "rev": 11983000000.0,
+   "eps": 1.85,
+   "opm": 0.0768,
+   "grow": -0.098,
+   "roe": 0.0,
+   "off_high": -32.731376975169304,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 8%",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "DCH",
+   "name": "Dauch Corporation",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 6.76,
+   "target": 9.02,
+   "upside": 33.4319526627219,
+   "analysts": 13,
+   "cap": 1610959000.0,
+   "rev": 8223700000.0,
+   "eps": -0.99,
+   "opm": 0.0486,
+   "grow": 0.924,
+   "roe": -0.15,
+   "off_high": -26.918918918918923,
+   "quality": 5,
+   "why": [
+    "op margin 5%",
+    "rev +92% YoY",
+    "$1B+ revenue",
+    "13 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "DDD",
+   "name": "3D Systems Corporation",
+   "sector": "TECHNOLOGY",
+   "price": 3.62,
+   "target": 5.5,
+   "upside": 51.93370165745856,
+   "analysts": 4,
+   "cap": 603114000.0,
+   "rev": 387641000.0,
+   "eps": -0.38,
+   "opm": -0.113,
+   "grow": -0.003,
+   "roe": -0.213,
+   "off_high": -12.135922330097081,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "DHC",
+   "name": "Diversified Healthcare Trust",
+   "sector": "REAL ESTATE",
+   "price": 8.37,
+   "target": 10.15,
+   "upside": 21.26642771804064,
+   "analysts": 5,
+   "cap": 2016935000.0,
+   "rev": 1500135000.0,
+   "eps": -1.13,
+   "opm": -0.0014,
+   "grow": -0.045,
+   "roe": -0.155,
+   "off_high": -13.354037267080754,
+   "quality": 1,
+   "why": [
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "DNUT",
+   "name": "Krispy Kreme Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 3.28,
+   "target": 4.25,
+   "upside": 29.573170731707332,
+   "analysts": 7,
+   "cap": 572550000.0,
+   "rev": 1465694000.0,
+   "eps": -0.59,
+   "opm": -0.0204,
+   "grow": -0.128,
+   "roe": -0.137,
+   "off_high": -35.81213307240705,
+   "quality": 1,
+   "why": [
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "EGY",
+   "name": "Vaalco Energy Inc",
+   "sector": "ENERGY",
+   "price": 5.63,
+   "target": 9.88,
+   "upside": 75.4884547069272,
+   "analysts": 4,
+   "cap": 601697000.0,
+   "rev": 349815000.0,
+   "eps": -1.03,
+   "opm": 0.461,
+   "grow": 0.395,
+   "roe": -0.244,
+   "off_high": -15.338345864661662,
+   "quality": 3,
+   "why": [
+    "op margin 46%",
+    "rev +40% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ENIC",
+   "name": "Enel Chile SA ADR",
+   "sector": "UTILITIES",
+   "price": 4.405,
+   "target": 4.904,
+   "upside": 11.328036322360946,
+   "analysts": 4,
+   "cap": 6045157000.0,
+   "rev": 4398599000.0,
+   "eps": 0.4,
+   "opm": 0.121,
+   "grow": -0.113,
+   "roe": 0.11,
+   "off_high": -6.574761399787898,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 12%",
+    "ROE 11%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "EOLS",
+   "name": "Evolus Inc",
+   "sector": "HEALTHCARE",
+   "price": 8.02,
+   "target": 14.67,
+   "upside": 82.91770573566086,
+   "analysts": 7,
+   "cap": 536330000.0,
+   "rev": 316488000.0,
+   "eps": -0.52,
+   "opm": -0.0392,
+   "grow": 0.212,
+   "roe": -187.3,
+   "off_high": -4.863582443653625,
+   "quality": 1,
+   "why": [
+    "rev +21% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ERII",
+   "name": "Energy Recovery Inc",
+   "sector": "INDUSTRIALS",
+   "price": 7.82,
+   "target": 9.33,
+   "upside": 19.309462915601028,
+   "analysts": 4,
+   "cap": 397129000.0,
+   "rev": 120573000.0,
+   "eps": 0.26,
+   "opm": -0.419,
+   "grow": -0.572,
+   "roe": 0.0858,
+   "off_high": -57.314410480349345,
+   "quality": 3,
+   "why": [
+    "profitable",
+    "ROE 9%"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "EVGO",
+   "name": "Evgo Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 1.65,
+   "target": 3.812,
+   "upside": 131.03030303030306,
+   "analysts": 10,
+   "cap": 769959000.0,
+   "rev": 402948000.0,
+   "eps": -0.4,
+   "opm": -0.459,
+   "grow": -0.157,
+   "roe": -0.346,
+   "off_high": -68.14671814671816,
+   "quality": 1,
+   "why": [
+    "10 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "EVH",
+   "name": "Evolent Health Inc",
+   "sector": "HEALTHCARE",
+   "price": 4.67,
+   "target": 5.69,
+   "upside": 21.84154175588866,
+   "analysts": 14,
+   "cap": 471457000.0,
+   "rev": 2097018000.0,
+   "eps": -4.57,
+   "opm": -0.0134,
+   "grow": 0.469,
+   "roe": -0.67,
+   "off_high": -53.67063492063493,
+   "quality": 3,
+   "why": [
+    "rev +47% YoY",
+    "$1B+ revenue",
+    "14 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "EVLV",
+   "name": "Evolv Technologies Holdings Inc",
+   "sector": "INDUSTRIALS",
+   "price": 5.76,
+   "target": 10.12,
+   "upside": 75.69444444444444,
+   "analysts": 4,
+   "cap": 1028864000.0,
+   "rev": 171435000.0,
+   "eps": -0.02,
+   "opm": -0.214,
+   "grow": 0.344,
+   "roe": -0.0494,
+   "off_high": -35.35353535353536,
+   "quality": 1,
+   "why": [
+    "rev +34% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "FINV",
+   "name": "FinVolution Group",
+   "sector": "FINANCIAL SERVICES",
+   "price": 4.53,
+   "target": 7.3,
+   "upside": 61.147902869757154,
+   "analysts": 7,
+   "cap": 1071867000.0,
+   "rev": 13335422000.0,
+   "eps": 1.28,
+   "opm": 0.437,
+   "grow": -0.078,
+   "roe": 0.138,
+   "off_high": -50.43763676148796,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 44%",
+    "ROE 14%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "FIP",
+   "name": "FTAI Infrastructure Inc.",
+   "sector": "INDUSTRIALS",
+   "price": 4.66,
+   "target": 9.94,
+   "upside": 113.3047210300429,
+   "analysts": 4,
+   "cap": 550727000.0,
+   "rev": 659205000.0,
+   "eps": -5.2,
+   "opm": 0.121,
+   "grow": 0.527,
+   "roe": -0.845,
+   "off_high": -29.500756429652043,
+   "quality": 3,
+   "why": [
+    "op margin 12%",
+    "rev +53% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "FUBO",
+   "name": "Fubotv\u00a0Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 9.82,
+   "target": 17.0,
+   "upside": 73.11608961303462,
+   "analysts": 10,
+   "cap": 292981000.0,
+   "rev": 5711988000.0,
+   "eps": 3.84,
+   "opm": -0.018,
+   "grow": 0.38,
+   "roe": -0.0505,
+   "off_high": -82.66242937853107,
+   "quality": 5,
+   "why": [
+    "profitable",
+    "rev +38% YoY",
+    "$1B+ revenue",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "FVRR",
+   "name": "Fiverr International Ltd",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 9.045,
+   "target": 10.75,
+   "upside": 18.85019347705914,
+   "analysts": 10,
+   "cap": 311333000.0,
+   "rev": 418351000.0,
+   "eps": 0.8,
+   "opm": 0.0601,
+   "grow": -0.1,
+   "roe": 0.0713,
+   "off_high": -67.69642857142857,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 6%",
+    "ROE 7%",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "GDRX",
+   "name": "Goodrx Holdings\u00a0Inc",
+   "sector": "HEALTHCARE",
+   "price": 3.72,
+   "target": 3.858,
+   "upside": 3.70967741935484,
+   "analysts": 15,
+   "cap": 1224712000.0,
+   "rev": 785230000.0,
+   "eps": 0.06,
+   "opm": 0.118,
+   "grow": -0.013,
+   "roe": 0.0252,
+   "off_high": -35.97246127366609,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 12%",
+    "ROE 3%",
+    "15 analysts"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "GENI",
+   "name": "Genius Sports Ltd",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 7.89,
+   "target": 10.93,
+   "upside": 38.52978453738911,
+   "analysts": 20,
+   "cap": 2123846000.0,
+   "rev": 790234000.0,
+   "eps": -0.66,
+   "opm": -0.124,
+   "grow": 0.647,
+   "roe": -0.259,
+   "off_high": -42.53459577567371,
+   "quality": 2,
+   "why": [
+    "rev +65% YoY",
+    "20 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "GERN",
+   "name": "Geron Corporation",
+   "sector": "HEALTHCARE",
+   "price": 1.535,
+   "target": 4.25,
+   "upside": 176.87296416938113,
+   "analysts": 5,
+   "cap": 1007188000.0,
+   "rev": 204559000.0,
+   "eps": -0.11,
+   "opm": -0.22,
+   "grow": 0.172,
+   "roe": -0.283,
+   "off_high": -23.631840796019898,
+   "quality": 1,
+   "why": [
+    "rev +17% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "GEVO",
+   "name": "Gevo Inc",
+   "sector": "BASIC MATERIALS",
+   "price": 1.62,
+   "target": 5.39,
+   "upside": 232.71604938271602,
+   "analysts": 4,
+   "cap": 390635000.0,
+   "rev": 177507000.0,
+   "eps": -0.88,
+   "opm": -0.768,
+   "grow": 0.071,
+   "roe": -0.555,
+   "off_high": -45.45454545454546,
+   "quality": 1,
+   "why": [
+    "rev +7% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "GNL",
+   "name": "Global Net Lease, Inc.",
+   "sector": "REAL ESTATE",
+   "price": 9.04,
+   "target": 10.17,
+   "upside": 12.5,
+   "analysts": 8,
+   "cap": 1896262000.0,
+   "rev": 459727000.0,
+   "eps": -0.29,
+   "opm": 0.313,
+   "grow": -0.1,
+   "roe": -0.0096,
+   "off_high": -6.126687435098665,
+   "quality": 3,
+   "why": [
+    "op margin 31%",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "GRNT",
+   "name": "Granite Ridge Resources Inc",
+   "sector": "ENERGY",
+   "price": 5.03,
+   "target": 7.6,
+   "upside": 51.09343936381707,
+   "analysts": 5,
+   "cap": 664777000.0,
+   "rev": 472493000.0,
+   "eps": -0.22,
+   "opm": 0.364,
+   "grow": 0.373,
+   "roe": -0.0458,
+   "off_high": -16.306156405990013,
+   "quality": 3,
+   "why": [
+    "op margin 36%",
+    "rev +37% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "GT",
+   "name": "Goodyear Tire & Rubber Co",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 6.18,
+   "target": 7.46,
+   "upside": 20.71197411003236,
+   "analysts": 10,
+   "cap": 1738908000.0,
+   "rev": 17693000000.0,
+   "eps": -8.77,
+   "opm": -0.0096,
+   "grow": -0.048,
+   "roe": -0.615,
+   "off_high": -41.80790960451978,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "10 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "GTM",
+   "name": "ZoomInfo Technologies Inc.",
+   "sector": "TECHNOLOGY",
+   "price": 4.31,
+   "target": 4.691,
+   "upside": 8.839907192575414,
+   "analysts": 22,
+   "cap": 1123685000.0,
+   "rev": 1257700000.0,
+   "eps": -1.73,
+   "opm": 0.205,
+   "grow": 0.012,
+   "roe": -0.455,
+   "off_high": -65.54756195043964,
+   "quality": 5,
+   "why": [
+    "op margin 20%",
+    "rev +1% YoY",
+    "$1B+ revenue",
+    "22 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "GTN",
+   "name": "Gray Television Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 5.045,
+   "target": 6.5,
+   "upside": 28.840436075322096,
+   "analysts": 5,
+   "cap": 498444000.0,
+   "rev": 3148000000.0,
+   "eps": -0.58,
+   "opm": 0.186,
+   "grow": 0.087,
+   "roe": -0.0094,
+   "off_high": -20.047543581616477,
+   "quality": 4,
+   "why": [
+    "op margin 19%",
+    "rev +9% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "HIVE",
+   "name": "HIVE Digital Technologies Ltd",
+   "sector": "FINANCIAL SERVICES",
+   "price": 2.58,
+   "target": 7.06,
+   "upside": 173.64341085271317,
+   "analysts": 8,
+   "cap": 749770000.0,
+   "rev": 297791000.0,
+   "eps": -0.68,
+   "opm": -0.822,
+   "grow": 1.305,
+   "roe": -0.303,
+   "off_high": -67.09183673469387,
+   "quality": 2,
+   "why": [
+    "rev +130% YoY",
+    "8 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "HUYA",
+   "name": "HUYA Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 2.34,
+   "target": 3.979,
+   "upside": 70.04273504273506,
+   "analysts": 11,
+   "cap": 537711000.0,
+   "rev": 6894447000.0,
+   "eps": -0.07,
+   "opm": -0.004,
+   "grow": 0.11,
+   "roe": -0.0229,
+   "off_high": -49.644932214331824,
+   "quality": 3,
+   "why": [
+    "rev +11% YoY",
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "IBRX",
+   "name": "Immunitybio Inc",
+   "sector": "HEALTHCARE",
+   "price": 7.65,
+   "target": 12.75,
+   "upside": 66.66666666666666,
+   "analysts": 4,
+   "cap": 8203132000.0,
+   "rev": 165792000.0,
+   "eps": -0.97,
+   "opm": -1.204,
+   "grow": 0.939,
+   "roe": 0.0,
+   "off_high": -38.45534995977473,
+   "quality": 1,
+   "why": [
+    "rev +94% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "IHRT",
+   "name": "iHeartMedia Inc Class A",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 3.0,
+   "target": 3.625,
+   "upside": 20.833333333333325,
+   "analysts": 4,
+   "cap": 450436000.0,
+   "rev": 3985676000.0,
+   "eps": -1.79,
+   "opm": 0.0363,
+   "grow": 0.047,
+   "roe": -24.44,
+   "off_high": -54.268292682926834,
+   "quality": 4,
+   "why": [
+    "op margin 4%",
+    "rev +5% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "ILPT",
+   "name": "Industrial Logistics Properties Trus",
+   "sector": "REAL ESTATE",
+   "price": 9.15,
+   "target": 11.17,
+   "upside": 22.07650273224042,
+   "analysts": 4,
+   "cap": 610725000.0,
+   "rev": 455388000.0,
+   "eps": -0.72,
+   "opm": 0.314,
+   "grow": 0.018,
+   "roe": -0.0916,
+   "off_high": -2.969247083775184,
+   "quality": 3,
+   "why": [
+    "op margin 31%",
+    "rev +2% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "INN",
+   "name": "Summit Hotel Properties Inc",
+   "sector": "REAL ESTATE",
+   "price": 6.09,
+   "target": 6.69,
+   "upside": 9.852216748768484,
+   "analysts": 6,
+   "cap": 654671000.0,
+   "rev": 736149000.0,
+   "eps": -0.22,
+   "opm": 0.144,
+   "grow": 0.032,
+   "roe": -0.0082,
+   "off_high": -15.062761506276157,
+   "quality": 3,
+   "why": [
+    "op margin 14%",
+    "rev +3% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "INTR",
+   "name": "Inter & Co. Inc. Class A Common Shar",
+   "sector": "FINANCIAL SERVICES",
+   "price": 5.22,
+   "target": 8.78,
+   "upside": 68.19923371647509,
+   "analysts": 10,
+   "cap": 2229643000.0,
+   "rev": 6661835000.0,
+   "eps": 0.65,
+   "opm": 0.297,
+   "grow": 0.238,
+   "roe": 0.162,
+   "off_high": -48.97360703812317,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 30%",
+    "rev +24% YoY",
+    "ROE 16%",
+    "$1B+ revenue",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "IOVA",
+   "name": "Iovance Biotherapeutics Inc",
+   "sector": "HEALTHCARE",
+   "price": 6.52,
+   "target": 9.22,
+   "upside": 41.4110429447853,
+   "analysts": 9,
+   "cap": 3053027000.0,
+   "rev": 324969000.0,
+   "eps": -0.69,
+   "opm": -0.523,
+   "grow": 0.657,
+   "roe": -0.404,
+   "off_high": -5.780346820809257,
+   "quality": 2,
+   "why": [
+    "rev +66% YoY",
+    "9 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "IQ",
+   "name": "iQIYI Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 1.36,
+   "target": 1.54,
+   "upside": 13.235294117647056,
+   "analysts": 20,
+   "cap": 1283483000.0,
+   "rev": 26330606000.0,
+   "eps": -0.1,
+   "opm": -0.0367,
+   "grow": -0.134,
+   "roe": -0.0513,
+   "off_high": -52.112676056338024,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "20 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "JMIA",
+   "name": "Jumia Technologies AG",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 6.21,
+   "target": 15.09,
+   "upside": 142.9951690821256,
+   "analysts": 5,
+   "cap": 792657000.0,
+   "rev": 203231000.0,
+   "eps": -0.56,
+   "opm": -0.259,
+   "grow": 0.394,
+   "roe": -1.547,
+   "off_high": -57.8125,
+   "quality": 1,
+   "why": [
+    "rev +39% YoY"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "JOBY",
+   "name": "Joby Aviation",
+   "sector": "INDUSTRIALS",
+   "price": 8.27,
+   "target": 10.68,
+   "upside": 29.14147521160824,
+   "analysts": 11,
+   "cap": 7873429000.0,
+   "rev": 116295000.0,
+   "eps": -0.93,
+   "opm": -6.75,
+   "grow": 2574.93,
+   "roe": -0.659,
+   "off_high": -58.60860860860861,
+   "quality": 2,
+   "why": [
+    "rev +257493% YoY",
+    "11 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "KOS",
+   "name": "Kosmos Energy Ltd",
+   "sector": "ENERGY",
+   "price": 2.525,
+   "target": 3.075,
+   "upside": 21.7821782178218,
+   "analysts": 13,
+   "cap": 1506584000.0,
+   "rev": 1584612000.0,
+   "eps": -1.13,
+   "opm": 0.538,
+   "grow": 0.546,
+   "roe": -0.629,
+   "off_high": -24.401197604790415,
+   "quality": 5,
+   "why": [
+    "op margin 54%",
+    "rev +55% YoY",
+    "$1B+ revenue",
+    "13 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "LTRX",
+   "name": "Lantronix Inc",
+   "sector": "TECHNOLOGY",
+   "price": 6.09,
+   "target": 10.33,
+   "upside": 69.6223316912972,
+   "analysts": 5,
+   "cap": 275235000.0,
+   "rev": 118584000.0,
+   "eps": -0.17,
+   "opm": -0.0263,
+   "grow": 0.059,
+   "roe": -0.0873,
+   "off_high": -30.400000000000006,
+   "quality": 1,
+   "why": [
+    "rev +6% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "LUMN",
+   "name": "Lumen Technologies Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 6.41,
+   "target": 7.64,
+   "upside": 19.188767550702025,
+   "analysts": 11,
+   "cap": 6487792000.0,
+   "rev": 11832001000.0,
+   "eps": -1.02,
+   "opm": -0.0289,
+   "grow": -0.093,
+   "roe": -0.789,
+   "off_high": -46.35983263598325,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "MARA",
+   "name": "Marathon Digital Holdings Inc",
+   "sector": "FINANCIAL SERVICES",
+   "price": 9.21,
+   "target": 17.95,
+   "upside": 94.89685124864276,
+   "analysts": 13,
+   "cap": 3723925000.0,
+   "rev": 804219000.0,
+   "eps": -9.35,
+   "opm": -2.652,
+   "grow": -0.267,
+   "roe": -1.056,
+   "off_high": -60.72494669509594,
+   "quality": 1,
+   "why": [
+    "13 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "MBLY",
+   "name": "Mobileye Global Inc. Class A Common ",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 8.9,
+   "target": 12.1,
+   "upside": 35.95505617977528,
+   "analysts": 28,
+   "cap": 7481651000.0,
+   "rev": 2016000000.0,
+   "eps": -4.97,
+   "opm": -0.0591,
+   "grow": 0.004,
+   "roe": -0.401,
+   "off_high": -43.70651486401012,
+   "quality": 3,
+   "why": [
+    "rev +0% YoY",
+    "$1B+ revenue",
+    "28 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "MDXG",
+   "name": "MiMedx Group Inc",
+   "sector": "HEALTHCARE",
+   "price": 4.2,
+   "target": 7.0,
+   "upside": 66.66666666666666,
+   "analysts": 5,
+   "cap": 623855000.0,
+   "rev": 355173000.0,
+   "eps": 0.04,
+   "opm": -0.287,
+   "grow": -0.347,
+   "roe": 0.0288,
+   "off_high": -47.30238393977415,
+   "quality": 3,
+   "why": [
+    "profitable",
+    "ROE 3%"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "MFIC",
+   "name": "MidCap Financial Investment Corporat",
+   "sector": "FINANCIAL SERVICES",
+   "price": 9.85,
+   "target": 10.5,
+   "upside": 6.598984771573613,
+   "analysts": 8,
+   "cap": 811370000.0,
+   "rev": 300983000.0,
+   "eps": -0.35,
+   "opm": 0.877,
+   "grow": -0.16,
+   "roe": -0.0239,
+   "off_high": -17.226890756302527,
+   "quality": 3,
+   "why": [
+    "op margin 88%",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "MNKD",
+   "name": "MannKind Corp",
+   "sector": "HEALTHCARE",
+   "price": 3.73,
+   "target": 7.97,
+   "upside": 113.67292225201071,
+   "analysts": 8,
+   "cap": 1229655000.0,
+   "rev": 393629000.0,
+   "eps": -0.15,
+   "opm": -0.0076,
+   "grow": 0.429,
+   "roe": 0.0,
+   "off_high": -42.703533026113675,
+   "quality": 2,
+   "why": [
+    "rev +43% YoY",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "MOMO",
+   "name": "Hello Group Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 5.75,
+   "target": 8.66,
+   "upside": 50.60869565217392,
+   "analysts": 7,
+   "cap": 867277000.0,
+   "rev": 10232237000.0,
+   "eps": 0.67,
+   "opm": 0.13,
+   "grow": -0.054,
+   "roe": 0.0669,
+   "off_high": -29.8780487804878,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 13%",
+    "ROE 7%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "MPT",
+   "name": "Medical Properties Trust, Inc.",
+   "sector": "REAL ESTATE",
+   "price": 4.215,
+   "target": 5.71,
+   "upside": 35.46856465005932,
+   "analysts": 9,
+   "cap": 2418660000.0,
+   "rev": 1117063000.0,
+   "eps": -0.05,
+   "opm": 0.555,
+   "grow": -0.024,
+   "roe": -0.0062,
+   "off_high": -32.34349919743179,
+   "quality": 4,
+   "why": [
+    "op margin 56%",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "MRVI",
+   "name": "Maravai Lifesciences Holdings\u00a0Inc",
+   "sector": "HEALTHCARE",
+   "price": 5.78,
+   "target": 7.3,
+   "upside": 26.29757785467126,
+   "analysts": 8,
+   "cap": 2140668000.0,
+   "rev": 208775000.0,
+   "eps": -0.53,
+   "opm": -0.294,
+   "grow": 0.085,
+   "roe": -0.331,
+   "off_high": -22.311827956989248,
+   "quality": 2,
+   "why": [
+    "rev +8% YoY",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics Inc",
+   "sector": "HEALTHCARE",
+   "price": 3.17,
+   "target": 4.95,
+   "upside": 56.15141955835963,
+   "analysts": 8,
+   "cap": 308948000.0,
+   "rev": 557000000.0,
+   "eps": -1.19,
+   "opm": -0.214,
+   "grow": -0.208,
+   "roe": -0.235,
+   "off_high": -63.09662398137369,
+   "quality": 1,
+   "why": [
+    "8 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "NABL",
+   "name": "N-Able Inc",
+   "sector": "TECHNOLOGY",
+   "price": 3.7,
+   "target": 5.58,
+   "upside": 50.8108108108108,
+   "analysts": 6,
+   "cap": 612054000.0,
+   "rev": 533413000.0,
+   "eps": -0.03,
+   "opm": 0.132,
+   "grow": 0.059,
+   "roe": -0.0063,
+   "off_high": -57.61741122565864,
+   "quality": 3,
+   "why": [
+    "op margin 13%",
+    "rev +6% YoY"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "NCMI",
+   "name": "National CineMedia Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 2.68,
+   "target": 5.25,
+   "upside": 95.89552238805969,
+   "analysts": 4,
+   "cap": 208836000.0,
+   "rev": 242300000.0,
+   "eps": -0.06,
+   "opm": -0.776,
+   "grow": -0.026,
+   "roe": -0.0238,
+   "off_high": -45.30612244897959,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "NIO",
+   "name": "Nio Inc Class A ADR",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 4.495,
+   "target": 7.36,
+   "upside": 63.73748609566186,
+   "analysts": 24,
+   "cap": 12077316000.0,
+   "rev": 100985438000.0,
+   "eps": -0.56,
+   "opm": -0.0121,
+   "grow": 1.122,
+   "roe": -0.84,
+   "off_high": -43.952618453865334,
+   "quality": 3,
+   "why": [
+    "rev +112% YoY",
+    "$1B+ revenue",
+    "24 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "NMFC",
+   "name": "New Mountain Finance Corporation",
+   "sector": "FINANCIAL SERVICES",
+   "price": 7.79,
+   "target": 8.29,
+   "upside": 6.41848523748394,
+   "analysts": 7,
+   "cap": 728228000.0,
+   "rev": 288200000.0,
+   "eps": -0.48,
+   "opm": 0.766,
+   "grow": -0.264,
+   "roe": -0.0406,
+   "off_high": -16.236559139784955,
+   "quality": 2,
+   "why": [
+    "op margin 77%"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "NNBR",
+   "name": "NN Inc",
+   "sector": "INDUSTRIALS",
+   "price": 3.61,
+   "target": 5.75,
+   "upside": 59.27977839335181,
+   "analysts": 4,
+   "cap": 302246000.0,
+   "rev": 455791000.0,
+   "eps": -0.98,
+   "opm": 0.0078,
+   "grow": 0.193,
+   "roe": -0.183,
+   "off_high": -19.419642857142872,
+   "quality": 3,
+   "why": [
+    "op margin 1%",
+    "rev +19% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "NRGV",
+   "name": "Energy Vault Holdings Inc",
+   "sector": "UTILITIES",
+   "price": 3.7,
+   "target": 5.53,
+   "upside": 49.45945945945947,
+   "analysts": 5,
+   "cap": 710458000.0,
+   "rev": 225873000.0,
+   "eps": -0.78,
+   "opm": -1.42,
+   "grow": 1.041,
+   "roe": -1.786,
+   "off_high": -44.27710843373494,
+   "quality": 1,
+   "why": [
+    "rev +104% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "NUVB",
+   "name": "Nuvation Bio Inc",
+   "sector": "HEALTHCARE",
+   "price": 6.12,
+   "target": 12.12,
+   "upside": 98.03921568627449,
+   "analysts": 10,
+   "cap": 2254211000.0,
+   "rev": 169900000.0,
+   "eps": -0.44,
+   "opm": -1.611,
+   "grow": 5.56,
+   "roe": -0.478,
+   "off_high": -37.23076923076923,
+   "quality": 2,
+   "why": [
+    "rev +556% YoY",
+    "10 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "NWL",
+   "name": "Newell Brands Inc",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 6.17,
+   "target": 6.66,
+   "upside": 7.94165316045381,
+   "analysts": 9,
+   "cap": 2623544000.0,
+   "rev": 7246000000.0,
+   "eps": -0.53,
+   "opm": 0.147,
+   "grow": 0.03,
+   "roe": -0.0859,
+   "off_high": -13.464235624123422,
+   "quality": 5,
+   "why": [
+    "op margin 15%",
+    "rev +3% YoY",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "NXDR",
+   "name": "NXDR",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 2.585,
+   "target": 3.212,
+   "upside": 24.255319148936174,
+   "analysts": 5,
+   "cap": 986463000.0,
+   "rev": 274600000.0,
+   "eps": -0.08,
+   "opm": -0.076,
+   "grow": 0.145,
+   "roe": -0.0724,
+   "off_high": -30.510752688172047,
+   "quality": 1,
+   "why": [
+    "rev +14% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "OEC",
+   "name": "Orion Engineered Carbons SA",
+   "sector": "BASIC MATERIALS",
+   "price": 6.37,
+   "target": 6.69,
+   "upside": 5.0235478806907485,
+   "analysts": 4,
+   "cap": 364006000.0,
+   "rev": 1823000000.0,
+   "eps": -1.7,
+   "opm": 0.0425,
+   "grow": 0.074,
+   "roe": -0.227,
+   "off_high": -40.63373718546133,
+   "quality": 4,
+   "why": [
+    "op margin 4%",
+    "rev +7% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "OI",
+   "name": "O-I Glass Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 6.835,
+   "target": 9.72,
+   "upside": 42.209217264081936,
+   "analysts": 9,
+   "cap": 1051033000.0,
+   "rev": 6360000000.0,
+   "eps": -7.64,
+   "opm": 0.0719,
+   "grow": -0.022,
+   "roe": -1.183,
+   "off_high": -59.58013010053222,
+   "quality": 4,
+   "why": [
+    "op margin 7%",
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "OIS",
+   "name": "Oil States International Inc",
+   "sector": "ENERGY",
+   "price": 8.72,
+   "target": 11.0,
+   "upside": 26.146788990825677,
+   "analysts": 4,
+   "cap": 535665000.0,
+   "rev": 645666000.0,
+   "eps": -1.85,
+   "opm": 0.0837,
+   "grow": -0.053,
+   "roe": -0.17,
+   "off_high": -39.86206896551724,
+   "quality": 2,
+   "why": [
+    "op margin 8%"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "OPEN",
+   "name": "Opendoor Technologies Inc",
+   "sector": "REAL ESTATE",
+   "price": 3.65,
+   "target": 4.7,
+   "upside": 28.767123287671236,
+   "analysts": 9,
+   "cap": 3389108000.0,
+   "rev": 3254000000.0,
+   "eps": -1.84,
+   "opm": -0.159,
+   "grow": -0.437,
+   "roe": -1.969,
+   "off_high": -66.42134314627415,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "9 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "OPK",
+   "name": "Opko Health Inc",
+   "sector": "HEALTHCARE",
+   "price": 1.4,
+   "target": 4.375,
+   "upside": 212.5,
+   "analysts": 6,
+   "cap": 1037396000.0,
+   "rev": 587897000.0,
+   "eps": -0.07,
+   "opm": -0.153,
+   "grow": 0.043,
+   "roe": -0.0588,
+   "off_high": -19.075144508670526,
+   "quality": 1,
+   "why": [
+    "rev +4% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "PACB",
+   "name": "Pacific Biosciences of California",
+   "sector": "HEALTHCARE",
+   "price": 1.15,
+   "target": 2.292,
+   "upside": 99.30434782608695,
+   "analysts": 7,
+   "cap": 354347000.0,
+   "rev": 159271000.0,
+   "eps": -0.42,
+   "opm": -1.144,
+   "grow": -0.019,
+   "roe": -9.29,
+   "off_high": -57.87545787545788,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "PERI",
+   "name": "Perion Network",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 9.77,
+   "target": 13.0,
+   "upside": 33.060388945752315,
+   "analysts": 6,
+   "cap": 396095000.0,
+   "rev": 436218000.0,
+   "eps": -0.36,
+   "opm": -0.0763,
+   "grow": -0.046,
+   "roe": -0.0196,
+   "off_high": -13.309671694764857,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "PHAT",
+   "name": "Phathom Pharmaceuticals Inc",
+   "sector": "HEALTHCARE",
+   "price": 9.18,
+   "target": 21.9,
+   "upside": 138.56209150326796,
+   "analysts": 10,
+   "cap": 741862000.0,
+   "rev": 239662000.0,
+   "eps": -1.35,
+   "opm": -0.0534,
+   "grow": 0.88,
+   "roe": -34.89,
+   "off_high": -49.86346258874932,
+   "quality": 2,
+   "why": [
+    "rev +88% YoY",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "PLTK",
+   "name": "Playtika Holding Corp",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 2.52,
+   "target": 5.0,
+   "upside": 98.41269841269842,
+   "analysts": 11,
+   "cap": 902054000.0,
+   "rev": 2829200000.0,
+   "eps": -0.66,
+   "opm": 0.188,
+   "grow": 0.05,
+   "roe": 0.0,
+   "off_high": -42.201834862385326,
+   "quality": 5,
+   "why": [
+    "op margin 19%",
+    "rev +5% YoY",
+    "$1B+ revenue",
+    "11 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "PNNT",
+   "name": "PennantPark Investment Corporation",
+   "sector": "FINANCIAL SERVICES",
+   "price": 3.825,
+   "target": 4.75,
+   "upside": 24.183006535947715,
+   "analysts": 8,
+   "cap": 249431000.0,
+   "rev": 104907000.0,
+   "eps": 0.15,
+   "opm": 0.722,
+   "grow": -0.162,
+   "roe": 0.0223,
+   "off_high": -40.42056074766355,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 72%",
+    "ROE 2%",
+    "8 analysts"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "PONY",
+   "name": "Pony AI Inc. American Depositary Sha",
+   "sector": "TECHNOLOGY",
+   "price": 8.33,
+   "target": 20.91,
+   "upside": 151.0204081632653,
+   "analysts": 18,
+   "cap": 3562191000.0,
+   "rev": 110272000.0,
+   "eps": -0.34,
+   "opm": -1.703,
+   "grow": 1.45,
+   "roe": -0.0718,
+   "off_high": -66.57303370786516,
+   "quality": 2,
+   "why": [
+    "rev +145% YoY",
+    "18 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "PSFE",
+   "name": "Paysafe Ltd",
+   "sector": "TECHNOLOGY",
+   "price": 7.9,
+   "target": 9.88,
+   "upside": 25.063291139240505,
+   "analysts": 6,
+   "cap": 355017000.0,
+   "rev": 1743111000.0,
+   "eps": -3.51,
+   "opm": 0.0245,
+   "grow": 0.104,
+   "roe": -0.27,
+   "off_high": -47.4034620505992,
+   "quality": 4,
+   "why": [
+    "op margin 2%",
+    "rev +10% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "REAX",
+   "name": "Real Brokerage Inc",
+   "sector": "REAL ESTATE",
+   "price": 2.4,
+   "target": 4.95,
+   "upside": 106.25,
+   "analysts": 6,
+   "cap": 507810000.0,
+   "rev": 2239814000.0,
+   "eps": -0.07,
+   "opm": 0.0065,
+   "grow": 0.296,
+   "roe": -0.249,
+   "off_high": -55.637707948244,
+   "quality": 4,
+   "why": [
+    "op margin 1%",
+    "rev +30% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "RIG",
+   "name": "Transocean Ltd",
+   "sector": "ENERGY",
+   "price": 5.715,
+   "target": 6.61,
+   "upside": 15.660542432195989,
+   "analysts": 14,
+   "cap": 6366217000.0,
+   "rev": 4118000000.0,
+   "eps": -1.68,
+   "opm": 0.174,
+   "grow": -0.022,
+   "roe": -0.187,
+   "off_high": -25.391644908616197,
+   "quality": 4,
+   "why": [
+    "op margin 17%",
+    "$1B+ revenue",
+    "14 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "RPAY",
+   "name": "Repay Holdings Corp",
+   "sector": "TECHNOLOGY",
+   "price": 3.83,
+   "target": 6.85,
+   "upside": 78.85117493472585,
+   "analysts": 5,
+   "cap": 331206000.0,
+   "rev": 337809000.0,
+   "eps": -2.01,
+   "opm": -0.0323,
+   "grow": 0.332,
+   "roe": -0.318,
+   "off_high": -36.69421487603306,
+   "quality": 1,
+   "why": [
+    "rev +33% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "RUN",
+   "name": "Sunrun Inc",
+   "sector": "TECHNOLOGY",
+   "price": 9.86,
+   "target": 16.71,
+   "upside": 69.47261663286007,
+   "analysts": 22,
+   "cap": 2369934000.0,
+   "rev": 3475609000.0,
+   "eps": 1.44,
+   "opm": 0.04,
+   "grow": 0.528,
+   "roe": -0.199,
+   "off_high": -56.06060606060607,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 4%",
+    "rev +53% YoY",
+    "$1B+ revenue",
+    "22 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "RWT",
+   "name": "Redwood Trust Inc",
+   "sector": "REAL ESTATE",
+   "price": 4.775,
+   "target": 5.91,
+   "upside": 23.769633507853392,
+   "analysts": 8,
+   "cap": 599171000.0,
+   "rev": 261570000.0,
+   "eps": -0.06,
+   "opm": 0.0008,
+   "grow": -0.134,
+   "roe": 0.0057,
+   "off_high": -26.538461538461533,
+   "quality": 4,
+   "why": [
+    "op margin 0%",
+    "ROE 1%",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "RXST",
+   "name": "Rxsight Inc",
+   "sector": "HEALTHCARE",
+   "price": 7.01,
+   "target": 7.79,
+   "upside": 11.126961483594865,
+   "analysts": 10,
+   "cap": 293648000.0,
+   "rev": 127582000.0,
+   "eps": -1.15,
+   "opm": -0.408,
+   "grow": 0.003,
+   "roe": -0.173,
+   "off_high": -46.974281391830566,
+   "quality": 2,
+   "why": [
+    "rev +0% YoY",
+    "10 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SFIX",
+   "name": "Stitch Fix",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 3.65,
+   "target": 4.7,
+   "upside": 28.767123287671236,
+   "analysts": 6,
+   "cap": 473662000.0,
+   "rev": 1334928000.0,
+   "eps": -0.13,
+   "opm": -0.0118,
+   "grow": 0.047,
+   "roe": -0.0952,
+   "off_high": -38.55218855218856,
+   "quality": 2,
+   "why": [
+    "rev +5% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SNAP",
+   "name": "Snap Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 5.315,
+   "target": 7.28,
+   "upside": 36.97083725305739,
+   "analysts": 43,
+   "cap": 8794228000.0,
+   "rev": 6351084000.0,
+   "eps": -0.17,
+   "opm": -0.0264,
+   "grow": 0.189,
+   "roe": -0.156,
+   "off_high": -42.72629310344826,
+   "quality": 3,
+   "why": [
+    "rev +19% YoY",
+    "$1B+ revenue",
+    "43 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SOUN",
+   "name": "SoundHound AI Inc",
+   "sector": "TECHNOLOGY",
+   "price": 7.48,
+   "target": 12.71,
+   "upside": 69.91978609625669,
+   "analysts": 8,
+   "cap": 3286413000.0,
+   "rev": 203200000.0,
+   "eps": -0.62,
+   "opm": -0.759,
+   "grow": 0.45,
+   "roe": -0.322,
+   "off_high": -66.26071267478575,
+   "quality": 2,
+   "why": [
+    "rev +45% YoY",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SPT",
+   "name": "Sprout Social Inc",
+   "sector": "TECHNOLOGY",
+   "price": 9.97,
+   "target": 10.33,
+   "upside": 3.6108324974924777,
+   "analysts": 10,
+   "cap": 578656000.0,
+   "rev": 481824000.0,
+   "eps": -0.48,
+   "opm": -0.0244,
+   "grow": 0.108,
+   "roe": -0.143,
+   "off_high": -37.80411728009982,
+   "quality": 2,
+   "why": [
+    "rev +11% YoY",
+    "10 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SRTA",
+   "name": "Strata Critical Medical, Inc.",
+   "sector": "HEALTHCARE",
+   "price": 5.97,
+   "target": 9.56,
+   "upside": 60.134003350083766,
+   "analysts": 4,
+   "cap": 533455000.0,
+   "rev": 255975000.0,
+   "eps": -0.28,
+   "opm": -0.0632,
+   "grow": 0.607,
+   "roe": -0.0922,
+   "off_high": -8.153846153846157,
+   "quality": 1,
+   "why": [
+    "rev +61% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "STIM",
+   "name": "Neuronetics Inc",
+   "sector": "HEALTHCARE",
+   "price": 3.03,
+   "target": 4.5,
+   "upside": 48.51485148514851,
+   "analysts": 4,
+   "cap": 223377000.0,
+   "rev": 155096000.0,
+   "eps": -0.43,
+   "opm": -0.0361,
+   "grow": 0.091,
+   "roe": -1.161,
+   "off_high": -20.26315789473684,
+   "quality": 1,
+   "why": [
+    "rev +9% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "STLA",
+   "name": "Stellantis NV",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 5.375,
+   "target": 7.08,
+   "upside": 31.720930232558132,
+   "analysts": 10,
+   "cap": 20155183000.0,
+   "rev": 160860996000.0,
+   "eps": -7.68,
+   "opm": 0.0224,
+   "grow": 0.131,
+   "roe": -0.287,
+   "off_high": -56.01472995090017,
+   "quality": 5,
+   "why": [
+    "op margin 2%",
+    "rev +13% YoY",
+    "$1B+ revenue",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "STUB",
+   "name": "StubHub Holdings, Inc.",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 7.665,
+   "target": 13.38,
+   "upside": 74.55968688845402,
+   "analysts": 14,
+   "cap": 3206235000.0,
+   "rev": 1793626000.0,
+   "eps": -5.4,
+   "opm": 0.0579,
+   "grow": 0.122,
+   "roe": -1.094,
+   "off_high": -72.51703119397634,
+   "quality": 5,
+   "why": [
+    "op margin 6%",
+    "rev +12% YoY",
+    "$1B+ revenue",
+    "14 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SUJA",
+   "name": "Suja Life, Inc. Class A Common Stock",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 6.33,
+   "target": 18.0,
+   "upside": 184.3601895734597,
+   "analysts": 5,
+   "cap": 226729000.0,
+   "rev": 355010000.0,
+   "eps": -0.76,
+   "opm": 0.0541,
+   "grow": 0.116,
+   "roe": -0.52,
+   "off_high": -98.99863954187363,
+   "quality": 3,
+   "why": [
+    "op margin 5%",
+    "rev +12% YoY"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SUPV",
+   "name": "Grupo Supervielle SA",
+   "sector": "FINANCIAL SERVICES",
+   "price": 8.42,
+   "target": 12.9,
+   "upside": 53.20665083135392,
+   "analysts": 5,
+   "cap": 782528000.0,
+   "rev": 742484017000.0,
+   "eps": -0.5,
+   "opm": 0.0331,
+   "grow": 0.207,
+   "roe": -0.0859,
+   "off_high": -37.85977859778599,
+   "quality": 4,
+   "why": [
+    "op margin 3%",
+    "rev +21% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "SUZ",
+   "name": "Suzano Papel e Celulose SA ADR",
+   "sector": "BASIC MATERIALS",
+   "price": 7.99,
+   "target": 12.57,
+   "upside": 57.32165206508135,
+   "analysts": 5,
+   "cap": 9877117000.0,
+   "rev": 49531175000.0,
+   "eps": 1.81,
+   "opm": 0.167,
+   "grow": -0.051,
+   "roe": 0.263,
+   "off_high": -30.70251517779704,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 17%",
+    "ROE 26%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "SVC",
+   "name": "Service Properties Trust",
+   "sector": "REAL ESTATE",
+   "price": 8.17,
+   "target": 12.19,
+   "upside": 49.204406364749076,
+   "analysts": 5,
+   "cap": 1098240000.0,
+   "rev": 1661648000.0,
+   "eps": -25.65,
+   "opm": 0.146,
+   "grow": -0.164,
+   "roe": -0.563,
+   "off_high": -44.534962661235575,
+   "quality": 3,
+   "why": [
+    "op margin 15%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TALK",
+   "name": "Talkspace Inc",
+   "sector": "HEALTHCARE",
+   "price": 5.25,
+   "target": 6.15,
+   "upside": 17.14285714285715,
+   "analysts": 8,
+   "cap": 868917000.0,
+   "rev": 245730000.0,
+   "eps": -0.01,
+   "opm": -0.02,
+   "grow": 0.136,
+   "roe": 0.0017,
+   "off_high": 0.0,
+   "quality": 3,
+   "why": [
+    "rev +14% YoY",
+    "ROE 0%",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "TCPC",
+   "name": "BlackRock TCP Capital Corp",
+   "sector": "FINANCIAL SERVICES",
+   "price": 4.21,
+   "target": 4.333,
+   "upside": 2.9216152019002406,
+   "analysts": 4,
+   "cap": 335611000.0,
+   "rev": 188480000.0,
+   "eps": -1.31,
+   "opm": 0.811,
+   "grow": -0.238,
+   "roe": -0.187,
+   "off_high": -30.98360655737704,
+   "quality": 2,
+   "why": [
+    "op margin 81%"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TDAY",
+   "name": "USA TODAY Co., Inc.",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 6.85,
+   "target": 8.84,
+   "upside": 29.051094890510964,
+   "analysts": 6,
+   "cap": 1007171000.0,
+   "rev": 2230614000.0,
+   "eps": -0.28,
+   "opm": 0.0422,
+   "grow": -0.083,
+   "roe": -0.207,
+   "off_high": -25.624321389793714,
+   "quality": 3,
+   "why": [
+    "op margin 4%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TDOC",
+   "name": "Teladoc Inc",
+   "sector": "HEALTHCARE",
+   "price": 6.95,
+   "target": 7.79,
+   "upside": 12.086330935251798,
+   "analysts": 24,
+   "cap": 1219100000.0,
+   "rev": 2489480000.0,
+   "eps": -0.98,
+   "opm": -0.0568,
+   "grow": -0.04,
+   "roe": -0.13,
+   "off_high": -29.726996966632967,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "24 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TDUP",
+   "name": "ThredUp Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 3.17,
+   "target": 7.24,
+   "upside": 128.391167192429,
+   "analysts": 7,
+   "cap": 404508000.0,
+   "rev": 334303000.0,
+   "eps": -0.18,
+   "opm": -0.0674,
+   "grow": 0.169,
+   "roe": -0.368,
+   "off_high": -74.185667752443,
+   "quality": 1,
+   "why": [
+    "rev +17% YoY"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "TE",
+   "name": "T1 Energy Inc.",
+   "sector": "INDUSTRIALS",
+   "price": 4.785,
+   "target": 9.71,
+   "upside": 102.92580982236154,
+   "analysts": 7,
+   "cap": 1443183000.0,
+   "rev": 879490000.0,
+   "eps": -1.68,
+   "opm": -0.127,
+   "grow": 2.323,
+   "roe": -1.111,
+   "off_high": -61.68935148118495,
+   "quality": 1,
+   "why": [
+    "rev +232% YoY"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "TIGR",
+   "name": "Up Fintech Holding Ltd",
+   "sector": "FINANCIAL SERVICES",
+   "price": 4.66,
+   "target": 7.68,
+   "upside": 64.8068669527897,
+   "analysts": 11,
+   "cap": 818449000.0,
+   "rev": 567876000.0,
+   "eps": 0.59,
+   "opm": 0.348,
+   "grow": 0.271,
+   "roe": 0.147,
+   "off_high": -65.60885608856088,
+   "quality": 7,
+   "why": [
+    "profitable",
+    "op margin 35%",
+    "rev +27% YoY",
+    "ROE 15%",
+    "11 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "TLRY",
+   "name": "Tilray Inc",
+   "sector": "HEALTHCARE",
+   "price": 4.7,
+   "target": 7.84,
+   "upside": 66.80851063829788,
+   "analysts": 10,
+   "cap": 637433000.0,
+   "rev": 915454000.0,
+   "eps": -1.07,
+   "opm": -0.527,
+   "grow": -0.078,
+   "roe": -0.0682,
+   "off_high": -79.74137931034483,
+   "quality": 1,
+   "why": [
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TLS",
+   "name": "Telos Corp",
+   "sector": "TECHNOLOGY",
+   "price": 4.6,
+   "target": 6.83,
+   "upside": 48.47826086956524,
+   "analysts": 6,
+   "cap": 324358000.0,
+   "rev": 193708000.0,
+   "eps": -0.22,
+   "opm": 0.0065,
+   "grow": 0.327,
+   "roe": -0.149,
+   "off_high": -44.97607655502392,
+   "quality": 3,
+   "why": [
+    "op margin 1%",
+    "rev +33% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "TMCI",
+   "name": "Treace Medical Concepts Inc",
+   "sector": "HEALTHCARE",
+   "price": 4.51,
+   "target": 5.5,
+   "upside": 21.95121951219512,
+   "analysts": 5,
+   "cap": 308914000.0,
+   "rev": 205307000.0,
+   "eps": -0.92,
+   "opm": -0.33,
+   "grow": -0.042,
+   "roe": -0.72,
+   "off_high": -42.03084832904885,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TME",
+   "name": "Tencent Music Entertainment Group",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 8.655,
+   "target": 14.98,
+   "upside": 73.07914500288852,
+   "analysts": 29,
+   "cap": 13851337000.0,
+   "rev": 33931999000.0,
+   "eps": 0.82,
+   "opm": 0.314,
+   "grow": 0.058,
+   "roe": 0.11,
+   "off_high": -66.71153846153847,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 31%",
+    "rev +6% YoY",
+    "ROE 11%",
+    "$1B+ revenue",
+    "29 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "TRLV",
+   "name": "Trulieve Cannabis Corp.",
+   "sector": "HEALTHCARE",
+   "price": 9.66,
+   "target": 18.71,
+   "upside": 93.68530020703933,
+   "analysts": 7,
+   "cap": 1752608000.0,
+   "rev": 1139080000.0,
+   "eps": -2.39,
+   "opm": 0.128,
+   "grow": -0.103,
+   "roe": -0.476,
+   "off_high": -27.259036144578307,
+   "quality": 3,
+   "why": [
+    "op margin 13%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TROX",
+   "name": "Tronox Holdings PLC",
+   "sector": "BASIC MATERIALS",
+   "price": 6.015,
+   "target": 7.06,
+   "upside": 17.3732335827099,
+   "analysts": 8,
+   "cap": 958200000.0,
+   "rev": 3057000000.0,
+   "eps": -3.46,
+   "opm": -0.0196,
+   "grow": 0.187,
+   "roe": -0.413,
+   "off_high": -42.440191387559814,
+   "quality": 3,
+   "why": [
+    "rev +19% YoY",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "TRTX",
+   "name": "TPG RE Finance Trust Inc",
+   "sector": "REAL ESTATE",
+   "price": 8.015,
+   "target": 9.88,
+   "upside": 23.268870867124146,
+   "analysts": 6,
+   "cap": 610314000.0,
+   "rev": 132254000.0,
+   "eps": 0.55,
+   "opm": 0.435,
+   "grow": -0.116,
+   "roe": 0.0544,
+   "off_high": -9.332579185520352,
+   "quality": 5,
+   "why": [
+    "profitable",
+    "op margin 44%",
+    "ROE 5%"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "TU",
+   "name": "Telus Corp",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 9.675,
+   "target": 11.67,
+   "upside": 20.62015503875969,
+   "analysts": 18,
+   "cap": 14994001000.0,
+   "rev": 20206000000.0,
+   "eps": -0.42,
+   "opm": 0.151,
+   "grow": -0.022,
+   "roe": -0.0639,
+   "off_high": -36.76470588235294,
+   "quality": 4,
+   "why": [
+    "op margin 15%",
+    "$1B+ revenue",
+    "18 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "UAA",
+   "name": "Under Armour Inc A",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 5.355,
+   "target": 6.42,
+   "upside": 19.887955182072826,
+   "analysts": 26,
+   "cap": 2259410000.0,
+   "rev": 4930229000.0,
+   "eps": -1.15,
+   "opm": 0.0477,
+   "grow": -0.032,
+   "roe": -0.298,
+   "off_high": -34.29447852760737,
+   "quality": 4,
+   "why": [
+    "op margin 5%",
+    "$1B+ revenue",
+    "26 analysts"
+   ],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "UPWK",
+   "name": "Upwork Inc",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 8.66,
+   "target": 10.81,
+   "upside": 24.82678983833719,
+   "analysts": 10,
+   "cap": 1049188000.0,
+   "rev": 787282000.0,
+   "eps": 0.78,
+   "opm": 0.218,
+   "grow": -0.017,
+   "roe": 0.167,
+   "off_high": -62.08406304728547,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 22%",
+    "ROE 17%",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "USAS",
+   "name": "Americas Silver Corp",
+   "sector": "BASIC MATERIALS",
+   "price": 5.055,
+   "target": 9.75,
+   "upside": 92.87833827893178,
+   "analysts": 8,
+   "cap": 1734970000.0,
+   "rev": 162186000.0,
+   "eps": -0.22,
+   "opm": 0.399,
+   "grow": 1.879,
+   "roe": -0.393,
+   "off_high": -51.857142857142854,
+   "quality": 4,
+   "why": [
+    "op margin 40%",
+    "rev +188% YoY",
+    "8 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "UWMC",
+   "name": "UWM Holdings Corp",
+   "sector": "FINANCIAL SERVICES",
+   "price": 1.625,
+   "target": 2.219,
+   "upside": 36.55384615384614,
+   "analysts": 10,
+   "cap": 4327647000.0,
+   "rev": 2925762000.0,
+   "eps": -0.1,
+   "opm": -1.11,
+   "grow": -0.706,
+   "roe": -0.0768,
+   "off_high": -74.64898595943839,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "10 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "VLRS",
+   "name": "Volaris",
+   "sector": "INDUSTRIALS",
+   "price": 8.01,
+   "target": 9.42,
+   "upside": 17.602996254681646,
+   "analysts": 13,
+   "cap": 905817000.0,
+   "rev": 3295630000.0,
+   "eps": -1.6,
+   "opm": -0.115,
+   "grow": 0.239,
+   "roe": -1.168,
+   "off_high": -25.833333333333343,
+   "quality": 3,
+   "why": [
+    "rev +24% YoY",
+    "$1B+ revenue",
+    "13 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "VNDA",
+   "name": "Vanda Pharmaceuticals Inc",
+   "sector": "HEALTHCARE",
+   "price": 5.03,
+   "target": 12.19,
+   "upside": 142.3459244532803,
+   "analysts": 4,
+   "cap": 313801000.0,
+   "rev": 215721000.0,
+   "eps": -4.89,
+   "opm": -1.263,
+   "grow": -0.039,
+   "roe": -0.778,
+   "off_high": -49.3963782696177,
+   "quality": 0,
+   "why": [],
+   "flags": [
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "VNET",
+   "name": "VNET Group Inc DRC",
+   "sector": "TECHNOLOGY",
+   "price": 7.45,
+   "target": 15.07,
+   "upside": 102.28187919463085,
+   "analysts": 14,
+   "cap": 2113836000.0,
+   "rev": 10394177000.0,
+   "eps": -1.21,
+   "opm": 0.0918,
+   "grow": 0.198,
+   "roe": -0.0407,
+   "off_high": -48.54972375690608,
+   "quality": 5,
+   "why": [
+    "op margin 9%",
+    "rev +20% YoY",
+    "$1B+ revenue",
+    "14 analysts"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "VRRM",
+   "name": "Verra Mobility Corp",
+   "sector": "TECHNOLOGY",
+   "price": 4.81,
+   "target": 10.0,
+   "upside": 107.90020790020792,
+   "analysts": 8,
+   "cap": 713961000.0,
+   "rev": 1006959000.0,
+   "eps": 0.27,
+   "opm": 0.272,
+   "grow": 0.117,
+   "roe": 0.154,
+   "off_high": -81.1888932342589,
+   "quality": 8,
+   "why": [
+    "profitable",
+    "op margin 27%",
+    "rev +12% YoY",
+    "ROE 15%",
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "well below its 200-day trend"
+   ]
+  },
+  {
+   "ticker": "VYX",
+   "name": "NCR Voyix Corporation",
+   "sector": "TECHNOLOGY",
+   "price": 8.495,
+   "target": 12.96,
+   "upside": 52.5603296056504,
+   "analysts": 6,
+   "cap": 1123889000.0,
+   "rev": 2544000000.0,
+   "eps": 0.28,
+   "opm": 0.0249,
+   "grow": -0.208,
+   "roe": 0.0527,
+   "off_high": -38.531114327062234,
+   "quality": 6,
+   "why": [
+    "profitable",
+    "op margin 2%",
+    "ROE 5%",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "WBTN",
+   "name": "WEBTOON Entertainment Inc. Common st",
+   "sector": "COMMUNICATION SERVICES",
+   "price": 8.51,
+   "target": 12.0,
+   "upside": 41.0105757931845,
+   "analysts": 8,
+   "cap": 1171187000.0,
+   "rev": 1368064000.0,
+   "eps": -2.58,
+   "opm": -0.046,
+   "grow": -0.028,
+   "roe": -0.263,
+   "off_high": -62.1272808188696,
+   "quality": 2,
+   "why": [
+    "$1B+ revenue",
+    "8 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  },
+  {
+   "ticker": "WEAV",
+   "name": "Weave Communications Inc",
+   "sector": "HEALTHCARE",
+   "price": 5.325,
+   "target": 8.0,
+   "upside": 50.23474178403755,
+   "analysts": 4,
+   "cap": 400796000.0,
+   "rev": 257787000.0,
+   "eps": -0.27,
+   "opm": -0.0622,
+   "grow": 0.155,
+   "roe": -0.251,
+   "off_high": -34.3403205918619,
+   "quality": 1,
+   "why": [
+    "rev +16% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "WEST",
+   "name": "Westrock Coffee Company",
+   "sector": "CONSUMER DEFENSIVE",
+   "price": 8.4,
+   "target": 9.75,
+   "upside": 16.07142857142856,
+   "analysts": 4,
+   "cap": 820070000.0,
+   "rev": 1308780000.0,
+   "eps": -0.66,
+   "opm": 0.0058,
+   "grow": 0.088,
+   "roe": -0.239,
+   "off_high": -17.56624141315014,
+   "quality": 4,
+   "why": [
+    "op margin 1%",
+    "rev +9% YoY",
+    "$1B+ revenue"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "WLTH",
+   "name": "Wealthfront Corporation Common Stock",
+   "sector": "TECHNOLOGY",
+   "price": 9.45,
+   "target": 12.25,
+   "upside": 29.62962962962965,
+   "analysts": 7,
+   "cap": 1399515000.0,
+   "rev": 370963000.0,
+   "eps": -0.37,
+   "opm": 0.161,
+   "grow": 0.071,
+   "roe": -0.129,
+   "off_high": -36.491935483870975,
+   "quality": 3,
+   "why": [
+    "op margin 16%",
+    "rev +7% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "WRD",
+   "name": "WeRide Inc. American Depositary Shar",
+   "sector": "TECHNOLOGY",
+   "price": 5.95,
+   "target": 14.14,
+   "upside": 137.64705882352942,
+   "analysts": 13,
+   "cap": 1881629000.0,
+   "rev": 726290000.0,
+   "eps": -0.69,
+   "opm": -3.776,
+   "grow": 0.576,
+   "roe": -0.239,
+   "off_high": -52.589641434262944,
+   "quality": 2,
+   "why": [
+    "rev +58% YoY",
+    "13 analysts"
+   ],
+   "flags": [
+    "STALE-TARGET RISK: <half its 52w high AND >100% upside",
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "XERS",
+   "name": "Xeris Pharmaceuticals Inc",
+   "sector": "HEALTHCARE",
+   "price": 8.33,
+   "target": 11.29,
+   "upside": 35.53421368547418,
+   "analysts": 7,
+   "cap": 1547899000.0,
+   "rev": 335414000.0,
+   "eps": -0.1,
+   "opm": 0.0562,
+   "grow": 0.287,
+   "roe": -6.17,
+   "off_high": -17.361111111111114,
+   "quality": 3,
+   "why": [
+    "op margin 6%",
+    "rev +29% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "XPER",
+   "name": "Xperi Corp",
+   "sector": "TECHNOLOGY",
+   "price": 6.58,
+   "target": 11.4,
+   "upside": 73.25227963525836,
+   "analysts": 5,
+   "cap": 321406000.0,
+   "rev": 456837000.0,
+   "eps": -0.69,
+   "opm": 0.0272,
+   "grow": 0.081,
+   "roe": -0.0779,
+   "off_high": -24.8,
+   "quality": 3,
+   "why": [
+    "op margin 3%",
+    "rev +8% YoY"
+   ],
+   "flags": [
+    "unprofitable"
+   ]
+  },
+  {
+   "ticker": "XPOF",
+   "name": "Xponential Fitness Inc",
+   "sector": "CONSUMER CYCLICAL",
+   "price": 4.87,
+   "target": 6.75,
+   "upside": 38.60369609856262,
+   "analysts": 8,
+   "cap": 239143000.0,
+   "rev": 288470000.0,
+   "eps": -1.45,
+   "opm": 0.181,
+   "grow": -0.134,
+   "roe": -0.288,
+   "off_high": -48.136315228966986,
+   "quality": 3,
+   "why": [
+    "op margin 18%",
+    "8 analysts"
+   ],
+   "flags": [
+    "well below its 200-day trend",
+    "unprofitable",
+    "revenue shrinking"
+   ]
+  }
+ ]
+}

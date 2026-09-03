@@ -1,0 +1,173 @@
+[
+  {
+    "ticker": "CBZ",
+    "price": 54.36,
+    "change_pct": 16.4026,
+    "volume": 1457124,
+    "dollar_volume": 79209260.64,
+    "lists": [
+      "gainer"
+    ],
+    "score": 99,
+    "direction": "LONG",
+    "atr": 2.4551,
+    "atr_pct_of_price": 0.0452,
+    "stop": 50.063575,
+    "target": 62.95285,
+    "why": "4 fresh articles, avg sentiment +0.50 | put/call 0.04 (bullish flow) | earnings today (2026-07-29) - catalyst"
+  },
+  {
+    "ticker": "SOFI",
+    "price": 15.52,
+    "change_pct": -7.2879,
+    "volume": 20406140,
+    "dollar_volume": 316703292.8,
+    "lists": [
+      "active"
+    ],
+    "score": 96,
+    "direction": "LONG",
+    "atr": 0.8853,
+    "atr_pct_of_price": 0.057,
+    "stop": 13.970725,
+    "target": 18.61855,
+    "why": "7 fresh articles, avg sentiment +0.19 | put/call 0.46 (bullish flow) | earnings today (2026-07-29) - catalyst"
+  },
+  {
+    "ticker": "VRRM",
+    "price": 5.745,
+    "change_pct": 37.4402,
+    "volume": 3961468,
+    "dollar_volume": 22758633.66,
+    "lists": [
+      "gainer"
+    ],
+    "score": 64,
+    "direction": "WATCH",
+    "atr": 0.3747,
+    "atr_pct_of_price": 0.0652,
+    "stop": null,
+    "target": null,
+    "why": "4 fresh articles, avg sentiment -0.65 | put/call 0.03 (bullish flow) | earnings in 7d (2026-08-05) - catalyst | CONFLICT: news and options disagree -> no call"
+  },
+  {
+    "ticker": "DFNS",
+    "price": 42.97,
+    "change_pct": 79.0417,
+    "volume": 4769489,
+    "dollar_volume": 204944942.32999998,
+    "lists": [
+      "gainer"
+    ],
+    "score": 61,
+    "direction": "LONG",
+    "atr": 6.3387,
+    "atr_pct_of_price": 0.1475,
+    "stop": 31.877274999999997,
+    "target": 65.15545,
+    "why": "1 fresh articles, avg sentiment +0.44 | no options data"
+  },
+  {
+    "ticker": "SNXX",
+    "price": 7.7086,
+    "change_pct": -4.1219,
+    "volume": 34042722,
+    "dollar_volume": 262421726.8092,
+    "lists": [
+      "active"
+    ],
+    "score": 59,
+    "direction": "WATCH",
+    "atr": 4.8537,
+    "atr_pct_of_price": 0.6296,
+    "stop": null,
+    "target": null,
+    "why": "4 fresh articles, avg sentiment -0.37 | put/call 0.70 (neutral) | TOO VOLATILE: ATR 63% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "AMIX",
+    "price": 4.29,
+    "change_pct": 56.0,
+    "volume": 16210193,
+    "dollar_volume": 69541727.97,
+    "lists": [
+      "gainer",
+      "active"
+    ],
+    "score": 50,
+    "direction": "SHORT",
+    "atr": 0.6583,
+    "atr_pct_of_price": 0.1534,
+    "stop": 5.442025,
+    "target": 1.9859499999999999,
+    "why": "1 fresh articles, avg sentiment -0.23 | no options data"
+  },
+  {
+    "ticker": "KORU",
+    "price": 13.26,
+    "change_pct": -6.2898,
+    "volume": 27181012,
+    "dollar_volume": 360420219.12,
+    "lists": [
+      "active"
+    ],
+    "score": 41,
+    "direction": "WATCH",
+    "atr": 4.405,
+    "atr_pct_of_price": 0.3322,
+    "stop": null,
+    "target": null,
+    "why": "1 fresh articles, avg sentiment -0.65 | put/call 0.62 (bullish flow) | CONFLICT: news and options disagree -> no call | TOO VOLATILE: ATR 33% of price (ceiling 18%) -> not tradeable"
+  },
+  {
+    "ticker": "SKHY",
+    "price": 128.21,
+    "change_pct": -1.5057,
+    "volume": 9254270,
+    "dollar_volume": 1186489956.7,
+    "lists": [
+      "active"
+    ],
+    "score": 40,
+    "direction": "LONG",
+    "atr": null,
+    "atr_pct_of_price": null,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | put/call 0.51 (bullish flow)"
+  },
+  {
+    "ticker": "SKUU",
+    "price": 15.41,
+    "change_pct": -3.2643,
+    "volume": 9107046,
+    "dollar_volume": 140339578.86,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": null,
+    "atr_pct_of_price": null,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | put/call 0.35 (bullish flow)"
+  },
+  {
+    "ticker": "SKDD",
+    "price": 20.8341,
+    "change_pct": 3.0371,
+    "volume": 8629188,
+    "dollar_volume": 179781365.7108,
+    "lists": [
+      "active"
+    ],
+    "score": 35,
+    "direction": "LONG",
+    "atr": null,
+    "atr_pct_of_price": null,
+    "stop": null,
+    "target": null,
+    "why": "no fresh relevant news | put/call 0.33 (bullish flow)"
+  }
+]
