@@ -1068,6 +1068,15 @@ async function load() {
     const r = await fetch("/api/data");
     DATA = await r.json();
     if (DATA.error) throw new Error(DATA.error);
+    // The momentum and macro sleeves are optional and ship separately from
+    // this repo. Their payloads are null when the sleeve isn't installed --
+    // hide the tabs rather than offering one that only says "hasn't run yet".
+    for (const p of ["momentum", "macro"]) {
+      if (DATA[p] == null) {
+        const btn = document.querySelector(`#nav button[data-p="${p}"]`);
+        if (btn) btn.hidden = true;
+      }
+    }
   } catch (e) {
     document.getElementById("main").innerHTML =
       `<div class="empty">Could not load data: ${esc(e.message)}<br>Paste this to Claude if it persists.</div>`;

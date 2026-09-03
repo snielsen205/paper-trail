@@ -82,10 +82,15 @@ say "running bot.py manage (time-stops + exit logging, market open)"
 $PY bot.py manage >>"$LOG" 2>&1 || say "manage failed (non-fatal)"
 # Read-only: refresh the momentum sleeve's dashboard snapshot (live P&L,
 # no orders). Keeps the Momentum tab current between monthly rebalances.
-say "refreshing momentum snapshot (read-only)"
-$PY momentum_sleeve.py --refresh >>"$LOG" 2>&1 || say "momentum refresh failed (non-fatal)"
-say "refreshing macro snapshot (read-only)"
-$PY macro_sleeve.py --refresh >>"$LOG" 2>&1 || say "macro refresh failed (non-fatal)"
+# Optional sleeves: present on the owner's machine, not shipped with the repo.
+if [ -f "$HERE/momentum_sleeve.py" ]; then
+  say "refreshing momentum snapshot (read-only)"
+  $PY momentum_sleeve.py --refresh >>"$LOG" 2>&1 || say "momentum refresh failed (non-fatal)"
+fi
+if [ -f "$HERE/macro_sleeve.py" ]; then
+  say "refreshing macro snapshot (read-only)"
+  $PY macro_sleeve.py --refresh >>"$LOG" 2>&1 || say "macro refresh failed (non-fatal)"
+fi
 # Read-only SEC filing monitor: 13D control-intent stakes, tender/merger forms,
 # "strategic alternatives" 8-Ks, and Form 15/25 delistings on the quality
 # universe. Public filings only, no orders, deduped so it buzzes once per

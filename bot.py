@@ -624,6 +624,33 @@ def spy_move_pct(av, start_date, end_date):
         return None
 
 
+def attribute_exit(pos, closing_order):
+    """Name the actual cause of an exit that did not come from a bracket leg.
+
+    "closed (manual / time-stop / re-protect)" was three different causes in
+    one string, and one of them -- a manual close -- would violate rulebook 7.
+    A log that cannot tell them apart cannot show the rule was followed, so
+    each is now named:
+
+      * the bot recorded its own intent before closing (time stop)  -> trusted
+      * a re-protect OCO leg filled: limit = target, stop = stop     -> inferred
+      * a market order nobody on the bot's side submitted            -> flagged
+
+    The last case is deliberately called out rather than absorbed into a
+    benign-sounding label. An unattributed exit is a finding.
+    """
+    intent = pos.get("exit_intent")
+    if intent:
+        return intent
+
+    otype = (closing_order.get("type") or "").lower()
+    if otype == "limit":
+        return "target hit (re-protect OCO)"
+    if otype in ("stop", "stop_limit", "trailing_stop"):
+        return "stop hit (re-protect OCO)"
+    return "closed outside the bot (unattributed)"
+
+
 def cmd_manage():
     config = load_config()
     dials = config["bot_dials"]
@@ -666,9 +693,10 @@ def cmd_manage():
                 if fills:
                     fills.sort(key=lambda o: (o.get("filled_at")
                                or o.get("submitted_at") or ""), reverse=True)
-                    exit_price = float(fills[0]["filled_avg_price"])
+                    closer = fills[0]
+                    exit_price = float(closer["filled_avg_price"])
                     if reason.startswith("unknown"):
-                        reason = "closed (manual / time-stop / re-protect)"
+                        reason = attribute_exit(pos, closer)
             except RuntimeError:
                 pass
         result = None
@@ -719,6 +747,13 @@ def cmd_manage():
                 print(f"  ({t}: could not list/cancel protective orders: {e})")
             try:
                 alp.close_position(t)
+                # Remember WHY this position is being closed. The exit itself
+                # is logged on the next manage run, by which point the only
+                # evidence left is a closing fill that looks identical to a
+                # manual sell. Recording the intent here is what lets the
+                # exit be attributed instead of guessed (rulebook 7, 9).
+                pos["exit_intent"] = "time stop"
+                save_state(state)
                 log_event("time_stop_submitted", ticker=t, days_held=held,
                           direction=pos["direction"], qty=pos["qty"],
                           protective_orders_cancelled=released)

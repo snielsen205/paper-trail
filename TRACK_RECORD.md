@@ -42,6 +42,17 @@ The screener's raw picks are one thing; the traded system is another. Across **1
 | Avg per trade | +6.66% |
 | Best / worst | +59.1% / -20.4% |
 
+**How every position was closed:**
+
+| Exit reason | Trades |
+|---|---|
+| time stop (attributed from log) | 8 |
+| target hit | 4 |
+| stop hit | 3 |
+| closed outside the bot (unattributed) | 2 |
+
+Exits marked *attributed from log* were recorded before the bot logged its own exit intent; they are matched to the `time_stop_submitted` event the bot wrote at the time it initiated the close. Two early exits match no such event and are left **unattributed** rather than assumed benign — under rulebook 7 the bot is not supposed to be closed by hand, so an exit it cannot account for is a finding, not a footnote. The bot now records its exit intent before closing, so new exits are attributed directly.
+
 That figure is realized P&L from the bot's **own** fills and exits. It is deliberately not read off account equity: the paper account is shared with other strategies, so its equity is not the bot's result.
 
 ## The honest read

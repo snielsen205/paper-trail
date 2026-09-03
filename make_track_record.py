@@ -50,6 +50,26 @@ def bot_results():
              and r.get("exit_price") and r.get("fill_price") and r.get("qty")]
     if not exits:
         return None
+    # Exits logged before the attribution fix carry a single bundled reason
+    # ("closed (manual / time-stop / re-protect)") that names three different
+    # causes, one of which would violate rulebook 7. Rather than rewrite the
+    # log -- an audit record you edit is not an audit record -- attribute them
+    # here from the bot's own contemporaneous time_stop_submitted events, and
+    # leave anything that does not match honestly unattributed.
+    time_stops = defaultdict(list)
+    for r in rows:
+        if r.get("event") == "time_stop_submitted":
+            time_stops[r["ticker"]].append(r.get("ts", ""))
+
+    def reason_of(r):
+        raw = str(r.get("reason", "unknown"))
+        if not raw.startswith("closed (manual"):
+            return raw
+        prior = [t for t in time_stops.get(r["ticker"], []) if t <= r.get("ts", "")]
+        if prior:
+            return "time stop (attributed from log)"
+        return "closed outside the bot (unattributed)"
+
     pnl = 0.0
     rets = []
     for r in exits:
@@ -62,7 +82,7 @@ def bot_results():
     wins = [x for x in rets if x > 0]
     reasons = defaultdict(int)
     for r in exits:
-        reasons[r.get("reason", "unknown")] += 1
+        reasons[reason_of(r)] += 1
     return {
         "n": len(exits),
         "pnl": pnl,
@@ -180,6 +200,22 @@ def main():
         A(f"| Win rate | {bot['win_rate']:.1f}% |")
         A(f"| Avg per trade | {bot['avg']:+.2f}% |")
         A(f"| Best / worst | {bot['best']:+.1f}% / {bot['worst']:+.1f}% |")
+        A("")
+        A("**How every position was closed:**")
+        A("")
+        A("| Exit reason | Trades |")
+        A("|---|---|")
+        for k in sorted(bot["reasons"], key=lambda k: -bot["reasons"][k]):
+            A(f"| {k} | {bot['reasons'][k]} |")
+        A("")
+        A("Exits marked *attributed from log* were recorded before the bot "
+          "logged its own exit intent; they are matched to the "
+          "`time_stop_submitted` event the bot wrote at the time it initiated "
+          "the close. Two early exits match no such event and are left "
+          "**unattributed** rather than assumed benign — under rulebook 7 the "
+          "bot is not supposed to be closed by hand, so an exit it cannot "
+          "account for is a finding, not a footnote. The bot now records its "
+          "exit intent before closing, so new exits are attributed directly.")
         A("")
         A("That figure is realized P&L from the bot's **own** fills and exits. "
           "It is deliberately not read off account equity: the paper account "
