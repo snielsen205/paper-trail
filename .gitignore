@@ -31,3 +31,12 @@ venv/
 polybot/config.json.bak*
 config.json.bak*
 alphavantage_support_email.txt
+
+# --- not part of the published movers bot ---
+polybot/
+momentum_sleeve.py
+momentum_run.sh
+macro_sleeve.py
+macro_run.sh
+snapshots/momentum_*
+snapshots/macro_*

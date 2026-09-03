@@ -99,10 +99,6 @@ Alpha Vantage ──► scan.py ──────► snapshots/scan_YYYY-MM-DD.
 - **`make_track_record.py`** — regenerates the published `TRACK_RECORD.md`
   and `track_record.csv` from that ledger.
 
-### Other sleeves
-- **`momentum_sleeve.py`**, **`macro_sleeve.py`** — separate monthly and
-  macro strategies logged alongside the movers book, never blended into it.
-
 ---
 
 ## The risk rules
@@ -174,6 +170,4 @@ late, because a late entry is a different strategy than the one being tested.
 ## Status
 
 Milestones 1-5 complete: scanner, scorer, ledger, dashboard, paper bot.
-The first evaluation window is running. `polybot/` is a retired
-Polymarket news-latency experiment, kept on disk with its 24-trade ledger
-for reference and no longer wired into the app.
+The first evaluation window is running.
