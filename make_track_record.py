@@ -17,6 +17,12 @@ from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEDGER = os.path.join(HERE, "snapshots", "track_record.jsonl")
+BOT_LOG = os.path.join(HERE, "snapshots", "bot_log.jsonl")
+
+# The bot's starting equity for the evaluation window. The Alpaca paper
+# account is shared with other strategies, so account equity is NOT the bot's
+# result -- realized P&L from the bot's own closed trades is.
+WINDOW_START_EQUITY = 100_000.0
 
 FIELDS = ["pick_date", "ticker", "direction", "score", "entry_close",
           "exit_date", "exit_close", "return_pct", "spy_return_pct",
@@ -26,6 +32,47 @@ FIELDS = ["pick_date", "ticker", "direction", "score", "entry_close",
 def load():
     with open(LEDGER) as fh:
         return [json.loads(l) for l in fh if l.strip()]
+
+
+def bot_results():
+    """Realized P&L from the bot's own closed trades.
+
+    Deliberately NOT read from account equity: the paper account is shared
+    with other strategies, so its equity reflects their positions too. Only
+    the bot's own fills and exits belong in the bot's number.
+    """
+    if not os.path.exists(BOT_LOG):
+        return None
+    with open(BOT_LOG) as fh:
+        rows = [json.loads(l) for l in fh if l.strip()]
+    exits = [r for r in rows
+             if r.get("event") == "exit"
+             and r.get("exit_price") and r.get("fill_price") and r.get("qty")]
+    if not exits:
+        return None
+    pnl = 0.0
+    rets = []
+    for r in exits:
+        qty = float(r["qty"])
+        fill = float(r["fill_price"])
+        out = float(r["exit_price"])
+        pnl += (out - fill) * qty if r.get("direction") == "LONG" else (fill - out) * qty
+        if r.get("result_pct") is not None:
+            rets.append(r["result_pct"])
+    wins = [x for x in rets if x > 0]
+    reasons = defaultdict(int)
+    for r in exits:
+        reasons[r.get("reason", "unknown")] += 1
+    return {
+        "n": len(exits),
+        "pnl": pnl,
+        "pct_of_equity": 100 * pnl / WINDOW_START_EQUITY,
+        "win_rate": 100 * len(wins) / len(rets) if rets else 0.0,
+        "avg": sum(rets) / len(rets) if rets else 0.0,
+        "best": max(rets) if rets else 0.0,
+        "worst": min(rets) if rets else 0.0,
+        "reasons": dict(reasons),
+    }
 
 
 def summarize(rows):
@@ -60,6 +107,7 @@ def row(label, s):
 
 def main():
     rows = load()
+    bot = bot_results()
     graded = [r for r in rows if r.get("graded")]
     pending = [r for r in rows if not r.get("graded")]
     calls = [r for r in graded if not r.get("no_call")]
@@ -75,6 +123,19 @@ def main():
     A(f"Every pick this screener has made, from **{dates[0]}** to **{dates[-1]}** "
       f"({len(dates)} trading days). Nothing is excluded. The losers are here "
       f"because a track record that drops them is not a track record.")
+    A("")
+    A("**Two different things are measured here, and they do not mean the "
+      "same thing:**")
+    A("")
+    A("1. **Signal quality** (this file's main table) — what every pick did if "
+      "you bought it and held it blind for the grading window. No stop, no "
+      "target, no exit rule. This measures the *screener*.")
+    A("2. **Strategy result** (the bot section) — what the trading rules "
+      "actually produced on the picks the bot took, with stops, 2:1 targets, "
+      "1% position sizing and a 5-day time stop. This measures the *system*.")
+    A("")
+    A("The gap between them is the value of the risk rules, and it is large. "
+      "Read one as the other and you will get the wrong answer.")
     A("")
     A(f"*Generated {date.today().isoformat()} from `snapshots/track_record.jsonl`. "
       f"Regenerate with `python3 make_track_record.py`.*")
@@ -103,25 +164,57 @@ def main():
     A("")
     A(f"{len(pending)} picks are logged but not yet ripe for grading.")
     A("")
+    A("## What the bot actually did")
+    A("")
+    if bot:
+        A(f"The screener's raw picks are one thing; the traded system is "
+          f"another. Across **{bot['n']} closed trades**, the bot realized "
+          f"**${bot['pnl']:,.2f}** — **{bot['pct_of_equity']:+.2f}%** on its "
+          f"${WINDOW_START_EQUITY:,.0f} starting equity — at a "
+          f"{bot['win_rate']:.1f}% win rate.")
+        A("")
+        A("| | |")
+        A("|---|---|")
+        A(f"| Closed trades | {bot['n']} |")
+        A(f"| Realized P&L | **${bot['pnl']:,.2f}** ({bot['pct_of_equity']:+.2f}% of starting equity) |")
+        A(f"| Win rate | {bot['win_rate']:.1f}% |")
+        A(f"| Avg per trade | {bot['avg']:+.2f}% |")
+        A(f"| Best / worst | {bot['best']:+.1f}% / {bot['worst']:+.1f}% |")
+        A("")
+        A("That figure is realized P&L from the bot's **own** fills and exits. "
+          "It is deliberately not read off account equity: the paper account "
+          "is shared with other strategies, so its equity is not the bot's "
+          "result.")
+    A("")
     A("## The honest read")
     A("")
-    if all_s and all_s["avg"] < 0:
-        A(f"**This strategy is losing money.** Over {all_s['n']} graded calls the "
-          f"average is **{all_s['avg']:+.2f}%** while SPY returned "
-          f"**{all_s['spy_avg']:+.2f}%** over the same windows. It beat SPY on "
-          f"{all_s['beat_spy']:.1f}% of calls and won outright "
-          f"{all_s['win_rate']:.1f}% of the time.")
+    if all_s and bot:
+        A(f"Held blind, the average pick loses **{abs(all_s['avg']):.2f}%** while "
+          f"SPY returns **{all_s['spy_avg']:+.2f}%** over the same windows. "
+          f"Traded under the rulebook, the same signal source returned "
+          f"**{bot['pct_of_equity']:+.2f}%**. **The risk management is doing the "
+          f"work, not the signal.**")
         A("")
-        A(f"The distribution is the story: a median of {all_s['median']:+.2f}% "
-          f"against a mean of {all_s['avg']:+.2f}% means the average is being "
-          f"dragged by a small number of severe losses, not by broad weakness. "
-          f"The worst single call was {all_s['worst']:+.1f}%; the best was "
-          f"{all_s['best']:+.1f}%.")
+        A("The clearest single case is **PLAG**. The ledger grades it "
+          "**-86.3%** — bought at 5.81, and five days later it traded at 0.79. "
+          "The bot logged the same pick as **+59.15%, target hit**: it took "
+          "profit at its 2:1 target and was out long before the collapse. One "
+          "pick, opposite outcomes, and the difference is entirely the exit "
+          "rule.")
         A("")
-        A("That gap is the actual finding, and it points at position sizing and "
-          "stop discipline rather than at the signal itself. It is being "
-          "addressed in the rulebook, not by re-running the screener until the "
-          "numbers look better.")
+        A("Read honestly, that cuts both ways. A screener whose picks lose "
+          "money when held is not a good screener, and the median call of "
+          f"{all_s['median']:+.2f}% says the edge in the raw signal is thin at "
+          "best. What the record supports is a narrower claim: **a mechanical "
+          "exit discipline can turn a mediocre signal into a positive result** "
+          "— which is worth knowing, and is not the same as having found alpha.")
+        A("")
+        A("The sample is small. "
+          f"{bot['n']} closed trades over {len(dates)} trading days is not "
+          "enough to distinguish skill from a favorable tape, several winners "
+          "carry most of the P&L, and it is paper money, where fills are "
+          "kinder than they would be live. The evaluation window is frozen "
+          "precisely so this gets more data before anyone concludes anything.")
     A("")
     A("## Every graded call")
     A("")

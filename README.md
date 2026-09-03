@@ -19,22 +19,43 @@ cannot be changed after the fact. The results are published in
 
 ## Current standing
 
-As of 2026-09-02, across 145 graded calls over 32 trading days:
+Two numbers matter here, and they measure different things.
+
+**The screener's raw signal** — every pick, bought and held blind for the
+grading window with no stop and no exit rule, across 145 graded calls over
+32 trading days:
 
 | | |
 |---|---|
 | Win rate | 44.8% |
-| Average return | **-6.19%** |
+| Average return | −6.19% |
 | SPY over the same windows | +0.72% |
 | Beat SPY | 42.1% of calls |
-| Median return | -1.48% |
 
-**The strategy is currently losing to SPY.** The gap between the -1.48%
-median and the -6.19% mean says the damage is concentrated in a few severe
-losses rather than spread across the book — which points at position sizing
-and stop behavior, not at the signal. That is the open question the next
-evaluation window is designed to answer. Full numbers and every individual
-call are in [TRACK_RECORD.md](TRACK_RECORD.md); the raw graded rows are in
+**The traded system** — the same signals run through the rulebook, with
+stops, 2:1 targets, 1% risk sizing and a 5-day time stop, across 17 closed
+trades:
+
+| | |
+|---|---|
+| Realized P&L | **+$6,890.73** |
+| On $100,000 starting equity | **+6.89%** |
+| Win rate | 58.8% |
+
+Held blind the picks lose money; traded under the rules the same picks made
+6.89%. **The risk management is doing the work, not the signal.**
+
+The clearest case is PLAG. The ledger grades it −86.3% — bought at 5.81, and
+five days later it traded at 0.79. The bot logged the same pick as **+59.15%,
+target hit**: it took its 2:1 target and was out long before the collapse.
+One pick, opposite outcomes, entirely because of the exit rule.
+
+That is a real result and a narrow one. 17 closed trades is a small sample,
+several winners carry most of the P&L, and paper fills are kinder than live
+ones. What the record supports is that a mechanical exit discipline can turn
+a mediocre signal into a positive result — not that the screener has found
+alpha. Full numbers and every individual call are in
+[TRACK_RECORD.md](TRACK_RECORD.md); the raw graded rows are in
 [track_record.csv](track_record.csv) if you want to check the arithmetic.
 
 ---

@@ -2,6 +2,13 @@
 
 Every pick this screener has made, from **2026-07-21** to **2026-09-02** (32 trading days). Nothing is excluded. The losers are here because a track record that drops them is not a track record.
 
+**Two different things are measured here, and they do not mean the same thing:**
+
+1. **Signal quality** (this file's main table) — what every pick did if you bought it and held it blind for the grading window. No stop, no target, no exit rule. This measures the *screener*.
+2. **Strategy result** (the bot section) — what the trading rules actually produced on the picks the bot took, with stops, 2:1 targets, 1% position sizing and a 5-day time stop. This measures the *system*.
+
+The gap between them is the value of the risk rules, and it is large. Read one as the other and you will get the wrong answer.
+
 *Generated 2026-09-02 from `snapshots/track_record.jsonl`. Regenerate with `python3 make_track_record.py`.*
 
 ## How grading works
@@ -23,13 +30,29 @@ Every pick this screener has made, from **2026-07-21** to **2026-09-02** (32 tra
 
 51 picks are logged but not yet ripe for grading.
 
+## What the bot actually did
+
+The screener's raw picks are one thing; the traded system is another. Across **17 closed trades**, the bot realized **$6,890.73** — **+6.89%** on its $100,000 starting equity — at a 58.8% win rate.
+
+| | |
+|---|---|
+| Closed trades | 17 |
+| Realized P&L | **$6,890.73** (+6.89% of starting equity) |
+| Win rate | 58.8% |
+| Avg per trade | +6.66% |
+| Best / worst | +59.1% / -20.4% |
+
+That figure is realized P&L from the bot's **own** fills and exits. It is deliberately not read off account equity: the paper account is shared with other strategies, so its equity is not the bot's result.
+
 ## The honest read
 
-**This strategy is losing money.** Over 145 graded calls the average is **-6.19%** while SPY returned **+0.72%** over the same windows. It beat SPY on 42.1% of calls and won outright 44.8% of the time.
+Held blind, the average pick loses **6.19%** while SPY returns **+0.72%** over the same windows. Traded under the rulebook, the same signal source returned **+6.89%**. **The risk management is doing the work, not the signal.**
 
-The distribution is the story: a median of -1.48% against a mean of -6.19% means the average is being dragged by a small number of severe losses, not by broad weakness. The worst single call was -164.8%; the best was +64.2%.
+The clearest single case is **PLAG**. The ledger grades it **-86.3%** — bought at 5.81, and five days later it traded at 0.79. The bot logged the same pick as **+59.15%, target hit**: it took profit at its 2:1 target and was out long before the collapse. One pick, opposite outcomes, and the difference is entirely the exit rule.
 
-That gap is the actual finding, and it points at position sizing and stop discipline rather than at the signal itself. It is being addressed in the rulebook, not by re-running the screener until the numbers look better.
+Read honestly, that cuts both ways. A screener whose picks lose money when held is not a good screener, and the median call of -1.48% says the edge in the raw signal is thin at best. What the record supports is a narrower claim: **a mechanical exit discipline can turn a mediocre signal into a positive result** — which is worth knowing, and is not the same as having found alpha.
+
+The sample is small. 17 closed trades over 32 trading days is not enough to distinguish skill from a favorable tape, several winners carry most of the P&L, and it is paper money, where fills are kinder than they would be live. The evaluation window is frozen precisely so this gets more data before anyone concludes anything.
 
 ## Every graded call
 
