@@ -1,8 +1,11 @@
-# Movers
+# paper-trail
 
 A daily equities research system: it scans the market for large intraday
 movers, filters and scores them, hands the survivors to a rules-based paper
 trading bot, and grades every call it ever made against SPY.
+
+The name is the thesis. It paper-trades, and it leaves a paper trail — an
+auditable record of every call, written down before the outcome was known.
 
 The point of the project is not the scanner. It is the **honesty ledger** —
 every pick is logged before the outcome is known and graded by a rule that
