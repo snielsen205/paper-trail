@@ -7,6 +7,8 @@ keys.json
 # --- live account / trading state (private) ---
 snapshots/bot_account.json
 snapshots/analyst_account.json
+snapshots/fund_account.json
+snapshots/fund_book.jsonl
 snapshots/bot_state.json
 snapshots/*.log
 snapshots/*.bak-*
