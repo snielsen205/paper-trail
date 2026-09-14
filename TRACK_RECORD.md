@@ -1,6 +1,6 @@
 # Track Record
 
-Every pick this screener has made, from **2026-07-21** to **2026-09-11** (38 trading days). Nothing is excluded. The losers are here because a track record that drops them is not a track record.
+Every pick this screener has made, from **2026-07-21** to **2026-09-14** (39 trading days). Nothing is excluded. The losers are here because a track record that drops them is not a track record.
 
 **Two different things are measured here, and they do not mean the same thing:**
 
@@ -28,7 +28,7 @@ The gap between them is the value of the risk rules, and it is large. Read one a
 | SHORT | 29 | 44.8% | -7.49% | -0.19% | 48.3% | +0.34% |
 | WATCH (no position) | 146 | 32.9% | -4.33% | -8.05% | 0.0% | +0.41% |
 
-51 picks are logged but not yet ripe for grading.
+61 picks are logged but not yet ripe for grading.
 
 ## What the bot actually did
 
@@ -64,7 +64,7 @@ The clearest single case is **PLAG**. The ledger grades it **-86.3%** — bought
 
 Read honestly, that cuts both ways. A screener whose picks lose money when held is not a good screener, and the median call of -2.42% says the edge in the raw signal is thin at best. What the record supports is a narrower claim: **a mechanical exit discipline can turn a mediocre signal into a positive result** — which is worth knowing, and is not the same as having found alpha.
 
-The sample is small. 18 closed trades over 38 trading days is not enough to distinguish skill from a favorable tape, several winners carry most of the P&L, and it is paper money, where fills are kinder than they would be live. The evaluation window is frozen precisely so this gets more data before anyone concludes anything.
+The sample is small. 18 closed trades over 39 trading days is not enough to distinguish skill from a favorable tape, several winners carry most of the P&L, and it is paper money, where fills are kinder than they would be live. The evaluation window is frozen precisely so this gets more data before anyone concludes anything.
 
 ## Every graded call
 

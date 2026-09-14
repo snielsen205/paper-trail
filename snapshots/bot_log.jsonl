@@ -59,3 +59,4 @@
 {"ts": "2026-09-11 09:45:00", "date": "2026-09-11", "event": "skip", "ticker": "INTC", "reason": "already in position (never add or flip)", "score": 88}
 {"ts": "2026-09-11 09:45:02", "date": "2026-09-11", "event": "time_stop_submitted", "ticker": "NVDA", "days_held": 5, "direction": "LONG", "qty": 47, "protective_orders_cancelled": 1}
 {"ts": "2026-09-11 16:25:27", "date": "2026-09-11", "event": "exit", "ticker": "NVDA", "reason": "time stop", "exit_price": 219.960638, "result_pct": -3.39, "direction": "LONG", "qty": 47, "fill_price": 227.68, "entry_date": "2026-09-03", "score": 96, "spy_pct": -1.16}
+{"ts": "2026-09-14 09:45:02", "date": "2026-09-14", "event": "time_stop_submitted", "ticker": "LULU", "days_held": 5, "direction": "SHORT", "qty": 104, "protective_orders_cancelled": 1}

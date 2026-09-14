@@ -1,61 +1,49 @@
 {
-  "updated": "2026-09-11T10:15:24.313858-04:00",
+  "updated": "2026-09-14T10:21:41.273904-04:00",
   "read_only": true,
   "mode": "movers",
-  "watchlist_file": "top10_2026-09-11_0931.json",
-  "tickers_scanned": 6,
+  "watchlist_file": "top10_2026-09-14_0931.json",
+  "tickers_scanned": 4,
   "lookback_days": 3,
-  "since": "2026-09-08",
+  "since": "2026-09-11",
   "hits": [
     {
-      "ticker": "SURG",
-      "company": "SurgePays, Inc.  (SURG)  (CIK 0001392694)",
-      "cik": 1392694,
-      "form": "8-K",
-      "kind": "capital",
-      "filed": "2026-09-10",
-      "accession": "0001493152-26-042153",
-      "phrase": "stock split",
-      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
-      "source": "full-text",
-      "url": "https://www.sec.gov/Archives/edgar/data/1392694/000149315226042153/ex10-2.htm"
-    },
-    {
-      "ticker": "TNON",
-      "company": "Tenon Medical, Inc.",
-      "cik": 1560293,
-      "form": "4",
-      "kind": "insider",
-      "filed": "2026-09-08",
-      "accession": "0001475597-26-000234",
-      "meaning": "OPEN-MARKET BUY by HRT FINANCIAL LP - 3,164 shares - cluster buying is the signal, one buy is noise",
+      "ticker": "DV",
+      "company": "DoubleVerify Holdings, Inc.",
+      "cik": 1819928,
+      "form": "PREM14A",
+      "kind": "deal",
+      "filed": "2026-09-11",
+      "accession": "0001104659-26-107126",
+      "meaning": "preliminary merger proxy",
       "source": "submissions",
-      "url": "https://www.sec.gov/Archives/edgar/data/1560293/000147559726000234/xslF345X06/primary_doc.xml",
-      "insider": "HRT FINANCIAL LP",
-      "insider_title": "",
-      "shares": 3164.0
+      "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926107126/tm2621904-10_prem14a.htm"
     }
   ],
   "new_hits": [
     {
-      "ticker": "SURG",
-      "company": "SurgePays, Inc.  (SURG)  (CIK 0001392694)",
-      "cik": 1392694,
-      "form": "8-K",
-      "kind": "capital",
-      "filed": "2026-09-10",
-      "accession": "0001493152-26-042153",
-      "phrase": "stock split",
-      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
-      "source": "full-text",
-      "url": "https://www.sec.gov/Archives/edgar/data/1392694/000149315226042153/ex10-2.htm"
+      "ticker": "DV",
+      "company": "DoubleVerify Holdings, Inc.",
+      "cik": 1819928,
+      "form": "PREM14A",
+      "kind": "deal",
+      "filed": "2026-09-11",
+      "accession": "0001104659-26-107126",
+      "meaning": "preliminary merger proxy",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926107126/tm2621904-10_prem14a.htm"
     }
   ],
   "unresolved_tickers": [
     "SOXS",
     "SOXL",
     "TQQQ",
-    "KORU"
+    "SQQQ",
+    "KORU",
+    "SNXX"
   ],
-  "errors": []
+  "errors": [
+    "full-text search \"increases quarterly dividend\": [Errno 54] Connection reset by peer",
+    "full-text search \"FDA approval\": [Errno 54] Connection reset by peer"
+  ]
 }

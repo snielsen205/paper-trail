@@ -54,6 +54,14 @@ That is a more useful finding than "the screener picks winners" would have
 been. Exit discipline is portable to any signal source; a lucky screener is
 not.
 
+**And one large caveat, measured after the fact.** Replaying these same rules
+over all 184 resolvable calls in the ledger returns **−0.72% per trade** — the
+brackets do not rescue the whole pick list, only the top score bucket. At the
+live score floor the rule set returns **+2.58%/trade across all 30 eligible
+picks**, against the **+6.10%** this book actually made, so the record above is
+flattered by which picks the position caps left room for. Method and full
+numbers: **[REPLAY_RESULTS.md](REPLAY_RESULTS.md)**.
+
 The clearest single case is **PLAG**. The ledger grades it **−86.3%** —
 bought at 5.81, and five days later it traded at 0.79. The bot logged the
 same pick as **+59.15%, target hit**: it took its 2:1 target and was out long
