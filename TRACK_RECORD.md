@@ -1,6 +1,6 @@
 # Track Record
 
-Every pick this screener has made, from **2026-07-21** to **2026-09-02** (32 trading days). Nothing is excluded. The losers are here because a track record that drops them is not a track record.
+Every pick this screener has made, from **2026-07-21** to **2026-09-11** (38 trading days). Nothing is excluded. The losers are here because a track record that drops them is not a track record.
 
 **Two different things are measured here, and they do not mean the same thing:**
 
@@ -9,7 +9,7 @@ Every pick this screener has made, from **2026-07-21** to **2026-09-02** (32 tra
 
 The gap between them is the value of the risk rules, and it is large. Read one as the other and you will get the wrong answer.
 
-*Generated 2026-09-02 from `snapshots/track_record.jsonl`. Regenerate with `python3 make_track_record.py`.*
+*Generated 2026-09-14 from `snapshots/track_record.jsonl`. Regenerate with `python3 make_track_record.py`.*
 
 ## How grading works
 
@@ -23,23 +23,23 @@ The gap between them is the value of the risk rules, and it is large. Read one a
 
 | Segment | Picks | Win rate | Avg return | Median | Beat SPY | SPY avg |
 |---|---|---|---|---|---|---|
-| **All calls** | 145 | 44.8% | -6.19% | -1.48% | 42.1% | +0.72% |
-| LONG | 128 | 46.1% | -5.52% | -1.32% | 42.2% | +0.70% |
-| SHORT | 17 | 35.3% | -11.23% | -1.50% | 41.2% | +0.85% |
-| WATCH (no position) | 124 | 32.3% | -3.36% | -7.65% | 0.0% | +0.52% |
+| **All calls** | 183 | 43.2% | -5.85% | -2.42% | 41.0% | +0.50% |
+| LONG | 154 | 42.9% | -5.54% | -2.70% | 39.6% | +0.53% |
+| SHORT | 29 | 44.8% | -7.49% | -0.19% | 48.3% | +0.34% |
+| WATCH (no position) | 146 | 32.9% | -4.33% | -8.05% | 0.0% | +0.41% |
 
 51 picks are logged but not yet ripe for grading.
 
 ## What the bot actually did
 
-The screener's raw picks are one thing; the traded system is another. Across **17 closed trades**, the bot realized **$6,890.73** — **+6.89%** on its $100,000 starting equity — at a 58.8% win rate.
+The screener's raw picks are one thing; the traded system is another. Across **18 closed trades**, the bot realized **$6,527.92** — **+6.53%** on its $100,000 starting equity — at a 55.6% win rate.
 
 | | |
 |---|---|
-| Closed trades | 17 |
-| Realized P&L | **$6,890.73** (+6.89% of starting equity) |
-| Win rate | 58.8% |
-| Avg per trade | +6.66% |
+| Closed trades | 18 |
+| Realized P&L | **$6,527.92** (+6.53% of starting equity) |
+| Win rate | 55.6% |
+| Avg per trade | +6.10% |
 | Best / worst | +59.1% / -20.4% |
 
 **How every position was closed:**
@@ -50,6 +50,7 @@ The screener's raw picks are one thing; the traded system is another. Across **1
 | target hit | 4 |
 | stop hit | 3 |
 | closed outside the bot (unattributed) | 2 |
+| time stop | 1 |
 
 Exits marked *attributed from log* were recorded before the bot logged its own exit intent; they are matched to the `time_stop_submitted` event the bot wrote at the time it initiated the close. Two early exits match no such event and are left **unattributed** rather than assumed benign — under rulebook 7 the bot is not supposed to be closed by hand, so an exit it cannot account for is a finding, not a footnote. The bot now records its exit intent before closing, so new exits are attributed directly.
 
@@ -57,13 +58,13 @@ That figure is realized P&L from the bot's **own** fills and exits. It is delibe
 
 ## The honest read
 
-Held blind, the average pick loses **6.19%** while SPY returns **+0.72%** over the same windows. Traded under the rulebook, the same signal source returned **+6.89%**. **The risk management is doing the work, not the signal.**
+Held blind, the average pick loses **5.85%** while SPY returns **+0.50%** over the same windows. Traded under the rulebook, the same signal source returned **+6.53%**. **The risk management is doing the work, not the signal.**
 
 The clearest single case is **PLAG**. The ledger grades it **-86.3%** — bought at 5.81, and five days later it traded at 0.79. The bot logged the same pick as **+59.15%, target hit**: it took profit at its 2:1 target and was out long before the collapse. One pick, opposite outcomes, and the difference is entirely the exit rule.
 
-Read honestly, that cuts both ways. A screener whose picks lose money when held is not a good screener, and the median call of -1.48% says the edge in the raw signal is thin at best. What the record supports is a narrower claim: **a mechanical exit discipline can turn a mediocre signal into a positive result** — which is worth knowing, and is not the same as having found alpha.
+Read honestly, that cuts both ways. A screener whose picks lose money when held is not a good screener, and the median call of -2.42% says the edge in the raw signal is thin at best. What the record supports is a narrower claim: **a mechanical exit discipline can turn a mediocre signal into a positive result** — which is worth knowing, and is not the same as having found alpha.
 
-The sample is small. 17 closed trades over 32 trading days is not enough to distinguish skill from a favorable tape, several winners carry most of the P&L, and it is paper money, where fills are kinder than they would be live. The evaluation window is frozen precisely so this gets more data before anyone concludes anything.
+The sample is small. 18 closed trades over 38 trading days is not enough to distinguish skill from a favorable tape, several winners carry most of the P&L, and it is paper money, where fills are kinder than they would be live. The evaluation window is frozen precisely so this gets more data before anyone concludes anything.
 
 ## Every graded call
 
@@ -214,4 +215,42 @@ The sample is small. 17 closed trades over 32 trading days is not enough to dist
 | 2026-08-25 | PRZO | LONG | 0.82 | 0.8647 | +5.45% | -0.54% | yes |
 | 2026-08-25 | RZLV | LONG | 2.96 | 2.3466 | -20.72% | -0.54% | no |
 | 2026-08-25 | SOXL | SHORT | 115.67 | 106.94 | +7.55% | -0.54% | yes |
+| 2026-08-27 | MERC | LONG | 0.39 | 0.3646 | -6.51% | +0.27% | no |
+| 2026-08-27 | NVD | LONG | 3.73 | 3.65 | -2.14% | +0.27% | no |
+| 2026-08-27 | NVDA | LONG | 227.98 | 228.45 | +0.21% | +0.27% | no |
+| 2026-08-27 | OKTA | SHORT | 172.91 | 170.42 | +1.44% | +0.27% | yes |
+| 2026-08-27 | SOXL | SHORT | 123.05 | 106.81 | +13.20% | +0.27% | yes |
+| 2026-08-27 | VNRX | LONG | 0.501 | 0.3411 | -31.92% | +0.27% | no |
+| 2026-08-27 | WKSP | LONG | 0.63 | 0.5793 | -8.05% | +0.27% | no |
+| 2026-08-28 | AFRM | LONG | 77.76 | 72.35 | -6.96% | +0.11% | no |
+| 2026-08-28 | FNGR | LONG | 0.398 | 0.1974 | -50.40% | +0.11% | no |
+| 2026-08-28 | IREN | LONG | 35.45 | 44.68 | +26.04% | +0.11% | yes |
+| 2026-08-28 | NA | LONG | 2.22 | 2.24 | +0.90% | +0.11% | yes |
+| 2026-08-28 | NVDA | LONG | 217.55 | 230.36 | +5.89% | +0.11% | yes |
+| 2026-08-28 | PYPL | LONG | 53.5237 | 54.96 | +2.68% | +0.11% | yes |
+| 2026-08-28 | SOLS | LONG | 63.53 | 63.73 | +0.31% | +0.11% | yes |
+| 2026-08-31 | EIX | SHORT | 53.98 | 59.345 | -9.94% | -0.14% | no |
+| 2026-08-31 | IBIT | SHORT | 44.67 | 44.39 | +0.63% | -0.14% | yes |
+| 2026-08-31 | SOXS | SHORT | 49.02 | 44.09 | +10.06% | -0.14% | yes |
+| 2026-09-01 | FRVO | LONG | 19.75 | 17.24 | -12.71% | +0.09% | no |
+| 2026-09-01 | NIO | LONG | 4.06 | 3.685 | -9.24% | +0.09% | no |
+| 2026-09-01 | RZLV | LONG | 2.39 | 2.3 | -3.77% | +0.09% | no |
+| 2026-09-01 | SOXL | SHORT | 105.91 | 125.88 | -18.86% | +0.09% | no |
+| 2026-09-01 | SOXS | LONG | 52.22 | 43.185 | -17.30% | +0.09% | no |
+| 2026-09-01 | TQQQ | SHORT | 69.15 | 71.55 | -3.47% | +0.09% | no |
+| 2026-09-02 | BIAF | LONG | 9.75 | 9.39 | -3.69% | -0.94% | no |
+| 2026-09-02 | CRDO | SHORT | 165.22 | 160.31 | +2.97% | -0.94% | yes |
+| 2026-09-02 | IBIT | SHORT | 43.79 | 43.68 | +0.25% | -0.94% | yes |
+| 2026-09-02 | MDB | SHORT | 375.4 | 373.87 | +0.41% | -0.94% | yes |
+| 2026-09-02 | NIO | LONG | 3.86 | 3.575 | -7.38% | -0.94% | no |
+| 2026-09-02 | NVDA | LONG | 224.41 | 218.36 | -2.70% | -0.94% | no |
+| 2026-09-02 | PPBT | LONG | 1.98 | 1.74 | -12.12% | -0.94% | no |
+| 2026-09-02 | SNXX | LONG | 14.02 | 16.4 | +16.98% | -0.94% | yes |
+| 2026-09-02 | SOXL | SHORT | 106.35 | 115.62 | -8.72% | -0.94% | no |
+| 2026-09-02 | SOXS | LONG | 51.83 | 46.79 | -9.72% | -0.94% | no |
+| 2026-09-03 | GPRO | LONG | 1.39 | 1.38 | -0.72% | -1.16% | yes |
+| 2026-09-03 | NVDA | LONG | 228.1887 | 218.29 | -4.34% | -1.16% | no |
+| 2026-09-03 | RARE | LONG | 14.85 | 14.3 | -3.70% | -1.16% | no |
+| 2026-09-03 | SOXL | SHORT | 106.74 | 121.84 | -14.15% | -1.16% | no |
+| 2026-09-03 | TSLL | LONG | 10.38 | 9.71 | -6.45% | -1.16% | no |
 

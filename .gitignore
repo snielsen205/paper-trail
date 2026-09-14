@@ -11,6 +11,7 @@ snapshots/bot_state.json
 snapshots/*.log
 snapshots/*.bak-*
 edgar_watchlist.txt
+filing_watchlist.json
 
 # --- bulk API cache (61MB, regenerates itself) ---
 cache/
@@ -40,3 +41,16 @@ macro_sleeve.py
 macro_run.sh
 snapshots/momentum_*
 snapshots/macro_*
+
+# --- build scaffolding, not part of the published project ---
+CLAUDE.md
+PENDING_DECISION.md
+V2_CHANGES.md
+
+# --- daily raw dumps: the ledgers below are the evidence, not these ---
+snapshots/scan_*.json
+snapshots/top10_*.json
+snapshots/edgar_2*.json
+snapshots/edgar_movers_2*.json
+!snapshots/scan_2026-09-02_0937.json
+!snapshots/top10_2026-09-02_0937.json

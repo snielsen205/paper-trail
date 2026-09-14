@@ -130,6 +130,12 @@ def review_payload():
         return None
 
 
+# NOTE 2026-09-05: momentum_payload / macro_payload / the calendar entry are no
+# longer wired into build_payload — their tabs were removed at the owner's
+# request. Kept (not deleted) because each made a LIVE Alpaca positions call;
+# dropping them from the payload also drops two API calls per dashboard load.
+# The SLEEVES THEMSELVES STILL RUN on their launchd jobs and still hold real
+# paper positions — this only stops displaying them.
 def momentum_payload():
     """Momentum snapshot, enriched with LIVE positions + P&L via one Alpaca
     call so the Momentum tab shows real-time gains, not the last rebalance's
@@ -299,11 +305,8 @@ def build_payload():
         "gainers": gainers,
         "losers": losers,
         "track_record": load_ledger(),
-        "calendar": load_earnings_week(pool_tickers),
         "bot_dials": dials,
         "bot": bot_payload(),
-        "momentum": momentum_payload(),
-        "macro": macro_payload(),
         "review": review_payload(),
         "analyst": analyst_payload(),
         "fund_book": fund_book_payload(),

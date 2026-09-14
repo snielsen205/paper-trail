@@ -80,13 +80,13 @@ $PY bot.py enter >>"$LOG" 2>&1
 # open) and log exits that resolved overnight. Evening run does end-of-day.
 say "running bot.py manage (time-stops + exit logging, market open)"
 $PY bot.py manage >>"$LOG" 2>&1 || say "manage failed (non-fatal)"
-# Read-only: refresh the momentum sleeve's dashboard snapshot (live P&L,
-# no orders). Keeps the Momentum tab current between monthly rebalances.
+# MOMENTUM SLEEVE RETIRED 2026-09-05 (owner: "i dont use them at all").
+# launchd job com.movers.momentum booted out; plist moved to
+# ~/Library/LaunchAgents/disabled/. The daily --refresh is gone too -- it only
+# existed to keep the removed dashboard tab's live P&L current.
+# THE POSITIONS ARE STILL OPEN: 27 names, ~$38k. They no longer rebalance and
+# nothing manages them. momentum_sleeve.py still runs by hand if needed.
 # Optional sleeves: present on the owner's machine, not shipped with the repo.
-if [ -f "$HERE/momentum_sleeve.py" ]; then
-  say "refreshing momentum snapshot (read-only)"
-  $PY momentum_sleeve.py --refresh >>"$LOG" 2>&1 || say "momentum refresh failed (non-fatal)"
-fi
 if [ -f "$HERE/macro_sleeve.py" ]; then
   say "refreshing macro snapshot (read-only)"
   $PY macro_sleeve.py --refresh >>"$LOG" 2>&1 || say "macro refresh failed (non-fatal)"

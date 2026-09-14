@@ -398,14 +398,18 @@ def scan_deal_forms(tickers, cikmap, cutoff):
 # detector 2 — "strategic alternatives", one full-text search
 # --------------------------------------------------------------------------
 
-def _fts_one(phrase, kind, blurb, watch_ciks, cutoff, today, max_hits):
+def _fts_one(phrase, kind, blurb, watch_ciks, cutoff, today, max_hits, co_term=None):
     """One EDGAR full-text search for a single phrase across 8-Ks in the window,
     keeping only CIKs on our watchlist. Split out so the whole phrase list can
     be scanned by the same paging/dedupe logic."""
     hits, errors = [], []
     page, PAGE = 0, 100
     while page < max_hits:
-        params = {"q": f'"{phrase}"', "forms": "8-K",
+        # EDGAR full-text ANDs multiple quoted phrases and offers no OR, so
+        # co_term here is ONE term; market_scan calls us once per synonym and
+        # merges the results. That union is the OR we can't express in the query.
+        q = f'"{phrase}" "{co_term}"' if co_term else f'"{phrase}"'
+        params = {"q": q, "forms": "8-K",
                   "startdt": cutoff, "enddt": today, "from": page}
         try:
             data = _get(FTS_URL, params)
@@ -532,16 +536,46 @@ def scan_strategic_alternatives(cikmap, tickers, cutoff, max_hits, phrases=None)
 # company. The operating phrases ("record quarterly revenue", "awarded a
 # contract") are true of hundreds of filers a week and would bury everything.
 MARKET_PHRASES = [
-    ("definitive agreement",      "deal",     "a transaction has been SIGNED"),
-    ("merger agreement",          "deal",     "merger paperwork signed"),
-    ("unsolicited proposal",      "signal",   "somebody made an uninvited bid"),
-    ("strategic alternatives",    "signal",   "hired a bank / exploring a sale"),
-    ("letter of intent",          "signal",   "early-stage deal talk"),
-    ("met the primary endpoint",  "clinical", "TRIAL SUCCEEDED"),
-    ("did not meet the primary endpoint", "clinical", "TRIAL FAILED - bearish"),
-    ("positive topline",          "clinical", "headline trial data came back good"),
-    ("FDA approval",              "clinical", "drug/device approved"),
+    # (phrase, kind, blurb, CO-TERMS — a tuple; ANY ONE of them is enough)
+    #
+    # WHY CO-TERMS: on the 2026-09-05 scan "definitive agreement" alone returned
+    # 98 of 149 hits. Companies use that phrase for EVERY signed contract —
+    # financing, supply, leases, CMBS paperwork. Requiring deal language in the
+    # same 8-K keeps the merger news and drops the boilerplate.
+    #
+    # WHY A TUPLE AND NOT ONE WORD: the first version required exactly "merger"
+    # or exactly "acquisition" and LOST two real movers — AAOI (+5.1%) and
+    # GYGY (-17.2%) — because their filings said "acquire" instead. One synonym
+    # is a filter; three is a filter that doesn't throw away the answer.
+    #
+    # "letter of intent" carries NO co-term: it is already narrow (17 hits
+    # unfiltered), and adding one cut it to 2 while dropping AAOI. Filtering a
+    # phrase that isn't noisy just loses signal.
+    ("definitive agreement",      "deal",     "a transaction has been SIGNED",
+        ("merger", "acquisition", "acquire")),
+    ("merger agreement",          "deal",     "merger paperwork signed",            None),
+    ("unsolicited proposal",      "signal",   "somebody made an uninvited bid",     None),
+    ("strategic alternatives",    "signal",   "hired a bank / exploring a sale",    None),
+    ("letter of intent",          "signal",   "early-stage deal talk",              None),
+    ("met the primary endpoint",  "clinical", "TRIAL SUCCEEDED",                    None),
+    ("did not meet the primary endpoint", "clinical", "TRIAL FAILED - bearish",     None),
+    ("positive topline",          "clinical", "headline trial data came back good", None),
+    ("FDA approval",              "clinical", "drug/device approved",               None),
 ]
+
+
+# Filers that generate deal-shaped 8-Ks but are not tradeable equities. These
+# are pass-through securitization vehicles: every CMBS deal signs a "definitive
+# agreement" and none of it is a stock you could ever buy.
+NOISE_NAME_PATTERNS = (
+    "mortgage trust", "commercial mortgage", "trust 20", "-c1", "-c2",
+    "asset-backed", "receivables", "auto trust", "loan trust", "certificates",
+)
+
+
+def is_noise_filer(display_name):
+    n = (display_name or "").lower()
+    return any(pat in n for pat in NOISE_NAME_PATTERNS)
 
 
 def quote_move(row):
@@ -588,13 +622,29 @@ def market_scan(args, lookback):
     print(f"edgar_watch MARKET-WIDE: every filer, {len(MARKET_PHRASES)} phrases, "
           f"since {cutoff}")
     hits, errors, seen_keys = [], [], set()
-    for phrase, kind, blurb in MARKET_PHRASES:
-        print(f'  "{phrase}"...', flush=True)
-        got, errs = _fts_one(phrase, kind, blurb, None, cutoff, today,
-                             int(dials()["max_fts_hits"]))
-        errors.extend(errs)
+    dropped_noise = 0
+    for phrase, kind, blurb, co_terms in MARKET_PHRASES:
+        # co_terms is a tuple of synonyms (or None). EDGAR has no OR operator,
+        # so we run one search per synonym and UNION the results; the dedupe
+        # below collapses a filing that matched more than one of them.
+        variants = co_terms if co_terms else (None,)
+        label = f'"{phrase}"' + (f' + any of {list(variants)}' if co_terms else "")
+        print(f"  {label}...", flush=True)
+        got = []
+        for ct in variants:
+            g, errs = _fts_one(phrase, kind, blurb, None, cutoff, today,
+                               int(dials()["max_fts_hits"]), ct)
+            errors.extend(errs)
+            got.extend(g)
         for h in got:
-            key = (h["ticker"], h["accession"], h["phrase"])
+            # securitization vehicles sign "definitive agreements" constantly
+            # and are not stocks anyone can trade -- drop them before dedupe.
+            if is_noise_filer(h.get("company", "")):
+                dropped_noise += 1
+                continue
+            # the same 8-K can match several phrases; key on the FILING so one
+            # deal doesn't print three times (GPRO showed up 3x on 2026-09-05).
+            key = (h["ticker"], h["accession"])
             if key not in seen_keys:
                 seen_keys.add(key)
                 hits.append(h)
@@ -632,10 +682,21 @@ def market_scan(args, lookback):
             note = (f"  {len(priced)} of {len(hits)} filings are on names that moved "
                     f">= {args.min_move:g}%")
             if unpriced:
-                note += f"; {len(unpriced)} could not be priced (shown, flagged)"
+                note += (f"; {len(unpriced)} could not be priced "
+                         + ("(HIDDEN by --priced-only)" if args.priced_only
+                            else "(shown, flagged)"))
             print(note)
-            hits = (sorted(priced, key=lambda h: -abs(h["change_pct"]))
-                    + sorted(unpriced, key=lambda h: h.get("filed", ""), reverse=True))
+            if args.priced_only:
+                # Deliberately opt-IN. The default still shows unpriced rows,
+                # because a thin real mover that AV can't quote is exactly the
+                # kind of name this scan exists to surface. --priced-only is for
+                # when you want a readable list: on 2026-09-05 it took 63 rows
+                # down to 5, and the 58 it hid were overwhelmingly SPAC shells
+                # and non-traded REITs that barely trade.
+                hits = sorted(priced, key=lambda h: -abs(h["change_pct"]))
+            else:
+                hits = (sorted(priced, key=lambda h: -abs(h["change_pct"]))
+                        + sorted(unpriced, key=lambda h: h.get("filed", ""), reverse=True))
 
     path_seen = os.path.join(SNAP, "edgar_market_seen.json")
     seen = set()
@@ -722,6 +783,12 @@ def main():
                    help="MARKET-WIDE: every filer, no watchlist. Finds CLRO-type "
                         "deal news anywhere. Run this any hour — it needs no "
                         "morning board and no watchlist.")
+    p.add_argument("--priced-only", action="store_true",
+                   help="with --market, HIDE filings we could not price. Most "
+                        "unpriced rows are SPAC shells and non-traded REITs that "
+                        "barely trade; on a market-wide scan a filing whose stock "
+                        "we cannot price is one we cannot judge. Opt-in: the "
+                        "default still shows them, flagged and sorted last.")
     p.add_argument("--min-move", type=float, default=5.0,
                    help="with --market, only show filings on names that moved at "
                         "least this %% today (default 5). Use 0 to show everything.")

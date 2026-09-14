@@ -1,62 +1,76 @@
 # paper-trail
 
+> ### +$6,527.92 realized — **+6.53%** on $100,000, across 18 closed trades at a 55.6% win rate.
+> Rules-based paper bot, 38 trading days. Every call logged *before* the outcome was known.
+
+[![realized P&L +6.53%](https://img.shields.io/badge/realized%20P%26L-%2B6.53%25-2ea44f?style=for-the-badge)](TRACK_RECORD.md)
+[![win rate 55.6%](https://img.shields.io/badge/win%20rate-55.6%25-0969da?style=for-the-badge)](TRACK_RECORD.md)
+[![18 closed trades](https://img.shields.io/badge/closed%20trades-18-0969da?style=for-the-badge)](TRACK_RECORD.md)
+[![paper account](https://img.shields.io/badge/account-paper-6e7781?style=for-the-badge)](#the-result)
+
 A daily equities research system: it scans the market for large intraday
 movers, filters and scores them, hands the survivors to a rules-based paper
 trading bot, and grades every call it ever made against SPY.
 
 The name is the thesis. It paper-trades, and it leaves a paper trail — an
-auditable record of every call, written down before the outcome was known.
-
-The point of the project is not the scanner. It is the **honesty ledger** —
-every pick is logged before the outcome is known and graded by a rule that
-cannot be changed after the fact. The results are published in
-**[TRACK_RECORD.md](TRACK_RECORD.md)**, including the losing calls.
-
-> Paper money only. The bot refuses live Alpaca keys by design. Nothing here
-> is investment advice.
+auditable record of every call, written down before the outcome was known,
+graded by a rule that cannot be changed after the fact.
 
 ---
 
-## Current standing
+## The result
 
-Two numbers matter here, and they measure different things.
-
-**The screener's raw signal** — every pick, bought and held blind for the
-grading window with no stop and no exit rule, across 145 graded calls over
-32 trading days:
+Across **18 closed trades** over 38 trading days, the bot's own fills and
+exits produced:
 
 | | |
 |---|---|
-| Win rate | 44.8% |
-| Average return | −6.19% |
-| SPY over the same windows | +0.72% |
-| Beat SPY | 42.1% of calls |
+| **Realized P&L** | **+$6,527.92** |
+| **Return on $100,000 starting equity** | **+6.53%** |
+| Win rate | 55.6% |
+| Average per trade | +6.10% |
+| Best / worst trade | +59.1% / −20.4% |
 
-**The traded system** — the same signals run through the rulebook, with
-stops, 2:1 targets, 1% risk sizing and a 5-day time stop, across 17 closed
-trades:
+Those are realized numbers from the bot's **own** fills and exits, not account
+equity — the paper account is shared with other strategies, so its equity is
+not the bot's result. Fills are Alpaca paper fills; the bot refuses live keys
+by design.
 
-| | |
-|---|---|
-| Realized P&L | **+$6,890.73** |
-| On $100,000 starting equity | **+6.89%** |
-| Win rate | 58.8% |
+### What produced it
 
-Held blind the picks lose money; traded under the rules the same picks made
-6.89%. **The risk management is doing the work, not the signal.**
+The interesting part is where the money came from. Run the *same* picks
+bought and held blind — no stop, no target, no exit rule — and they lose:
 
-The clearest case is PLAG. The ledger grades it −86.3% — bought at 5.81, and
-five days later it traded at 0.79. The bot logged the same pick as **+59.15%,
-target hit**: it took its 2:1 target and was out long before the collapse.
-One pick, opposite outcomes, entirely because of the exit rule.
+| | Raw signal, held blind | Same signal, traded under the rulebook |
+|---|---|---|
+| Sample | 183 graded calls | 18 closed trades |
+| Average return | **−5.85%** | **+6.10%** |
+| Win rate | 43.2% | 55.6% |
+| SPY over the same windows | +0.50% | — |
 
-That is a real result and a narrow one. 17 closed trades is a small sample,
-several winners carry most of the P&L, and paper fills are kinder than live
-ones. What the record supports is that a mechanical exit discipline can turn
-a mediocre signal into a positive result — not that the screener has found
-alpha. Full numbers and every individual call are in
-[TRACK_RECORD.md](TRACK_RECORD.md); the raw graded rows are in
-[track_record.csv](track_record.csv) if you want to check the arithmetic.
+**The risk management is doing the work, not the signal.**
+
+That is a more useful finding than "the screener picks winners" would have
+been. Exit discipline is portable to any signal source; a lucky screener is
+not.
+
+The clearest single case is **PLAG**. The ledger grades it **−86.3%** —
+bought at 5.81, and five days later it traded at 0.79. The bot logged the
+same pick as **+59.15%, target hit**: it took its 2:1 target and was out long
+before the collapse. One pick, opposite outcomes, entirely because of the
+exit rule.
+
+**The bounds on this.** 18 closed trades is a small sample, several winners
+carry most of the P&L, and paper fills are kinder than live ones. The
+headline moved from +6.89% to +6.53% the day the 18th trade closed red —
+which is what a ledger you cannot edit after the fact does to you. Every
+individual call, including every loser, is published in
+**[TRACK_RECORD.md](TRACK_RECORD.md)**, and the raw graded rows are in
+[track_record.csv](track_record.csv) if you want to check the arithmetic. A
+track record that drops its losers is not a track record.
+
+> Paper money only. The bot refuses live Alpaca keys by design. Nothing here
+> is investment advice.
 
 ---
 
@@ -164,7 +178,8 @@ in code, not by judgment. The ones that matter:
 ## Running it
 
 Requires Python 3.9+, an Alpha Vantage key, and (for the bot) free Alpaca
-**paper** keys.
+**paper** keys. There are **no third-party dependencies** — the whole system
+runs on the standard library, so there is nothing to `pip install`.
 
 ```bash
 cp config.example.json config.json   # then add your keys
@@ -184,6 +199,11 @@ python3 make_track_record.py         # regenerate the published record
 
 `config.json` holds every dial and every key. It is gitignored and must
 never be committed.
+
+`snapshots/` ships the two ledgers the track record is built from —
+`track_record.jsonl` (every pick, graded and frozen) and `bot_log.jsonl`
+(every fill, exit and skip) — plus one scan and one Top 10 as format samples.
+The daily raw dumps are not committed; they regenerate on every run.
 
 The morning sequence runs unattended via macOS `launchd` at 9:31 AM ET; if
 the machine was asleep the day is logged as **missed** rather than traded

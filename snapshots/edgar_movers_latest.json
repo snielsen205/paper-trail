@@ -1,20 +1,61 @@
 {
-  "updated": "2026-09-02T10:40:13.200197-04:00",
+  "updated": "2026-09-11T10:15:24.313858-04:00",
   "read_only": true,
   "mode": "movers",
-  "watchlist_file": "top10_2026-09-02_0937.json",
-  "tickers_scanned": 7,
+  "watchlist_file": "top10_2026-09-11_0931.json",
+  "tickers_scanned": 6,
   "lookback_days": 3,
-  "since": "2026-08-30",
-  "hits": [],
-  "new_hits": [],
-  "unresolved_tickers": [
-    "SOXL",
-    "SNXX",
-    "SOXS"
+  "since": "2026-09-08",
+  "hits": [
+    {
+      "ticker": "SURG",
+      "company": "SurgePays, Inc.  (SURG)  (CIK 0001392694)",
+      "cik": 1392694,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-09-10",
+      "accession": "0001493152-26-042153",
+      "phrase": "stock split",
+      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1392694/000149315226042153/ex10-2.htm"
+    },
+    {
+      "ticker": "TNON",
+      "company": "Tenon Medical, Inc.",
+      "cik": 1560293,
+      "form": "4",
+      "kind": "insider",
+      "filed": "2026-09-08",
+      "accession": "0001475597-26-000234",
+      "meaning": "OPEN-MARKET BUY by HRT FINANCIAL LP - 3,164 shares - cluster buying is the signal, one buy is noise",
+      "source": "submissions",
+      "url": "https://www.sec.gov/Archives/edgar/data/1560293/000147559726000234/xslF345X06/primary_doc.xml",
+      "insider": "HRT FINANCIAL LP",
+      "insider_title": "",
+      "shares": 3164.0
+    }
   ],
-  "errors": [
-    "full-text search \"strategic alternatives\": HTTP Error 500: Internal Server Error",
-    "full-text search \"breakthrough therapy\": [Errno 54] Connection reset by peer"
-  ]
+  "new_hits": [
+    {
+      "ticker": "SURG",
+      "company": "SurgePays, Inc.  (SURG)  (CIK 0001392694)",
+      "cik": 1392694,
+      "form": "8-K",
+      "kind": "capital",
+      "filed": "2026-09-10",
+      "accession": "0001493152-26-042153",
+      "phrase": "stock split",
+      "meaning": "8-K contains \"stock split\" - split announced - usually follows a long run up",
+      "source": "full-text",
+      "url": "https://www.sec.gov/Archives/edgar/data/1392694/000149315226042153/ex10-2.htm"
+    }
+  ],
+  "unresolved_tickers": [
+    "SOXS",
+    "SOXL",
+    "TQQQ",
+    "KORU"
+  ],
+  "errors": []
 }

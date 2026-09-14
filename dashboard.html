@@ -155,9 +155,6 @@
   <nav id="nav">
     <button data-p="today" class="on">Today</button>
     <button data-p="record">Track Record</button>
-    <button data-p="calendar">Calendar</button>
-    <button data-p="momentum">Momentum</button>
-    <button data-p="macro">Macro</button>
     <button data-p="filings">Filings</button>
     <button data-p="bot">Main Bot</button>
     <button data-p="fund">Hedge Fund</button>
@@ -1032,11 +1029,13 @@ function renderReview() {
 function render() {
   const m = document.getElementById("main");
   if (!DATA) { m.innerHTML = `<div class="empty">Loading&hellip;</div>`; return; }
+  /* Calendar, Momentum and Macro tabs REMOVED 2026-09-05 (owner: "i dont use
+     them at all"). The render functions are left in the file, unreferenced, so
+     re-adding a tab is a one-line change. IMPORTANT: removing a TAB does not
+     stop a SLEEVE — momentum_sleeve.py and macro_sleeve.py still run on their
+     launchd jobs and still hold real paper positions. See CLAUDE.md. */
   m.innerHTML = page === "today" ? renderToday()
     : page === "record" ? renderRecord()
-    : page === "calendar" ? renderCalendar()
-    : page === "momentum" ? renderMomentum()
-    : page === "macro" ? renderMacro()
     : page === "filings" ? renderFilings()
     : page === "fund" ? renderFund()
     : page === "review" ? renderReview()
